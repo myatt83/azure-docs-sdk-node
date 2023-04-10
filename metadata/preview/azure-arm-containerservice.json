@@ -1,7 +1,7 @@
 {
   "Name": "@azure/arm-containerservice",
-  "Version": "17.4.0-beta.2",
-  "DevVersion": null,
+  "Version": "17.4.1-alpha.20230322.1",
+  "DevVersion": "17.4.1-alpha.20230410.1",
   "DirectoryPath": "sdk/containerservice/arm-containerservice",
   "ServiceDirectory": "containerservice",
   "ReadMePath": "sdk/containerservice/arm-containerservice/README.md",
@@ -10,5 +10,5 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "azure-arm-containerservice",
-  "ReleaseStatus": "2023-03-07"
+  "ReleaseStatus": "Unreleased"
 }
