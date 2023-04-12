@@ -794,7 +794,7 @@
         href: ~/docs-ref-services/{moniker}/arm-devtestlabs-readme.md
         children:
         - '@azure/arm-devtestlabs'
-  - name: Dns
+  - name: DNS
     href: ~/docs-ref-services/{moniker}/dns.md
     landingPageType: Service
     items:
@@ -1424,22 +1424,10 @@
     href: ~/docs-ref-services/{moniker}/maps.md
     landingPageType: Service
     items:
-    - name: Maps Geolocation
-      href: ~/docs-ref-services/{moniker}/maps-geolocation-rest-readme.md
-      children:
-      - '@azure-rest/maps-geolocation'
-    - name: Maps Render
-      href: ~/docs-ref-services/{moniker}/maps-render-rest-readme.md
-      children:
-      - '@azure-rest/maps-render'
     - name: Maps Route
       href: ~/docs-ref-services/{moniker}/maps-route-rest-readme.md
       children:
       - '@azure-rest/maps-route'
-    - name: Maps Search
-      href: ~/docs-ref-services/{moniker}/maps-search-rest-readme.md
-      children:
-      - '@azure-rest/maps-search'
     - name: Maps Common
       href: ~/docs-ref-services/{moniker}/maps-common-readme.md
       children:
@@ -2202,7 +2190,7 @@
     items:
     - name: Management
       items:
-      - name: Resource Management - StorSimple 1200 series
+      - name: Resource Management - StorSimple 1200 series (deprecated)
         href: ~/docs-ref-services/{moniker}/arm-storsimple1200series-readme.md
         children:
         - '@azure/arm-storsimple1200series'
@@ -2212,7 +2200,7 @@
     items:
     - name: Management
       items:
-      - name: Resource Management - StorSimple 8000 series
+      - name: Resource Management - StorSimple 8000 series (deprecated)
         href: ~/docs-ref-services/{moniker}/arm-storsimple8000series-readme.md
         children:
         - '@azure/arm-storsimple8000series'
@@ -2396,6 +2384,14 @@
       href: ~/docs-ref-services/{moniker}/cognitiveservices-websearch-readme.md
       children:
       - '@azure/cognitiveservices-websearch'
+  - name: WebPubSub
+    href: ~/docs-ref-services/{moniker}/webpubsub.md
+    landingPageType: Service
+    items:
+    - name: WebPubSub Client SDK Protobuf
+      href: ~/docs-ref-services/{moniker}/web-pubsub-client-protobuf-readme.md
+      children:
+      - '@azure/web-pubsub-client-protobuf'
   - name: Workloads
     href: ~/docs-ref-services/{moniker}/workloads.md
     landingPageType: Service
