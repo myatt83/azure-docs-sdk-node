@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'datasetParameters?: Record<string, unknown>'
+      content: 'datasetParameters?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: parameters
     uid: '@azure/arm-datafactory.DataFlowDebugPackageDebugSettings.parameters'
     package: '@azure/arm-datafactory'
@@ -28,10 +28,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'parameters?: {[propertyName: string]: Record}'
+      content: 'parameters?: {[propertyName: string]: any}'
       return:
         description: ''
-        type: '{[propertyName: string]: Record}'
+        type: '{[propertyName: string]: any}'
   - name: sourceSettings
     uid: '@azure/arm-datafactory.DataFlowDebugPackageDebugSettings.sourceSettings'
     package: '@azure/arm-datafactory'

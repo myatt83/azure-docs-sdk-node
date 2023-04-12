@@ -56,7 +56,7 @@ methods:
         function beginCreate(resourceGroupName: string, factoryName: string,
         request: CreateDataFlowDebugSessionRequest, options?:
         DataFlowDebugSessionCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<CreateDataFlowDebugSessionResponse>,
+        Promise<SimplePollerLike<OperationState<CreateDataFlowDebugSessionResponse>,
         CreateDataFlowDebugSessionResponse>>
       parameters:
         - id: resourceGroupName
@@ -79,7 +79,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-datafactory.CreateDataFlowDebugSessionResponse"
           />&gt;, <xref
           uid="@azure/arm-datafactory.CreateDataFlowDebugSessionResponse"
@@ -134,7 +134,7 @@ methods:
         function beginExecuteCommand(resourceGroupName: string, factoryName:
         string, request: DataFlowDebugCommandRequest, options?:
         DataFlowDebugSessionExecuteCommandOptionalParams):
-        Promise<PollerLike<PollOperationState<DataFlowDebugCommandResponse>,
+        Promise<SimplePollerLike<OperationState<DataFlowDebugCommandResponse>,
         DataFlowDebugCommandResponse>>
       parameters:
         - id: resourceGroupName
@@ -155,7 +155,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-datafactory.DataFlowDebugCommandResponse" />&gt;,
           <xref uid="@azure/arm-datafactory.DataFlowDebugCommandResponse"
           />&gt;&gt;

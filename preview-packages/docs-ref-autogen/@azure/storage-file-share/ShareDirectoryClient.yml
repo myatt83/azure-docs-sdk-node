@@ -10,9 +10,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: >-
-      ShareDirectoryClient(string, Credential_2 | TokenCredential,
-      ShareClientOptions)
+  - name: ShareDirectoryClient(string, Credential_2, StoragePipelineOptions)
     uid: '@azure/storage-file-share.ShareDirectoryClient.constructor'
     package: '@azure/storage-file-share'
     summary: Creates an instance of DirectoryClient.
@@ -20,8 +18,8 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new ShareDirectoryClient(url: string, credential?: Credential_2 |
-        TokenCredential, options?: ShareClientOptions)
+        new ShareDirectoryClient(url: string, credential?: Credential_2,
+        options?: StoragePipelineOptions)
       parameters:
         - id: url
           type: string
@@ -35,25 +33,21 @@ constructors:
                                 However, if a directory name includes %, directory name must be encoded in the URL.
                                 Such as a directory named "mydir%", the URL should be "https://myaccount.file.core.windows.net/myshare/mydir%25".
         - id: credential
-          type: >-
-            <xref uid="@azure/storage-file-share.Credential" /> |
-            TokenCredential
+          type: <xref uid="@azure/storage-file-share.Credential" />
           description: |-
             Such as AnonymousCredential or StorageSharedKeyCredential.
                                              If not specified, AnonymousCredential is used.
         - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientOptions" />
+          type: <xref uid="@azure/storage-file-share.StoragePipelineOptions" />
           description: Optional. Options to configure the HTTP pipeline.
-  - name: ShareDirectoryClient(string, Pipeline, ShareClientConfig)
+  - name: ShareDirectoryClient(string, Pipeline)
     uid: '@azure/storage-file-share.ShareDirectoryClient.constructor_1'
     package: '@azure/storage-file-share'
     summary: Creates an instance of DirectoryClient.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new ShareDirectoryClient(url: string, pipeline: Pipeline, options?:
-        ShareClientConfig)
+      content: 'new ShareDirectoryClient(url: string, pipeline: Pipeline)'
       parameters:
         - id: url
           type: string
@@ -71,9 +65,6 @@ constructors:
           description: |-
             Call newPipeline() to create a default
                                        pipeline, or provide a customized pipeline.
-        - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientConfig" />
-          description: ''
 properties:
   - name: name
     uid: '@azure/storage-file-share.ShareDirectoryClient.name'

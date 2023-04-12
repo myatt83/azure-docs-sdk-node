@@ -60,7 +60,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'userAssignedIdentities?: {[propertyName: string]: Record}'
+      content: 'userAssignedIdentities?: {[propertyName: string]: any}'
       return:
         description: ''
-        type: '{[propertyName: string]: Record}'
+        type: '{[propertyName: string]: any}'

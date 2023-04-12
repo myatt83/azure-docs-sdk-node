@@ -37,6 +37,30 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.$host'
+    package: '@azure/arm-servicefabric'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.apiVersion'
+    package: '@azure/arm-servicefabric'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: applications
     uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.applications'
     package: '@azure/arm-servicefabric'
@@ -122,52 +146,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-servicefabric.Services" />
-inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.$host'
-    package: '@azure/arm-servicefabric'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ServiceFabricManagementClientContext.$host](xref:@azure/arm-servicefabric.ServiceFabricManagementClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.apiVersion'
-    package: '@azure/arm-servicefabric'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ServiceFabricManagementClientContext.apiVersion](xref:@azure/arm-servicefabric.ServiceFabricManagementClientContext.apiVersion)
-  - name: pipeline
-    uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.pipeline'
-    package: '@azure/arm-servicefabric'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ServiceFabricManagementClientContext.pipeline](xref:@azure/arm-servicefabric.ServiceFabricManagementClientContext.pipeline)
   - name: subscriptionId
     uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.subscriptionId'
     package: '@azure/arm-servicefabric'
@@ -180,9 +158,20 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ServiceFabricManagementClientContext.subscriptionId](xref:@azure/arm-servicefabric.ServiceFabricManagementClientContext.subscriptionId)
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.pipeline'
+    package: '@azure/arm-servicefabric'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: >-
@@ -207,9 +196,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ServiceFabricManagementClientContext.sendOperationRequest](xref:@azure/arm-servicefabric.ServiceFabricManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-servicefabric.ServiceFabricManagementClient.sendRequest'
     package: '@azure/arm-servicefabric'
@@ -227,7 +214,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ServiceFabricManagementClientContext.sendRequest](xref:@azure/arm-servicefabric.ServiceFabricManagementClientContext.sendRequest)
-extends: <xref uid="@azure/arm-servicefabric.ServiceFabricManagementClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

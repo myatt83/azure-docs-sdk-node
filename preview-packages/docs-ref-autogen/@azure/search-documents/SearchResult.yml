@@ -3,9 +3,10 @@ name: SearchResult
 uid: '@azure/search-documents.SearchResult'
 package: '@azure/search-documents'
 summary: Contains a document found by a search query, plus associated metadata.
-fullName: SearchResult<T>
+fullName: SearchResult<Model, Fields>
 remarks: ''
 isDeprecated: false
 syntax: >-
-  type SearchResult<T> = { captions?: CaptionResult[], document: T, highlights?:
-  {[k in keyof T]?: string[];}, rerankerScore?: number, score: number }
+  type SearchResult<Model, Fields> = { captions?: CaptionResult[], document:
+  NarrowedModel<Model, Fields>, highlights?: {[k in SelectFields<Model>]?:
+  string[];}, rerankerScore?: number, score: number }

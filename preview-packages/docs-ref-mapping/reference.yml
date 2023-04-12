@@ -138,6 +138,16 @@
         href: ~/docs-ref-services/preview/arm-batch-readme.md
         children:
         - '@azure/arm-batch'
+  - name: Billing
+    href: ~/docs-ref-services/preview/billing.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Billing
+        href: ~/docs-ref-services/preview/arm-billing-readme.md
+        children:
+        - '@azure/arm-billing'
   - name: Bot Service
     href: ~/docs-ref-services/preview/bot-service.md
     landingPageType: Service
@@ -163,9 +173,9 @@
     landingPageType: Service
     items:
     - name: Document Translation
+      href: ~/docs-ref-services/preview/ai-document-translator-rest-readme.md
       children:
       - '@azure-rest/ai-document-translator'
-      landingPageType: Service
     - name: Personalizer
       href: ~/docs-ref-services/preview/ai-personalizer-rest-readme.md
       children:
@@ -424,6 +434,16 @@
         href: ~/docs-ref-services/preview/arm-databricks-readme.md
         children:
         - '@azure/arm-databricks'
+  - name: Datadog
+    href: ~/docs-ref-services/preview/datadog.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Datadog
+        href: ~/docs-ref-services/preview/arm-datadog-readme.md
+        children:
+        - '@azure/arm-datadog'
   - name: Deployment Manager
     href: ~/docs-ref-services/preview/deployment-manager.md
     landingPageType: Service
@@ -556,6 +576,16 @@
         href: ~/docs-ref-services/preview/arm-eventhub-readme.md
         children:
         - '@azure/arm-eventhub'
+  - name: Eventhub
+    href: ~/docs-ref-services/preview/eventhub.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: '@azure/arm-eventhub-profile-2020-09-01-hybrid'
+        href: ~/docs-ref-services/preview/arm-eventhub-profile-2020-09-01-hybrid-readme.md
+        children:
+        - '@azure/arm-eventhub-profile-2020-09-01-hybrid'
   - name: Extended Location
     href: ~/docs-ref-services/preview/extended-location.md
     landingPageType: Service
@@ -1068,7 +1098,7 @@
         href: ~/docs-ref-services/preview/arm-portal-readme.md
         children:
         - '@azure/arm-portal'
-  - name: PostgreSQL
+  - name: Postgresql
     href: ~/docs-ref-services/preview/postgresql.md
     landingPageType: Service
     items:
@@ -1132,6 +1162,10 @@
         href: ~/docs-ref-services/preview/arm-recoveryservices-readme.md
         children:
         - '@azure/arm-recoveryservices'
+      - name: Resource Management - Backup
+        href: ~/docs-ref-services/preview/arm-recoveryservicesbackup-readme.md
+        children:
+        - '@azure/arm-recoveryservicesbackup'
   - name: Redis
     href: ~/docs-ref-services/preview/redis.md
     landingPageType: Service
@@ -1388,6 +1422,16 @@
         href: ~/docs-ref-services/preview/arm-storagemover-readme.md
         children:
         - '@azure/arm-storagemover'
+  - name: StorSimple 8000 series
+    href: ~/docs-ref-services/preview/storsimple-8000-series.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - StorSimple 8000 series (deprecated)
+        href: ~/docs-ref-services/preview/arm-storsimple8000series-readme.md
+        children:
+        - '@azure/arm-storsimple8000series'
   - name: Stream Analytics
     href: ~/docs-ref-services/preview/stream-analytics.md
     landingPageType: Service
@@ -1462,6 +1506,16 @@
         href: ~/docs-ref-services/preview/arm-visualstudio-readme.md
         children:
         - '@azure/arm-visualstudio'
+  - name: VMware Solution by CloudSimple
+    href: ~/docs-ref-services/preview/vmware-solution-by-cloudsimple.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - VMware Solution by CloudSimple
+        href: ~/docs-ref-services/preview/arm-vmwarecloudsimple-readme.md
+        children:
+        - '@azure/arm-vmwarecloudsimple'
   - name: Voiceservices
     href: ~/docs-ref-services/preview/voiceservices.md
     landingPageType: Service
@@ -1490,6 +1544,14 @@
         href: ~/docs-ref-services/preview/arm-webpubsub-readme.md
         children:
         - '@azure/arm-webpubsub'
+  - name: WebPubSub
+    href: ~/docs-ref-services/preview/webpubsub.md
+    landingPageType: Service
+    items:
+    - name: WebPubSub Client SDK Protobuf
+      href: ~/docs-ref-services/preview/web-pubsub-client-protobuf-readme.md
+      children:
+      - '@azure/web-pubsub-client-protobuf'
   - name: Workloads
     href: ~/docs-ref-services/preview/workloads.md
     landingPageType: Service

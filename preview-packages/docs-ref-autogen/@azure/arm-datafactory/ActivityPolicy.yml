@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'retry?: Record<string, unknown>'
+      content: 'retry?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: retryIntervalInSeconds
     uid: '@azure/arm-datafactory.ActivityPolicy.retryIntervalInSeconds'
     package: '@azure/arm-datafactory'
@@ -73,7 +73,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'timeout?: Record<string, unknown>'
+      content: 'timeout?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

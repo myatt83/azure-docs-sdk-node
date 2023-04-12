@@ -10,6 +10,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: audience
+    uid: '@azure/storage-file-datalake.StoragePipelineOptions.audience'
+    package: '@azure/storage-file-datalake'
+    summary: The audience used to retrieve an AAD token.
+    fullName: audience
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'audience?: string | string[]'
+      return:
+        description: ''
+        type: string | string[]
   - name: httpClient
     uid: '@azure/storage-file-datalake.StoragePipelineOptions.httpClient'
     package: '@azure/storage-file-datalake'
@@ -18,10 +30,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'httpClient?: HttpClient'
+      content: 'httpClient?: RequestPolicy'
       return:
         description: ''
-        type: <xref uid="@azure/storage-file-datalake.IHttpClient" />
+        type: RequestPolicy
   - name: keepAliveOptions
     uid: '@azure/storage-file-datalake.StoragePipelineOptions.keepAliveOptions'
     package: '@azure/storage-file-datalake'
@@ -57,7 +69,7 @@ properties:
       content: 'retryOptions?: StorageRetryOptions'
       return:
         description: ''
-        type: <xref uid="@azure/storage-file-datalake.StorageRetryOptions" />
+        type: StorageRetryOptions
   - name: userAgentOptions
     uid: '@azure/storage-file-datalake.StoragePipelineOptions.userAgentOptions'
     package: '@azure/storage-file-datalake'
@@ -66,7 +78,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'userAgentOptions?: UserAgentOptions'
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
       return:
         description: ''
-        type: UserAgentOptions
+        type: UserAgentPolicyOptions

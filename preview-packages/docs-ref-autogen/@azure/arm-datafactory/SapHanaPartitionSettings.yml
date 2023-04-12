@@ -18,7 +18,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'partitionColumnName?: Record<string, unknown>'
+      content: 'partitionColumnName?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

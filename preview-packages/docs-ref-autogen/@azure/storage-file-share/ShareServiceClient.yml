@@ -12,9 +12,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: >-
-      ShareServiceClient(string, Credential_2 | TokenCredential,
-      ShareClientOptions)
+  - name: ShareServiceClient(string, Credential_2, StoragePipelineOptions)
     uid: '@azure/storage-file-share.ShareServiceClient.constructor'
     package: '@azure/storage-file-share'
     summary: Creates an instance of ShareServiceClient.
@@ -22,8 +20,8 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new ShareServiceClient(url: string, credential?: Credential_2 |
-        TokenCredential, options?: ShareClientOptions)
+        new ShareServiceClient(url: string, credential?: Credential_2, options?:
+        StoragePipelineOptions)
       parameters:
         - id: url
           type: string
@@ -32,26 +30,21 @@ constructors:
                                 "https://myaccount.file.core.windows.net". You can Append a SAS
                                 if using AnonymousCredential, such as "https://myaccount.file.core.windows.net?sasString".
         - id: credential
-          type: >-
-            <xref uid="@azure/storage-file-share.Credential" /> |
-            TokenCredential
-          description: >-
-            Such as AnonymousCredential, StorageSharedKeyCredential or
-            TokenCredential.
+          type: <xref uid="@azure/storage-file-share.Credential" />
+          description: |-
+            Such as AnonymousCredential or StorageSharedKeyCredential.
                                              If not specified, AnonymousCredential is used.
         - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientOptions" />
+          type: <xref uid="@azure/storage-file-share.StoragePipelineOptions" />
           description: Optional. Options to configure the HTTP pipeline.
-  - name: ShareServiceClient(string, Pipeline, ShareClientConfig)
+  - name: ShareServiceClient(string, Pipeline)
     uid: '@azure/storage-file-share.ShareServiceClient.constructor_1'
     package: '@azure/storage-file-share'
     summary: Creates an instance of ShareServiceClient.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new ShareServiceClient(url: string, pipeline: Pipeline, options?:
-        ShareClientConfig)
+      content: 'new ShareServiceClient(url: string, pipeline: Pipeline)'
       parameters:
         - id: url
           type: string
@@ -64,9 +57,6 @@ constructors:
           description: |-
             Call newPipeline() to create a default
                                        pipeline, or provide a customized pipeline.
-        - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientConfig" />
-          description: Optional. Options to configure the HTTP pipeline.
 inheritedProperties:
   - name: accountName
     uid: '@azure/storage-file-share.ShareServiceClient.accountName'
@@ -140,7 +130,7 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/storage-file-share.ShareDeleteResponse"
           />&gt;
-  - name: fromConnectionString(string, ShareClientOptions)
+  - name: fromConnectionString(string, StoragePipelineOptions)
     uid: '@azure/storage-file-share.ShareServiceClient.fromConnectionString'
     package: '@azure/storage-file-share'
     summary: Creates an instance of ShareServiceClient from connection string.
@@ -149,7 +139,7 @@ methods:
     syntax:
       content: >-
         static function fromConnectionString(connectionString: string, options?:
-        ShareClientOptions): ShareServiceClient
+        StoragePipelineOptions): ShareServiceClient
       parameters:
         - id: connectionString
           type: string
@@ -162,7 +152,7 @@ methods:
                                              SAS connection string example -
                                              `BlobEndpoint=https://myaccount.blob.core.windows.net/;QueueEndpoint=https://myaccount.queue.core.windows.net/;FileEndpoint=https://myaccount.file.core.windows.net/;TableEndpoint=https://myaccount.table.core.windows.net/;SharedAccessSignature=sasString`
         - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientOptions" />
+          type: <xref uid="@azure/storage-file-share.StoragePipelineOptions" />
           description: Options to configure the HTTP pipeline.
       return:
         description: A new ShareServiceClient from the given connection string.

@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'annotations?: Record<string, unknown>[]'
+      content: 'annotations?: any[]'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;[]
+        type: any[]
   - name: description
     uid: '@azure/arm-datafactory.DataFlow.description'
     package: '@azure/arm-datafactory'

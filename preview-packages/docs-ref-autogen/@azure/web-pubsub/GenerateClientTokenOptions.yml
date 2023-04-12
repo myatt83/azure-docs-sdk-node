@@ -22,6 +22,18 @@ properties:
       return:
         description: ''
         type: number
+  - name: groups
+    uid: '@azure/web-pubsub.GenerateClientTokenOptions.groups'
+    package: '@azure/web-pubsub'
+    summary: The groups to join when the client connects
+    fullName: groups
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'groups?: string[]'
+      return:
+        description: ''
+        type: string[]
   - name: roles
     uid: '@azure/web-pubsub.GenerateClientTokenOptions.roles'
     package: '@azure/web-pubsub'

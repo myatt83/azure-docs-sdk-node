@@ -21,10 +21,10 @@ constructors:
       content: 'new StorageRetryPolicyFactory(retryOptions?: StorageRetryOptions)'
       parameters:
         - id: retryOptions
-          type: <xref uid="@azure/storage-file-datalake.StorageRetryOptions" />
+          type: StorageRetryOptions
           description: ''
 methods:
-  - name: create(RequestPolicy, RequestPolicyOptions)
+  - name: create(RequestPolicy, RequestPolicyOptionsLike)
     uid: '@azure/storage-file-datalake.StorageRetryPolicyFactory.create'
     package: '@azure/storage-file-datalake'
     summary: Creates a StorageRetryPolicy object.
@@ -33,13 +33,13 @@ methods:
     syntax:
       content: >-
         function create(nextPolicy: RequestPolicy, options:
-        RequestPolicyOptions): StorageRetryPolicy
+        RequestPolicyOptionsLike): StorageRetryPolicy
       parameters:
         - id: nextPolicy
-          type: <xref uid="@azure/storage-file-datalake.RequestPolicy" />
+          type: RequestPolicy
           description: ''
         - id: options
-          type: <xref uid="@azure/storage-file-datalake.RequestPolicyOptions" />
+          type: RequestPolicyOptionsLike
           description: ''
       return:
         description: ''

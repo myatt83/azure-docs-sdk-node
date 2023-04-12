@@ -20,10 +20,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'computeType?: Record<string, unknown>'
+      content: 'computeType?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: coreCount
     uid: >-
       @azure/arm-datafactory.ExecuteDataFlowActivityTypePropertiesCompute.coreCount
@@ -36,7 +36,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'coreCount?: Record<string, unknown>'
+      content: 'coreCount?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

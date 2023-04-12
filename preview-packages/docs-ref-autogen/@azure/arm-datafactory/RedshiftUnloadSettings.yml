@@ -24,10 +24,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'bucketName: Record<string, unknown>'
+      content: 'bucketName: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: s3LinkedServiceName
     uid: '@azure/arm-datafactory.RedshiftUnloadSettings.s3LinkedServiceName'
     package: '@azure/arm-datafactory'

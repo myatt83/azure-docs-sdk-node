@@ -32,6 +32,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: disablePublish
+    uid: '@azure/arm-datafactory.FactoryRepoConfiguration.disablePublish'
+    package: '@azure/arm-datafactory'
+    summary: Disable manual publish operation in ADF studio to favor automated publish.
+    fullName: disablePublish
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'disablePublish?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: lastCommitId
     uid: '@azure/arm-datafactory.FactoryRepoConfiguration.lastCommitId'
     package: '@azure/arm-datafactory'
@@ -78,7 +90,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'type: "FactoryVSTSConfiguration" | "FactoryGitHubConfiguration"'
+      content: 'type: "FactoryGitHubConfiguration" | "FactoryVSTSConfiguration"'
       return:
         description: ''
-        type: '"FactoryVSTSConfiguration" | "FactoryGitHubConfiguration"'
+        type: '"FactoryGitHubConfiguration" | "FactoryVSTSConfiguration"'

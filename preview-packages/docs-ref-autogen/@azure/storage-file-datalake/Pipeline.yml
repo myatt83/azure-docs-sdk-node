@@ -35,10 +35,10 @@ constructors:
         PipelineOptions)
       parameters:
         - id: factories
-          type: <xref uid="@azure/storage-file-datalake.RequestPolicyFactory" />[]
+          type: RequestPolicyFactory[]
           description: ''
         - id: options
-          type: <xref uid="@azure/storage-file-datalake.PipelineOptions" />
+          type: PipelineOptions
           description: ''
 properties:
   - name: factories
@@ -52,7 +52,7 @@ properties:
       content: 'factories: RequestPolicyFactory[]'
       return:
         description: ''
-        type: <xref uid="@azure/storage-file-datalake.RequestPolicyFactory" />[]
+        type: RequestPolicyFactory[]
   - name: options
     uid: '@azure/storage-file-datalake.Pipeline.options'
     package: '@azure/storage-file-datalake'
@@ -64,7 +64,7 @@ properties:
       content: 'options: PipelineOptions'
       return:
         description: ''
-        type: <xref uid="@azure/storage-file-datalake.PipelineOptions" />
+        type: PipelineOptions
 methods:
   - name: toServiceClientOptions()
     uid: '@azure/storage-file-datalake.Pipeline.toServiceClientOptions'

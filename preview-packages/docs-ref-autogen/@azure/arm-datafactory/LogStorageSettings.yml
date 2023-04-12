@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'enableReliableLogging?: Record<string, unknown>'
+      content: 'enableReliableLogging?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: linkedServiceName
     uid: '@azure/arm-datafactory.LogStorageSettings.linkedServiceName'
     package: '@azure/arm-datafactory'
@@ -44,10 +44,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'logLevel?: Record<string, unknown>'
+      content: 'logLevel?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: path
     uid: '@azure/arm-datafactory.LogStorageSettings.path'
     package: '@azure/arm-datafactory'
@@ -58,7 +58,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'path?: Record<string, unknown>'
+      content: 'path?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

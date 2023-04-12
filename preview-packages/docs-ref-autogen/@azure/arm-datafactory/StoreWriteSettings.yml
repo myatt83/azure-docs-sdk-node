@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'copyBehavior?: Record<string, unknown>'
+      content: 'copyBehavior?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: disableMetricsCollection
     uid: '@azure/arm-datafactory.StoreWriteSettings.disableMetricsCollection'
     package: '@azure/arm-datafactory'
@@ -30,10 +30,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'disableMetricsCollection?: Record<string, unknown>'
+      content: 'disableMetricsCollection?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: maxConcurrentConnections
     uid: '@azure/arm-datafactory.StoreWriteSettings.maxConcurrentConnections'
     package: '@azure/arm-datafactory'
@@ -44,10 +44,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'maxConcurrentConnections?: Record<string, unknown>'
+      content: 'maxConcurrentConnections?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: type
     uid: '@azure/arm-datafactory.StoreWriteSettings.type'
     package: '@azure/arm-datafactory'
@@ -59,12 +59,12 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        type: "SftpWriteSettings" | "AzureBlobStorageWriteSettings" |
-        "AzureBlobFSWriteSettings" | "AzureDataLakeStoreWriteSettings" |
-        "FileServerWriteSettings" | "AzureFileStorageWriteSettings"
+        type: "AzureBlobFSWriteSettings" | "AzureBlobStorageWriteSettings" |
+        "AzureDataLakeStoreWriteSettings" | "AzureFileStorageWriteSettings" |
+        "FileServerWriteSettings" | "SftpWriteSettings"
       return:
         description: ''
         type: >-
-          "SftpWriteSettings" | "AzureBlobStorageWriteSettings" |
-          "AzureBlobFSWriteSettings" | "AzureDataLakeStoreWriteSettings" |
-          "FileServerWriteSettings" | "AzureFileStorageWriteSettings"
+          "AzureBlobFSWriteSettings" | "AzureBlobStorageWriteSettings" |
+          "AzureDataLakeStoreWriteSettings" | "AzureFileStorageWriteSettings" |
+          "FileServerWriteSettings" | "SftpWriteSettings"

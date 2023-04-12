@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'parameters?: {[propertyName: string]: Record}'
+      content: 'parameters?: {[propertyName: string]: any}'
       return:
         description: ''
-        type: '{[propertyName: string]: Record}'
+        type: '{[propertyName: string]: any}'
   - name: pipelineReference
     uid: '@azure/arm-datafactory.TriggerPipelineReference.pipelineReference'
     package: '@azure/arm-datafactory'

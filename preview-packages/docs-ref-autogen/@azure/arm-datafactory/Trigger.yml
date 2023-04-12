@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'annotations?: Record<string, unknown>[]'
+      content: 'annotations?: any[]'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;[]
+        type: any[]
   - name: description
     uid: '@azure/arm-datafactory.Trigger.description'
     package: '@azure/arm-datafactory'
@@ -62,12 +62,12 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        type: "MultiplePipelineTrigger" | "ScheduleTrigger" | "BlobTrigger" |
-        "BlobEventsTrigger" | "CustomEventsTrigger" | "TumblingWindowTrigger" |
-        "RerunTumblingWindowTrigger" | "ChainingTrigger"
+        type: "BlobEventsTrigger" | "BlobTrigger" | "ChainingTrigger" |
+        "CustomEventsTrigger" | "MultiplePipelineTrigger" | "ScheduleTrigger" |
+        "RerunTumblingWindowTrigger" | "TumblingWindowTrigger"
       return:
         description: ''
         type: >-
-          "MultiplePipelineTrigger" | "ScheduleTrigger" | "BlobTrigger" |
-          "BlobEventsTrigger" | "CustomEventsTrigger" | "TumblingWindowTrigger"
-          | "RerunTumblingWindowTrigger" | "ChainingTrigger"
+          "BlobEventsTrigger" | "BlobTrigger" | "ChainingTrigger" |
+          "CustomEventsTrigger" | "MultiplePipelineTrigger" | "ScheduleTrigger"
+          | "RerunTumblingWindowTrigger" | "TumblingWindowTrigger"

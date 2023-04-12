@@ -30,7 +30,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'httpClient?: HttpClient'
+      content: 'httpClient?: RequestPolicy'
       return:
         description: ''
         type: <xref uid="@azure/storage-blob.IHttpClient" />
@@ -78,7 +78,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'userAgentOptions?: UserAgentOptions'
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
       return:
         description: ''
-        type: UserAgentOptions
+        type: UserAgentPolicyOptions

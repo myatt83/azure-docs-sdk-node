@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'count?: Record<string, unknown>'
+      content: 'count?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: intervalInSeconds
     uid: '@azure/arm-datafactory.RetryPolicy.intervalInSeconds'
     package: '@azure/arm-datafactory'

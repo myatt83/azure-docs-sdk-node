@@ -32,3 +32,6 @@ syntax: |
     | DatabricksSparkPythonActivity
     | AzureFunctionActivity
     | ExecuteDataFlowActivity
+    | ScriptActivity
+    | SynapseNotebookActivity
+    | SynapseSparkJobDefinitionActivity

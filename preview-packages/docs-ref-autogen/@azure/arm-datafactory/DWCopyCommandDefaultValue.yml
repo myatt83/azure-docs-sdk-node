@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'columnName?: Record<string, unknown>'
+      content: 'columnName?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: defaultValue
     uid: '@azure/arm-datafactory.DWCopyCommandDefaultValue.defaultValue'
     package: '@azure/arm-datafactory'
@@ -30,7 +30,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'defaultValue?: Record<string, unknown>'
+      content: 'defaultValue?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

@@ -19,10 +19,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'limit?: Record<string, unknown>'
+      content: 'limit?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: project
     uid: '@azure/arm-datafactory.MongoDbCursorMethodsProperties.project'
     package: '@azure/arm-datafactory'
@@ -34,10 +34,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'project?: Record<string, unknown>'
+      content: 'project?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: skip
     uid: '@azure/arm-datafactory.MongoDbCursorMethodsProperties.skip'
     package: '@azure/arm-datafactory'
@@ -49,10 +49,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'skip?: Record<string, unknown>'
+      content: 'skip?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: sort
     uid: '@azure/arm-datafactory.MongoDbCursorMethodsProperties.sort'
     package: '@azure/arm-datafactory'
@@ -64,7 +64,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'sort?: Record<string, unknown>'
+      content: 'sort?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

@@ -46,10 +46,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'servicePrincipalId?: Record<string, unknown>'
+      content: 'servicePrincipalId?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: servicePrincipalKey
     uid: '@azure/arm-datafactory.SqlAlwaysEncryptedProperties.servicePrincipalKey'
     package: '@azure/arm-datafactory'

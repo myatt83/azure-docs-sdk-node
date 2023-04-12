@@ -19,10 +19,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'enableCompression?: Record<string, unknown>'
+      content: 'enableCompression?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: linkedServiceName
     uid: '@azure/arm-datafactory.StagingSettings.linkedServiceName'
     package: '@azure/arm-datafactory'
@@ -45,7 +45,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'path?: Record<string, unknown>'
+      content: 'path?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

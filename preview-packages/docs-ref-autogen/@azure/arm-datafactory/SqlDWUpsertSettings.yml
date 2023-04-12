@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'interimSchemaName?: Record<string, unknown>'
+      content: 'interimSchemaName?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: keys
     uid: '@azure/arm-datafactory.SqlDWUpsertSettings.keys'
     package: '@azure/arm-datafactory'
@@ -32,7 +32,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'keys?: Record<string, unknown>'
+      content: 'keys?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

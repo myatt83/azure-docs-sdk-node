@@ -8,9 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: >-
-      ShareFileClient(string, Credential_2 | TokenCredential,
-      ShareClientOptions)
+  - name: ShareFileClient(string, Credential_2, StoragePipelineOptions)
     uid: '@azure/storage-file-share.ShareFileClient.constructor'
     package: '@azure/storage-file-share'
     summary: Creates an instance of ShareFileClient.
@@ -18,8 +16,8 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new ShareFileClient(url: string, credential?: Credential_2 |
-        TokenCredential, options?: ShareClientOptions)
+        new ShareFileClient(url: string, credential?: Credential_2, options?:
+        StoragePipelineOptions)
       parameters:
         - id: url
           type: string
@@ -33,26 +31,21 @@ constructors:
                                 However, if a file or directory name includes %, file or directory name must be encoded in the URL.
                                 Such as a file named "myfile%", the URL should be "https://myaccount.file.core.windows.net/myshare/mydirectory/myfile%25".
         - id: credential
-          type: >-
-            <xref uid="@azure/storage-file-share.Credential" /> |
-            TokenCredential
-          description: >-
-            Such as AnonymousCredential, StorageSharedKeyCredential or
-            TokenCredential,
+          type: <xref uid="@azure/storage-file-share.Credential" />
+          description: |-
+            Such as AnonymousCredential or StorageSharedKeyCredential.
                                              If not specified, AnonymousCredential is used.
         - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientOptions" />
+          type: <xref uid="@azure/storage-file-share.StoragePipelineOptions" />
           description: Optional. Options to configure the HTTP pipeline.
-  - name: ShareFileClient(string, Pipeline, ShareClientConfig)
+  - name: ShareFileClient(string, Pipeline)
     uid: '@azure/storage-file-share.ShareFileClient.constructor_1'
     package: '@azure/storage-file-share'
     summary: Creates an instance of ShareFileClient.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new ShareFileClient(url: string, pipeline: Pipeline, options?:
-        ShareClientConfig)
+      content: 'new ShareFileClient(url: string, pipeline: Pipeline)'
       parameters:
         - id: url
           type: string
@@ -70,9 +63,6 @@ constructors:
           description: |-
             Call newPipeline() to create a default
                                        pipeline, or provide a customized pipeline.
-        - id: options
-          type: <xref uid="@azure/storage-file-share.ShareClientConfig" />
-          description: ''
 properties:
   - name: name
     uid: '@azure/storage-file-share.ShareFileClient.name'

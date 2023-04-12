@@ -18,10 +18,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'dataInconsistency?: Record<string, unknown>'
+      content: 'dataInconsistency?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: fileMissing
     uid: '@azure/arm-datafactory.SkipErrorFile.fileMissing'
     package: '@azure/arm-datafactory'
@@ -32,7 +32,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'fileMissing?: Record<string, unknown>'
+      content: 'fileMissing?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any

@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: loggingOptions
+    uid: '@azure/web-pubsub.WebPubSubServiceClientOptions.loggingOptions'
+    package: '@azure/web-pubsub'
+    summary: Options to configure the logging options.
+    fullName: loggingOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'loggingOptions?: WebPubSubServiceClientLogOptions'
+      return:
+        description: ''
+        type: <xref uid="@azure/web-pubsub.WebPubSubServiceClientLogOptions" />
   - name: reverseProxyEndpoint
     uid: '@azure/web-pubsub.WebPubSubServiceClientOptions.reverseProxyEndpoint'
     package: '@azure/web-pubsub'
