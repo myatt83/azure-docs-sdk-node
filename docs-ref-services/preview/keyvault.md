@@ -1,0 +1,13 @@
+---
+title: Azure Keyvault SDK for JavaScript
+description: Reference for Azure Keyvault SDK for JavaScript
+author: timovv
+ms.author: timov
+ms.data: 04/13/2023
+ms.topic: reference
+ms.devlang: javascript
+ms.service: keyvault
+---
+# Azure Keyvault SDK for JavaScript - preview
+## Packages - preview
+[!INCLUDE [packages](keyvault-index.md)]
