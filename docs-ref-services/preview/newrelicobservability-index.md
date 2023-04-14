@@ -1,3 +1,3 @@
 | Reference | Package | Source |
 |---|---|---|
-|Resource Management - Newrelicobservability|[@azure/arm-newrelicobservability](https://www.npmjs.com/package/@azure/arm-newrelicobservability)|[GitHub](https://github.com/Azure/azure-sdk-for-js)|
+|[Resource Management - Newrelicobservability](arm-newrelicobservability-readme.md)|[@azure/arm-newrelicobservability](https://www.npmjs.com/package/@azure/arm-newrelicobservability)|[GitHub](https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/newrelicobservability/arm-newrelicobservability)|
