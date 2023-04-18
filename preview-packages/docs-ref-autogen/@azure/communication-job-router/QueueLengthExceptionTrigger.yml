@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: QueueLengthExceptionTrigger
+uid: '@azure/communication-job-router.QueueLengthExceptionTrigger'
+package: '@azure/communication-job-router'
+summary: Trigger for an exception action on exceeding queue length
+fullName: QueueLengthExceptionTrigger
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-job-router.QueueLengthExceptionTrigger.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "queue-length"'
+      return:
+        description: ''
+        type: '"queue-length"'
+  - name: maxJobCount
+    uid: '@azure/communication-job-router.QueueLengthExceptionTrigger.maxJobCount'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Threshold of number of jobs ahead in the queue to for this trigger to
+      fire.
+    fullName: maxJobCount
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxJobCount: number'
+      return:
+        description: ''
+        type: number
+extends: <xref uid="@azure/communication-job-router.JobExceptionTrigger" />

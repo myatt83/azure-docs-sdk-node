@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: WorkerSelector
+uid: '@azure/communication-job-router.WorkerSelector'
+package: '@azure/communication-job-router'
+summary: >-
+  Describes a condition that must be met against a set of labels for worker
+  selection
+fullName: WorkerSelector
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: expedite
+    uid: '@azure/communication-job-router.WorkerSelector.expedite'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Pushes the job to the front of the queue as long as this selector is
+      active.
+    fullName: expedite
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expedite?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: expireTime
+    uid: '@azure/communication-job-router.WorkerSelector.expireTime'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The time at which this worker selector expires in UTC
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: expireTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expireTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: key
+    uid: '@azure/communication-job-router.WorkerSelector.key'
+    package: '@azure/communication-job-router'
+    summary: The label key to query against
+    fullName: key
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'key: string'
+      return:
+        description: ''
+        type: string
+  - name: labelOperator
+    uid: '@azure/communication-job-router.WorkerSelector.labelOperator'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Describes how the value of the label is compared to the value defined on
+      the label selector
+    fullName: labelOperator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'labelOperator: LabelOperator'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.LabelOperator" />
+  - name: state
+    uid: '@azure/communication-job-router.WorkerSelector.state'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The state of the worker selector.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: state
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'state?: WorkerSelectorState'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.WorkerSelectorState" />
+  - name: ttlSeconds
+    uid: '@azure/communication-job-router.WorkerSelector.ttlSeconds'
+    package: '@azure/communication-job-router'
+    summary: Describes how long this label selector is valid in seconds.
+    fullName: ttlSeconds
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ttlSeconds?: number'
+      return:
+        description: ''
+        type: number
+  - name: value
+    uid: '@azure/communication-job-router.WorkerSelector.value'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The value to compare against the actual label value with the given
+      operator
+    fullName: value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'value?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

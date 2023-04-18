@@ -19,7 +19,8 @@ methods:
     syntax:
       content: >-
         function post(options: DeviceUpdateImportUpdateParameters):
-        StreamableMethod<DeviceUpdateImportUpdate202Response |
+        StreamableMethod<DeviceUpdateImportUpdate200Response |
+        DeviceUpdateImportUpdate202Response |
         DeviceUpdateImportUpdatedefaultResponse>
       parameters:
         - id: options
@@ -32,6 +33,8 @@ methods:
         description: ''
         type: >-
           StreamableMethod&lt;<xref
+          uid="@azure-rest/iot-device-update.DeviceUpdateImportUpdate200Response"
+          /> | <xref
           uid="@azure-rest/iot-device-update.DeviceUpdateImportUpdate202Response"
           /> | <xref
           uid="@azure-rest/iot-device-update.DeviceUpdateImportUpdatedefaultResponse"

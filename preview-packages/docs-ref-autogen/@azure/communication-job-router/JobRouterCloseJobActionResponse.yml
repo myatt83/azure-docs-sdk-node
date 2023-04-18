@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: JobRouterCloseJobActionResponse
+uid: '@azure/communication-job-router.JobRouterCloseJobActionResponse'
+package: '@azure/communication-job-router'
+summary: Contains response data for the closeJobAction operation.
+fullName: JobRouterCloseJobActionResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JobRouterCloseJobActionResponse = Record<string, unknown>

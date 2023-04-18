@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: WorkerAssignment
+uid: '@azure/communication-job-router.WorkerAssignment'
+package: '@azure/communication-job-router'
+summary: The assignment for a worker to a job
+fullName: WorkerAssignment
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: assignTime
+    uid: '@azure/communication-job-router.WorkerAssignment.assignTime'
+    package: '@azure/communication-job-router'
+    summary: The assignment time of the job.
+    fullName: assignTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'assignTime: Date'
+      return:
+        description: ''
+        type: Date
+  - name: capacityCost
+    uid: '@azure/communication-job-router.WorkerAssignment.capacityCost'
+    package: '@azure/communication-job-router'
+    summary: The amount of capacity this assignment has consumed on the worker.
+    fullName: capacityCost
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'capacityCost: number'
+      return:
+        description: ''
+        type: number
+  - name: id
+    uid: '@azure/communication-job-router.WorkerAssignment.id'
+    package: '@azure/communication-job-router'
+    summary: The Id of the assignment.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: jobId
+    uid: '@azure/communication-job-router.WorkerAssignment.jobId'
+    package: '@azure/communication-job-router'
+    summary: The Id of the Job assigned.
+    fullName: jobId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'jobId: string'
+      return:
+        description: ''
+        type: string

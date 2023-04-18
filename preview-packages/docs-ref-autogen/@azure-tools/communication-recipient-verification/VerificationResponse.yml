@@ -1,0 +1,36 @@
+### YamlMime:TSType
+name: VerificationResponse
+uid: '@azure-tools/communication-recipient-verification.VerificationResponse'
+package: '@azure-tools/communication-recipient-verification'
+summary: Model that contains the verification code.
+fullName: VerificationResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: isVerified
+    uid: >-
+      @azure-tools/communication-recipient-verification.VerificationResponse.isVerified
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Verification status of the number.
+    fullName: isVerified
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isVerified?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: verificationId
+    uid: >-
+      @azure-tools/communication-recipient-verification.VerificationResponse.verificationId
+    package: '@azure-tools/communication-recipient-verification'
+    summary: VerificationId of the number assigned to the verified recipient.
+    fullName: verificationId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'verificationId?: string'
+      return:
+        description: ''
+        type: string

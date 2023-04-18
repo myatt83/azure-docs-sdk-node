@@ -100,10 +100,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'connectionParameters?: {[propertyName: string]: Record}'
+      content: 'connectionParameters?: {[propertyName: string]: any}'
       return:
         description: ''
-        type: '{[propertyName: string]: Record}'
+        type: '{[propertyName: string]: any}'
   - name: generalInformation
     uid: '@azure/arm-logic.ApiResourceProperties.generalInformation'
     package: '@azure/arm-logic'

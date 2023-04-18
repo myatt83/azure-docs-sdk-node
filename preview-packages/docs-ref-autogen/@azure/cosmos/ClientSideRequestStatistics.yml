@@ -1,0 +1,19 @@
+### YamlMime:TSTypeAlias
+name: ClientSideRequestStatistics
+uid: '@azure/cosmos.ClientSideRequestStatistics'
+package: '@azure/cosmos'
+summary: This is a collection type for all client side diagnostic information.
+fullName: ClientSideRequestStatistics
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ClientSideRequestStatistics = {
+    activityId: string,
+    locationEndpointsContacted: Location_2[],
+    metadataDiagnostics: MetadataLookUpDiagnostics,
+    requestEndTimeUTCInMs: number,
+    requestPayloadLength: number,
+    requestStartTimeUTCInMs: number,
+    responsePayloadLength: number,
+    retryDiagnostics: RetryDiagnostics,
+  }

@@ -35,7 +35,10 @@ properties:
   - name: deviceClassId
     uid: '@azure-rest/iot-device-update.DeviceClassSubgroupOutput.deviceClassId'
     package: '@azure-rest/iot-device-update'
-    summary: Device class subgroup identity.
+    summary: >-
+      Device class subgroup identity. This is generated from the model Id and
+      the compat properties reported by the device update agent in the Device
+      Update PnP interface in IoT Hub. It is a hex-encoded SHA1 hash.
     fullName: deviceClassId
     remarks: ''
     isDeprecated: false

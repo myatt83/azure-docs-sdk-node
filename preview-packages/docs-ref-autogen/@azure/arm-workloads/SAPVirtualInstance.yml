@@ -70,7 +70,9 @@ properties:
   - name: identity
     uid: '@azure/arm-workloads.SAPVirtualInstance.identity'
     package: '@azure/arm-workloads'
-    summary: Managed service identity (user assigned identities)
+    summary: >-
+      A pre-created user assigned identity with appropriate roles assigned. To
+      learn more on identity and roles required, visit the ACSS how-to-guide.
     fullName: identity
     remarks: ''
     isDeprecated: false

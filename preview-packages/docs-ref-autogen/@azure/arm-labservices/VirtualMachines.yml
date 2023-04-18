@@ -34,8 +34,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -75,8 +75,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -115,8 +115,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -155,8 +155,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -192,8 +192,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -232,8 +232,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -271,8 +271,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -307,8 +307,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -342,8 +342,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -378,8 +378,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -412,8 +412,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: virtualMachineName
           type: string
           description: |-
@@ -447,8 +447,8 @@ methods:
           type: string
           description: >-
             The name of the lab that uniquely identifies it within containing
-            lab account. Used
-                           in resource URIs.
+            lab plan. Used in
+                           resource URIs.
         - id: options
           type: >-
             <xref

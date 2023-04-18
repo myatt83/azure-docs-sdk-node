@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: UpdateJobClassificationOptions
+uid: '@azure/communication-job-router.UpdateJobClassificationOptions'
+package: '@azure/communication-job-router'
+summary: Options to update a job's classification.
+fullName: UpdateJobClassificationOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: forceClassification
+    uid: >-
+      @azure/communication-job-router.UpdateJobClassificationOptions.forceClassification
+    package: '@azure/communication-job-router'
+    summary: If set to true, will force classification. Defaults to false.
+    fullName: forceClassification
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'forceClassification?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: patch
+    uid: '@azure/communication-job-router.UpdateJobClassificationOptions.patch'
+    package: '@azure/communication-job-router'
+    summary: Request model for patching a job
+    fullName: patch
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'patch?: RouterJob'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.RouterJob" />
+inheritedProperties:
+  - name: abortSignal
+    uid: '@azure/communication-job-router.UpdateJobClassificationOptions.abortSignal'
+    package: '@azure/communication-job-router'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.abortSignal
+  - name: onResponse
+    uid: '@azure/communication-job-router.UpdateJobClassificationOptions.onResponse'
+    package: '@azure/communication-job-router'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.onResponse
+  - name: requestOptions
+    uid: >-
+      @azure/communication-job-router.UpdateJobClassificationOptions.requestOptions
+    package: '@azure/communication-job-router'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: >-
+      @azure/communication-job-router.UpdateJobClassificationOptions.serializerOptions
+    package: '@azure/communication-job-router'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.serializerOptions
+  - name: tracingOptions
+    uid: >-
+      @azure/communication-job-router.UpdateJobClassificationOptions.tracingOptions
+    package: '@azure/communication-job-router'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.tracingOptions
+extends: OperationOptions

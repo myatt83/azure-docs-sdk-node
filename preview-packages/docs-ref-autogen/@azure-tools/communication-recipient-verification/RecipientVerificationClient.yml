@@ -1,0 +1,235 @@
+### YamlMime:TSType
+name: RecipientVerificationClient
+uid: '@azure-tools/communication-recipient-verification.RecipientVerificationClient'
+package: '@azure-tools/communication-recipient-verification'
+summary: >-
+  Client class for interacting with Azure Communication Services Recipient
+  Verification.
+fullName: RecipientVerificationClient
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      RecipientVerificationClient(string, KeyCredential,
+      RecipientVerificationClientOptions)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.constructor_1
+    package: '@azure-tools/communication-recipient-verification'
+    summary: >-
+      Initializes a new instance of the RecipientVerificationClient class using
+      an Azure KeyCredential.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RecipientVerificationClient(endpoint: string, credential:
+        KeyCredential, options?: RecipientVerificationClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the service (eg:
+            https://contoso.eastus.communications.azure.net)
+        - id: credential
+          type: KeyCredential
+          description: >-
+            An object that is used to authenticate requests to the service. Use
+            the Azure KeyCredential or `@azure/identity` to create a credential.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.RecipientVerificationClientOptions"
+            />
+          description: Optional. Options to configure the HTTP pipeline.
+  - name: RecipientVerificationClient(string, RecipientVerificationClientOptions)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.constructor
+    package: '@azure-tools/communication-recipient-verification'
+    summary: >-
+      Initializes a new instance of the RecipientVerificationClient class using
+      a connection string.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RecipientVerificationClient(connectionString: string, options?:
+        RecipientVerificationClientOptions)
+      parameters:
+        - id: connectionString
+          type: string
+          description: >-
+            Connection string to connect to an Azure Communication Service
+            resource. (eg:
+            endpoint=https://contoso.eastus.communications.azure.net/;accesskey=secret)
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.RecipientVerificationClientOptions"
+            />
+          description: Optional. Options to configure the HTTP pipeline.
+  - name: >-
+      RecipientVerificationClient(string, TokenCredential,
+      RecipientVerificationClientOptions)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.constructor_2
+    package: '@azure-tools/communication-recipient-verification'
+    summary: >-
+      Initializes a new instance of the RecipientVerificationClient class using
+      an Azure KeyCredential.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RecipientVerificationClient(endpoint: string, credential:
+        TokenCredential, options?: RecipientVerificationClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the service (eg:
+            https://contoso.eastus.communications.azure.net)
+        - id: credential
+          type: TokenCredential
+          description: >-
+            An object that is used to authenticate requests to the service. Use
+            the Azure KeyCredential or `@azure/identity` to create a credential.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.RecipientVerificationClientOptions"
+            />
+          description: Optional. Options to configure the HTTP pipeline.
+methods:
+  - name: >-
+      deleteVerification(string,
+      AcsVerificationDeleteVerificationOptionalParams)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.deleteVerification
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Removes a pending/verified number.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteVerification(verificationId: string, options?:
+        AcsVerificationDeleteVerificationOptionalParams): Promise<void>
+      parameters:
+        - id: verificationId
+          type: string
+          description: Id that is used to reference users phone number.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.AcsVerificationDeleteVerificationOptionalParams"
+            />
+          description: Additional request options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      getVerificationConstants(AcsVerificationGetVerificationConstantsOptionalParams)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.getVerificationConstants
+    package: '@azure-tools/communication-recipient-verification'
+    summary: >-
+      Returns information about a resource in relation to recipient
+      verification.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getVerificationConstants(options?:
+        AcsVerificationGetVerificationConstantsOptionalParams):
+        Promise<VerificationConstantsResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.AcsVerificationGetVerificationConstantsOptionalParams"
+            />
+          description: Additional request options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-tools/communication-recipient-verification.VerificationConstantsResponse"
+          />&gt;
+  - name: getVerifications(AcsVerificationGetVerificationsOptionalParams)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.getVerifications
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Returns list of verified/pending phone numbers.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getVerifications(options?:
+        AcsVerificationGetVerificationsOptionalParams):
+        Promise<AcsVerification[]>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.AcsVerificationGetVerificationsOptionalParams"
+            />
+          description: Additional request options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-tools/communication-recipient-verification.AcsVerification"
+          />[]&gt;
+  - name: requestVerification(AcsVerificationRequestVerificationOptionalParams)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.requestVerification
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Sends a code to users phone number that will be used for verification.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function requestVerification(options?:
+        AcsVerificationRequestVerificationOptionalParams):
+        Promise<VerificationResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.AcsVerificationRequestVerificationOptionalParams"
+            />
+          description: Additional request options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-tools/communication-recipient-verification.VerificationResponse"
+          />&gt;
+  - name: verifyIdentity(string, AcsVerificationVerifyIdentityOptionalParams)
+    uid: >-
+      @azure-tools/communication-recipient-verification.RecipientVerificationClient.verifyIdentity
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Verifies a users phone number.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function verifyIdentity(verificationId: string, options?:
+        AcsVerificationVerifyIdentityOptionalParams):
+        Promise<VerificationResponse>
+      parameters:
+        - id: verificationId
+          type: string
+          description: Id that is used to reference users phone number.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-tools/communication-recipient-verification.AcsVerificationVerifyIdentityOptionalParams"
+            />
+          description: Additional request options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-tools/communication-recipient-verification.VerificationResponse"
+          />&gt;

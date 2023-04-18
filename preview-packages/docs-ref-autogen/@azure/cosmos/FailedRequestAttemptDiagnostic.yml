@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: FailedRequestAttemptDiagnostic
+uid: '@azure/cosmos.FailedRequestAttemptDiagnostic'
+package: '@azure/cosmos'
+summary: >-
+  This type captures diagnostic information regarding a failed request to server
+  api.
+fullName: FailedRequestAttemptDiagnostic
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: attemptNumber
+    uid: '@azure/cosmos.FailedRequestAttemptDiagnostic.attemptNumber'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: attemptNumber
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'attemptNumber: number'
+      return:
+        description: ''
+        type: number
+  - name: endTimeUTCInMs
+    uid: '@azure/cosmos.FailedRequestAttemptDiagnostic.endTimeUTCInMs'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: endTimeUTCInMs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endTimeUTCInMs: number'
+      return:
+        description: ''
+        type: number
+  - name: id
+    uid: '@azure/cosmos.FailedRequestAttemptDiagnostic.id'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: startTimeUTCInMs
+    uid: '@azure/cosmos.FailedRequestAttemptDiagnostic.startTimeUTCInMs'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: startTimeUTCInMs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'startTimeUTCInMs: number'
+      return:
+        description: ''
+        type: number
+  - name: statusCode
+    uid: '@azure/cosmos.FailedRequestAttemptDiagnostic.statusCode'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: statusCode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'statusCode: string'
+      return:
+        description: ''
+        type: string

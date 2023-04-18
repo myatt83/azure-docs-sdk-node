@@ -1,0 +1,18 @@
+### YamlMime:TSTypeAlias
+name: RouterJobStatus
+uid: '@azure/communication-job-router.RouterJobStatus'
+package: '@azure/communication-job-router'
+summary: Defines values for RouterJobStatus.
+fullName: RouterJobStatus
+remarks: ''
+isDeprecated: false
+syntax: |
+  type RouterJobStatus =
+    | "pendingClassification"
+    | "queued"
+    | "assigned"
+    | "completed"
+    | "closed"
+    | "cancelled"
+    | "classificationFailed"
+    | "created"

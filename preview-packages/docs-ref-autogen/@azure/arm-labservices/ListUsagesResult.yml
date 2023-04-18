@@ -27,11 +27,7 @@ properties:
   - name: value
     uid: '@azure/arm-labservices.ListUsagesResult.value'
     package: '@azure/arm-labservices'
-    summary: >-
-      The array page of Usages.
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
+    summary: The array page of Usages.
     fullName: value
     remarks: ''
     isDeprecated: false

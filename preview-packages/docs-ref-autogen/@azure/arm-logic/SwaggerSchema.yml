@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'additionalProperties?: Record<string, unknown>'
+      content: 'additionalProperties?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: allOf
     uid: '@azure/arm-logic.SwaggerSchema.allOf'
     package: '@azure/arm-logic'
@@ -100,10 +100,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'example?: Record<string, unknown>'
+      content: 'example?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: externalDocs
     uid: '@azure/arm-logic.SwaggerSchema.externalDocs'
     package: '@azure/arm-logic'

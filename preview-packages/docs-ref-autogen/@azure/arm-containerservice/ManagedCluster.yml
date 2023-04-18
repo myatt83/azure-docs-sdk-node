@@ -555,6 +555,18 @@ properties:
         type: >-
           <xref uid="@azure/arm-containerservice.ManagedClusterSecurityProfile"
           />
+  - name: serviceMeshProfile
+    uid: '@azure/arm-containerservice.ManagedCluster.serviceMeshProfile'
+    package: '@azure/arm-containerservice'
+    summary: Service mesh profile for a managed cluster.
+    fullName: serviceMeshProfile
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serviceMeshProfile?: ServiceMeshProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerservice.ServiceMeshProfile" />
   - name: servicePrincipalProfile
     uid: '@azure/arm-containerservice.ManagedCluster.servicePrincipalProfile'
     package: '@azure/arm-containerservice'

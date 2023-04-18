@@ -124,18 +124,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-eventgrid.DomainTopics" />
-  - name: eventChannels
-    uid: '@azure/arm-eventgrid.EventGridManagementClient.eventChannels'
-    package: '@azure/arm-eventgrid'
-    summary: ''
-    fullName: eventChannels
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'eventChannels: EventChannels'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-eventgrid.EventChannels" />
   - name: eventSubscriptions
     uid: '@azure/arm-eventgrid.EventGridManagementClient.eventSubscriptions'
     package: '@azure/arm-eventgrid'
@@ -184,18 +172,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-eventgrid.PartnerConfigurations" />
-  - name: partnerDestinations
-    uid: '@azure/arm-eventgrid.EventGridManagementClient.partnerDestinations'
-    package: '@azure/arm-eventgrid'
-    summary: ''
-    fullName: partnerDestinations
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'partnerDestinations: PartnerDestinations'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-eventgrid.PartnerDestinations" />
   - name: partnerNamespaces
     uid: '@azure/arm-eventgrid.EventGridManagementClient.partnerNamespaces'
     package: '@azure/arm-eventgrid'

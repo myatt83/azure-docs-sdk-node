@@ -2,13 +2,9 @@
 name: PartitionKey
 uid: '@azure/cosmos.PartitionKey'
 package: '@azure/cosmos'
-summary: PartitionKey of a container.
+summary: ''
 fullName: PartitionKey
-remarks: >-
-  - PartitionKeyDefinition is no longer part of PartitionKey. So please use
-  PartitionKeyDefinition
-
-  type directly where appropriate.
+remarks: ''
 isDeprecated: false
 syntax: |
-  type PartitionKey = PrimitivePartitionKeyValue | PrimitivePartitionKeyValue[]
+  type PartitionKey = PartitionKeyDefinition | string | number | unknown

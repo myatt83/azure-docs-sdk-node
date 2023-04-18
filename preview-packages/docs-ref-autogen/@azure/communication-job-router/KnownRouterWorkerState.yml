@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: KnownRouterWorkerState
+uid: '@azure/communication-job-router.KnownRouterWorkerState'
+package: '@azure/communication-job-router'
+summary: >-
+  Known values of
+  [RouterWorkerState](xref:@azure/communication-job-router.RouterWorkerState)
+  that the service accepts.
+fullName: KnownRouterWorkerState
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Active
+    uid: '@azure/communication-job-router.KnownRouterWorkerState.Active'
+    package: '@azure/communication-job-router'
+    summary: Active
+  - name: Draining
+    uid: '@azure/communication-job-router.KnownRouterWorkerState.Draining'
+    package: '@azure/communication-job-router'
+    summary: Draining
+  - name: Inactive
+    uid: '@azure/communication-job-router.KnownRouterWorkerState.Inactive'
+    package: '@azure/communication-job-router'
+    summary: Inactive

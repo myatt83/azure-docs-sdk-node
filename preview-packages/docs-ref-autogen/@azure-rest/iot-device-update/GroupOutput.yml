@@ -47,7 +47,9 @@ properties:
   - name: groupId
     uid: '@azure-rest/iot-device-update.GroupOutput.groupId'
     package: '@azure-rest/iot-device-update'
-    summary: Group identity.
+    summary: >-
+      Group identity. This is created from the value of the ADUGroup tag in the
+      Iot Hub's device/module twin or $default for devices with no tag.
     fullName: groupId
     remarks: ''
     isDeprecated: false

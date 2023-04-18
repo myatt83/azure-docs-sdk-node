@@ -3,7 +3,10 @@ name: DeviceManagementListDeviceClassSubgroupsForGroup200Response
 uid: >-
   @azure-rest/iot-device-update.DeviceManagementListDeviceClassSubgroupsForGroup200Response
 package: '@azure-rest/iot-device-update'
-summary: Get the device class subgroups for the group.
+summary: >-
+  Get the device class subgroups for the group. A device class subgroup is the
+  set of devices within the group that share the same device class. All devices
+  within the same device class are compatible with the same updates.
 fullName: DeviceManagementListDeviceClassSubgroupsForGroup200Response
 remarks: ''
 isDeprecated: false

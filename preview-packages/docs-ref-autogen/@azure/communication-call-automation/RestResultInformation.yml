@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: RestResultInformation
+uid: '@azure/communication-call-automation.RestResultInformation'
+package: '@azure/communication-call-automation'
+summary: ''
+fullName: RestResultInformation
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/communication-call-automation.RestResultInformation.code'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: code
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'code?: number'
+      return:
+        description: ''
+        type: number
+  - name: message
+    uid: '@azure/communication-call-automation.RestResultInformation.message'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string
+  - name: subCode
+    uid: '@azure/communication-call-automation.RestResultInformation.subCode'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: subCode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subCode?: number'
+      return:
+        description: ''
+        type: number

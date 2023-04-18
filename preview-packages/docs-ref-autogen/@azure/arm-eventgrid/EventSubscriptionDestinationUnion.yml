@@ -16,4 +16,3 @@ syntax: |
     | ServiceBusQueueEventSubscriptionDestination
     | ServiceBusTopicEventSubscriptionDestination
     | AzureFunctionEventSubscriptionDestination
-    | PartnerEventSubscriptionDestination

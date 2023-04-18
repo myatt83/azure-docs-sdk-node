@@ -105,13 +105,14 @@ interfaces:
     @azure-rest/iot-device-update.DeviceManagementGetLogCollectionDetailedStatusdefaultResponse
   - >-
     @azure-rest/iot-device-update.DeviceManagementGetLogCollectiondefaultResponse
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperation'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperation200Headers'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperation200Response'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperation304Response'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperationHeaderParam'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperationHeaders'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperationdefaultResponse'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatus'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatus200Headers'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatus200Response'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatus304Response'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatusHeaderParam'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatusHeaders'
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementGetOperationStatusdefaultResponse
   - '@azure-rest/iot-device-update.DeviceManagementGetUpdateCompliance'
   - '@azure-rest/iot-device-update.DeviceManagementGetUpdateCompliance200Response'
   - '@azure-rest/iot-device-update.DeviceManagementGetUpdateComplianceForGroup'
@@ -130,10 +131,6 @@ interfaces:
   - '@azure-rest/iot-device-update.DeviceManagementListBestUpdatesForGroup'
   - >-
     @azure-rest/iot-device-update.DeviceManagementListBestUpdatesForGroup200Response
-  - >-
-    @azure-rest/iot-device-update.DeviceManagementListBestUpdatesForGroupQueryParam
-  - >-
-    @azure-rest/iot-device-update.DeviceManagementListBestUpdatesForGroupQueryParamProperties
   - >-
     @azure-rest/iot-device-update.DeviceManagementListBestUpdatesForGroupdefaultResponse
   - >-
@@ -167,15 +164,11 @@ interfaces:
     @azure-rest/iot-device-update.DeviceManagementListDeviceClassSubgroupsForGroupdefaultResponse
   - '@azure-rest/iot-device-update.DeviceManagementListDeviceClasses'
   - '@azure-rest/iot-device-update.DeviceManagementListDeviceClasses200Response'
+  - '@azure-rest/iot-device-update.DeviceManagementListDeviceClassesQueryParam'
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListDeviceClassesQueryParamProperties
   - >-
     @azure-rest/iot-device-update.DeviceManagementListDeviceClassesdefaultResponse
-  - '@azure-rest/iot-device-update.DeviceManagementListDeviceHealth'
-  - '@azure-rest/iot-device-update.DeviceManagementListDeviceHealth200Response'
-  - '@azure-rest/iot-device-update.DeviceManagementListDeviceHealthQueryParam'
-  - >-
-    @azure-rest/iot-device-update.DeviceManagementListDeviceHealthQueryParamProperties
-  - >-
-    @azure-rest/iot-device-update.DeviceManagementListDeviceHealthdefaultResponse
   - >-
     @azure-rest/iot-device-update.DeviceManagementListDeviceStatesForDeviceClassSubgroupDeployment
   - >-
@@ -197,6 +190,13 @@ interfaces:
   - '@azure-rest/iot-device-update.DeviceManagementListGroupsQueryParam'
   - '@azure-rest/iot-device-update.DeviceManagementListGroupsQueryParamProperties'
   - '@azure-rest/iot-device-update.DeviceManagementListGroupsdefaultResponse'
+  - '@azure-rest/iot-device-update.DeviceManagementListHealthOfDevices'
+  - '@azure-rest/iot-device-update.DeviceManagementListHealthOfDevices200Response'
+  - '@azure-rest/iot-device-update.DeviceManagementListHealthOfDevicesQueryParam'
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListHealthOfDevicesQueryParamProperties
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListHealthOfDevicesdefaultResponse
   - >-
     @azure-rest/iot-device-update.DeviceManagementListInstallableUpdatesForDeviceClass
   - >-
@@ -207,12 +207,15 @@ interfaces:
   - '@azure-rest/iot-device-update.DeviceManagementListLogCollections200Response'
   - >-
     @azure-rest/iot-device-update.DeviceManagementListLogCollectionsdefaultResponse
-  - '@azure-rest/iot-device-update.DeviceManagementListOperations'
-  - '@azure-rest/iot-device-update.DeviceManagementListOperations200Response'
-  - '@azure-rest/iot-device-update.DeviceManagementListOperationsQueryParam'
+  - '@azure-rest/iot-device-update.DeviceManagementListOperationStatuses'
   - >-
-    @azure-rest/iot-device-update.DeviceManagementListOperationsQueryParamProperties
-  - '@azure-rest/iot-device-update.DeviceManagementListOperationsdefaultResponse'
+    @azure-rest/iot-device-update.DeviceManagementListOperationStatuses200Response
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListOperationStatusesQueryParam
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListOperationStatusesQueryParamProperties
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListOperationStatusesdefaultResponse
   - '@azure-rest/iot-device-update.DeviceManagementRetryDeployment'
   - '@azure-rest/iot-device-update.DeviceManagementRetryDeployment200Response'
   - '@azure-rest/iot-device-update.DeviceManagementRetryDeploymentdefaultResponse'
@@ -246,13 +249,13 @@ interfaces:
   - '@azure-rest/iot-device-update.DeviceUpdateGetFileHeaderParam'
   - '@azure-rest/iot-device-update.DeviceUpdateGetFileHeaders'
   - '@azure-rest/iot-device-update.DeviceUpdateGetFiledefaultResponse'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperation'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperation200Headers'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperation200Response'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperation304Response'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationHeaderParam'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationHeaders'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationdefaultResponse'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatus'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatus200Headers'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatus200Response'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatus304Response'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatusHeaderParam'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatusHeaders'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatusdefaultResponse'
   - '@azure-rest/iot-device-update.DeviceUpdateGetUpdate'
   - '@azure-rest/iot-device-update.DeviceUpdateGetUpdate200Response'
   - '@azure-rest/iot-device-update.DeviceUpdateGetUpdate304Response'
@@ -260,6 +263,7 @@ interfaces:
   - '@azure-rest/iot-device-update.DeviceUpdateGetUpdateHeaders'
   - '@azure-rest/iot-device-update.DeviceUpdateGetUpdatedefaultResponse'
   - '@azure-rest/iot-device-update.DeviceUpdateImportUpdate'
+  - '@azure-rest/iot-device-update.DeviceUpdateImportUpdate200Response'
   - '@azure-rest/iot-device-update.DeviceUpdateImportUpdate202Headers'
   - '@azure-rest/iot-device-update.DeviceUpdateImportUpdate202Response'
   - '@azure-rest/iot-device-update.DeviceUpdateImportUpdateBodyParam'
@@ -271,11 +275,13 @@ interfaces:
   - '@azure-rest/iot-device-update.DeviceUpdateListNames'
   - '@azure-rest/iot-device-update.DeviceUpdateListNames200Response'
   - '@azure-rest/iot-device-update.DeviceUpdateListNamesdefaultResponse'
-  - '@azure-rest/iot-device-update.DeviceUpdateListOperations'
-  - '@azure-rest/iot-device-update.DeviceUpdateListOperations200Response'
-  - '@azure-rest/iot-device-update.DeviceUpdateListOperationsQueryParam'
-  - '@azure-rest/iot-device-update.DeviceUpdateListOperationsQueryParamProperties'
-  - '@azure-rest/iot-device-update.DeviceUpdateListOperationsdefaultResponse'
+  - '@azure-rest/iot-device-update.DeviceUpdateListOperationStatuses'
+  - '@azure-rest/iot-device-update.DeviceUpdateListOperationStatuses200Response'
+  - '@azure-rest/iot-device-update.DeviceUpdateListOperationStatusesQueryParam'
+  - >-
+    @azure-rest/iot-device-update.DeviceUpdateListOperationStatusesQueryParamProperties
+  - >-
+    @azure-rest/iot-device-update.DeviceUpdateListOperationStatusesdefaultResponse
   - '@azure-rest/iot-device-update.DeviceUpdateListProviders'
   - '@azure-rest/iot-device-update.DeviceUpdateListProviders200Response'
   - '@azure-rest/iot-device-update.DeviceUpdateListProvidersdefaultResponse'
@@ -354,7 +360,7 @@ typeAliases:
   - >-
     @azure-rest/iot-device-update.DeviceManagementGetLogCollectionDetailedStatusParameters
   - '@azure-rest/iot-device-update.DeviceManagementGetLogCollectionParameters'
-  - '@azure-rest/iot-device-update.DeviceManagementGetOperationParameters'
+  - '@azure-rest/iot-device-update.DeviceManagementGetOperationStatusParameters'
   - >-
     @azure-rest/iot-device-update.DeviceManagementGetUpdateComplianceForGroupParameters
   - '@azure-rest/iot-device-update.DeviceManagementGetUpdateComplianceParameters'
@@ -368,15 +374,16 @@ typeAliases:
   - >-
     @azure-rest/iot-device-update.DeviceManagementListDeviceClassSubgroupsForGroupParameters
   - '@azure-rest/iot-device-update.DeviceManagementListDeviceClassesParameters'
-  - '@azure-rest/iot-device-update.DeviceManagementListDeviceHealthParameters'
   - >-
     @azure-rest/iot-device-update.DeviceManagementListDeviceStatesForDeviceClassSubgroupDeploymentParameters
   - '@azure-rest/iot-device-update.DeviceManagementListDevicesParameters'
   - '@azure-rest/iot-device-update.DeviceManagementListGroupsParameters'
+  - '@azure-rest/iot-device-update.DeviceManagementListHealthOfDevicesParameters'
   - >-
     @azure-rest/iot-device-update.DeviceManagementListInstallableUpdatesForDeviceClassParameters
   - '@azure-rest/iot-device-update.DeviceManagementListLogCollectionsParameters'
-  - '@azure-rest/iot-device-update.DeviceManagementListOperationsParameters'
+  - >-
+    @azure-rest/iot-device-update.DeviceManagementListOperationStatusesParameters
   - '@azure-rest/iot-device-update.DeviceManagementRetryDeploymentParameters'
   - '@azure-rest/iot-device-update.DeviceManagementStartLogCollectionParameters'
   - '@azure-rest/iot-device-update.DeviceManagementStopDeploymentParameters'
@@ -384,12 +391,12 @@ typeAliases:
   - '@azure-rest/iot-device-update.DeviceUpdateClient'
   - '@azure-rest/iot-device-update.DeviceUpdateDeleteUpdateParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateGetFileParameters'
-  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationParameters'
+  - '@azure-rest/iot-device-update.DeviceUpdateGetOperationStatusParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateGetUpdateParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateImportUpdateParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateListFilesParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateListNamesParameters'
-  - '@azure-rest/iot-device-update.DeviceUpdateListOperationsParameters'
+  - '@azure-rest/iot-device-update.DeviceUpdateListOperationStatusesParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateListProvidersParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateListUpdatesParameters'
   - '@azure-rest/iot-device-update.DeviceUpdateListVersionsParameters'
@@ -476,7 +483,8 @@ functions:
         description: ''
         type: response
   - name: >-
-      isUnexpected(DeviceUpdateImportUpdate202Response |
+      isUnexpected(DeviceUpdateImportUpdate200Response |
+      DeviceUpdateImportUpdate202Response |
       DeviceUpdateImportUpdatedefaultResponse)
     uid: '@azure-rest/iot-device-update.isUnexpected_1'
     package: '@azure-rest/iot-device-update'
@@ -485,12 +493,15 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function isUnexpected(response: DeviceUpdateImportUpdate202Response |
+        function isUnexpected(response: DeviceUpdateImportUpdate200Response |
+        DeviceUpdateImportUpdate202Response |
         DeviceUpdateImportUpdatedefaultResponse): response
       parameters:
         - id: response
           type: >-
             <xref
+            uid="@azure-rest/iot-device-update.DeviceUpdateImportUpdate200Response"
+            /> | <xref
             uid="@azure-rest/iot-device-update.DeviceUpdateImportUpdate202Response"
             /> | <xref
             uid="@azure-rest/iot-device-update.DeviceUpdateImportUpdatedefaultResponse"
@@ -674,8 +685,8 @@ functions:
         description: ''
         type: response
   - name: >-
-      isUnexpected(DeviceUpdateListOperations200Response |
-      DeviceUpdateListOperationsdefaultResponse)
+      isUnexpected(DeviceUpdateListOperationStatuses200Response |
+      DeviceUpdateListOperationStatusesdefaultResponse)
     uid: '@azure-rest/iot-device-update.isUnexpected_9'
     package: '@azure-rest/iot-device-update'
     summary: ''
@@ -683,24 +694,25 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function isUnexpected(response: DeviceUpdateListOperations200Response |
-        DeviceUpdateListOperationsdefaultResponse): response
+        function isUnexpected(response:
+        DeviceUpdateListOperationStatuses200Response |
+        DeviceUpdateListOperationStatusesdefaultResponse): response
       parameters:
         - id: response
           type: >-
             <xref
-            uid="@azure-rest/iot-device-update.DeviceUpdateListOperations200Response"
+            uid="@azure-rest/iot-device-update.DeviceUpdateListOperationStatuses200Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceUpdateListOperationsdefaultResponse"
+            uid="@azure-rest/iot-device-update.DeviceUpdateListOperationStatusesdefaultResponse"
             />
           description: ''
       return:
         description: ''
         type: response
   - name: >-
-      isUnexpected(DeviceUpdateGetOperation200Response |
-      DeviceUpdateGetOperation304Response |
-      DeviceUpdateGetOperationdefaultResponse)
+      isUnexpected(DeviceUpdateGetOperationStatus200Response |
+      DeviceUpdateGetOperationStatus304Response |
+      DeviceUpdateGetOperationStatusdefaultResponse)
     uid: '@azure-rest/iot-device-update.isUnexpected_10'
     package: '@azure-rest/iot-device-update'
     summary: ''
@@ -708,18 +720,19 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function isUnexpected(response: DeviceUpdateGetOperation200Response |
-        DeviceUpdateGetOperation304Response |
-        DeviceUpdateGetOperationdefaultResponse): response
+        function isUnexpected(response:
+        DeviceUpdateGetOperationStatus200Response |
+        DeviceUpdateGetOperationStatus304Response |
+        DeviceUpdateGetOperationStatusdefaultResponse): response
       parameters:
         - id: response
           type: >-
             <xref
-            uid="@azure-rest/iot-device-update.DeviceUpdateGetOperation200Response"
+            uid="@azure-rest/iot-device-update.DeviceUpdateGetOperationStatus200Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceUpdateGetOperation304Response"
+            uid="@azure-rest/iot-device-update.DeviceUpdateGetOperationStatus304Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceUpdateGetOperationdefaultResponse"
+            uid="@azure-rest/iot-device-update.DeviceUpdateGetOperationStatusdefaultResponse"
             />
           description: ''
       return:
@@ -1530,9 +1543,9 @@ functions:
         description: ''
         type: response
   - name: >-
-      isUnexpected(DeviceManagementGetOperation200Response |
-      DeviceManagementGetOperation304Response |
-      DeviceManagementGetOperationdefaultResponse)
+      isUnexpected(DeviceManagementGetOperationStatus200Response |
+      DeviceManagementGetOperationStatus304Response |
+      DeviceManagementGetOperationStatusdefaultResponse)
     uid: '@azure-rest/iot-device-update.isUnexpected_43'
     package: '@azure-rest/iot-device-update'
     summary: ''
@@ -1540,26 +1553,27 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function isUnexpected(response: DeviceManagementGetOperation200Response
-        | DeviceManagementGetOperation304Response |
-        DeviceManagementGetOperationdefaultResponse): response
+        function isUnexpected(response:
+        DeviceManagementGetOperationStatus200Response |
+        DeviceManagementGetOperationStatus304Response |
+        DeviceManagementGetOperationStatusdefaultResponse): response
       parameters:
         - id: response
           type: >-
             <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementGetOperation200Response"
+            uid="@azure-rest/iot-device-update.DeviceManagementGetOperationStatus200Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementGetOperation304Response"
+            uid="@azure-rest/iot-device-update.DeviceManagementGetOperationStatus304Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementGetOperationdefaultResponse"
+            uid="@azure-rest/iot-device-update.DeviceManagementGetOperationStatusdefaultResponse"
             />
           description: ''
       return:
         description: ''
         type: response
   - name: >-
-      isUnexpected(DeviceManagementListOperations200Response |
-      DeviceManagementListOperationsdefaultResponse)
+      isUnexpected(DeviceManagementListOperationStatuses200Response |
+      DeviceManagementListOperationStatusesdefaultResponse)
     uid: '@azure-rest/iot-device-update.isUnexpected_44'
     package: '@azure-rest/iot-device-update'
     summary: ''
@@ -1568,15 +1582,15 @@ functions:
     syntax:
       content: >-
         function isUnexpected(response:
-        DeviceManagementListOperations200Response |
-        DeviceManagementListOperationsdefaultResponse): response
+        DeviceManagementListOperationStatuses200Response |
+        DeviceManagementListOperationStatusesdefaultResponse): response
       parameters:
         - id: response
           type: >-
             <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementListOperations200Response"
+            uid="@azure-rest/iot-device-update.DeviceManagementListOperationStatuses200Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementListOperationsdefaultResponse"
+            uid="@azure-rest/iot-device-update.DeviceManagementListOperationStatusesdefaultResponse"
             />
           description: ''
       return:
@@ -1683,8 +1697,8 @@ functions:
         description: ''
         type: response
   - name: >-
-      isUnexpected(DeviceManagementListDeviceHealth200Response |
-      DeviceManagementListDeviceHealthdefaultResponse)
+      isUnexpected(DeviceManagementListHealthOfDevices200Response |
+      DeviceManagementListHealthOfDevicesdefaultResponse)
     uid: '@azure-rest/iot-device-update.isUnexpected_49'
     package: '@azure-rest/iot-device-update'
     summary: ''
@@ -1693,15 +1707,15 @@ functions:
     syntax:
       content: >-
         function isUnexpected(response:
-        DeviceManagementListDeviceHealth200Response |
-        DeviceManagementListDeviceHealthdefaultResponse): response
+        DeviceManagementListHealthOfDevices200Response |
+        DeviceManagementListHealthOfDevicesdefaultResponse): response
       parameters:
         - id: response
           type: >-
             <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementListDeviceHealth200Response"
+            uid="@azure-rest/iot-device-update.DeviceManagementListHealthOfDevices200Response"
             /> | <xref
-            uid="@azure-rest/iot-device-update.DeviceManagementListDeviceHealthdefaultResponse"
+            uid="@azure-rest/iot-device-update.DeviceManagementListHealthOfDevicesdefaultResponse"
             />
           description: ''
       return:

@@ -14,7 +14,7 @@ properties:
     package: '@azure-rest/iot-device-update'
     summary: >-
       The device class json merge patch body. Currently only supports patching
-      friendlyName
+      friendlyName.
     fullName: body
     remarks: ''
     isDeprecated: false

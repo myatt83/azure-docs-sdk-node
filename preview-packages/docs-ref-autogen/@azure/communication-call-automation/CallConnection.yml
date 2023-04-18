@@ -1,0 +1,201 @@
+### YamlMime:TSType
+name: CallConnection
+uid: '@azure/communication-call-automation.CallConnection'
+package: '@azure/communication-call-automation'
+summary: CallConnection class represents call connection based APIs.
+fullName: CallConnection
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: CallConnection(string, CallConnectionImpl, CallMediaImpl)
+    uid: '@azure/communication-call-automation.CallConnection.constructor'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new CallConnection(callConnectionId: string, callConnectionImpl:
+        CallConnectionImpl, callMediaImpl: CallMediaImpl)
+      parameters:
+        - id: callConnectionId
+          type: string
+          description: ''
+        - id: callConnectionImpl
+          type: CallConnectionImpl
+          description: ''
+        - id: callMediaImpl
+          type: CallMediaImpl
+          description: ''
+methods:
+  - name: addParticipant(CallInvite, AddParticipantOptions)
+    uid: '@azure/communication-call-automation.CallConnection.addParticipant'
+    package: '@azure/communication-call-automation'
+    summary: Add a participant to the call
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addParticipant(participant: CallInvite, options?:
+        AddParticipantOptions): Promise<AddParticipantResult>
+      parameters:
+        - id: participant
+          type: <xref uid="@azure/communication-call-automation.CallInvite" />
+          description: The participant is going to be added.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.AddParticipantOptions" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.AddParticipantResult" />&gt;
+  - name: getCallConnectionProperties(OperationOptions)
+    uid: >-
+      @azure/communication-call-automation.CallConnection.getCallConnectionProperties
+    package: '@azure/communication-call-automation'
+    summary: Get call connection properties of the call
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getCallConnectionProperties(options?: OperationOptions):
+        Promise<CallConnectionProperties>
+      parameters:
+        - id: options
+          type: OperationOptions
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.CallConnectionProperties"
+          />&gt;
+  - name: getCallMedia()
+    uid: '@azure/communication-call-automation.CallConnection.getCallMedia'
+    package: '@azure/communication-call-automation'
+    summary: Initializes a new instance of CallMedia.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getCallMedia(): CallMedia'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-call-automation.CallMedia" />
+  - name: getParticipant(string, OperationOptions)
+    uid: '@azure/communication-call-automation.CallConnection.getParticipant'
+    package: '@azure/communication-call-automation'
+    summary: Get a participant from the call
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getParticipant(participantMri: string, options?:
+        OperationOptions): Promise<CallParticipant>
+      parameters:
+        - id: participantMri
+          type: string
+          description: The MRI of requested participant.
+        - id: options
+          type: OperationOptions
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.CallParticipant" />&gt;
+  - name: hangUp(boolean, OperationOptions)
+    uid: '@azure/communication-call-automation.CallConnection.hangUp'
+    package: '@azure/communication-call-automation'
+    summary: Hang up the call for itself or terminate the whole call.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function hangUp(isForEveryOne: boolean, options?: OperationOptions):
+        Promise<void>
+      parameters:
+        - id: isForEveryOne
+          type: boolean
+          description: Determine if every one in the call would be hung up or not.
+        - id: options
+          type: OperationOptions
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: listParticipants(OperationOptions)
+    uid: '@azure/communication-call-automation.CallConnection.listParticipants'
+    package: '@azure/communication-call-automation'
+    summary: Get all participants from the call
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listParticipants(options?: OperationOptions):
+        Promise<ListParticipantsResult>
+      parameters:
+        - id: options
+          type: OperationOptions
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.ListParticipantsResult"
+          />&gt;
+  - name: removeParticipant(CommunicationIdentifier, RemoveParticipantsOptions)
+    uid: '@azure/communication-call-automation.CallConnection.removeParticipant'
+    package: '@azure/communication-call-automation'
+    summary: Remove a participant from the call
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function removeParticipant(participant: CommunicationIdentifier,
+        options?: RemoveParticipantsOptions): Promise<RemoveParticipantsResult>
+      parameters:
+        - id: participant
+          type: CommunicationIdentifier
+          description: The participant is going to be removed from the call.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.RemoveParticipantsOptions"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.RemoveParticipantsResult"
+          />&gt;
+  - name: transferCallToParticipant(CallInvite, TransferCallToParticipantOptions)
+    uid: >-
+      @azure/communication-call-automation.CallConnection.transferCallToParticipant
+    package: '@azure/communication-call-automation'
+    summary: Transfer the call to a target participant
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function transferCallToParticipant(target: CallInvite, options?:
+        TransferCallToParticipantOptions): Promise<TransferCallResult>
+      parameters:
+        - id: target
+          type: <xref uid="@azure/communication-call-automation.CallInvite" />
+          description: The target is going to be transferred to.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.TransferCallToParticipantOptions"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.TransferCallResult" />&gt;

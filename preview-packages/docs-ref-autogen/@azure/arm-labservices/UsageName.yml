@@ -20,6 +20,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: skuInstances
+    uid: '@azure/arm-labservices.UsageName.skuInstances'
+    package: '@azure/arm-labservices'
+    summary: The instances of the resource.
+    fullName: skuInstances
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'skuInstances?: string[]'
+      return:
+        description: ''
+        type: string[]
   - name: value
     uid: '@azure/arm-labservices.UsageName.value'
     package: '@azure/arm-labservices'

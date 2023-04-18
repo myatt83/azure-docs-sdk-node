@@ -8,22 +8,6 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: cancel
-    uid: '@azure/core-lro.LroEngineOptions.cancel'
-    package: '@azure/core-lro'
-    summary: >-
-      A function that takes the mutable state as input and attempts to cancel
-      the
-
-      LRO.
-    fullName: cancel
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'cancel?: (state: TState) => Promise<void>'
-      return:
-        description: ''
-        type: '(state: TState) =&gt; Promise&lt;void&gt;'
   - name: intervalInMs
     uid: '@azure/core-lro.LroEngineOptions.intervalInMs'
     package: '@azure/core-lro'
@@ -76,6 +60,20 @@ properties:
       return:
         description: ''
         type: '(result: unknown, state: TState) =&gt; TResult'
+  - name: resolveOnUnsuccessful
+    uid: '@azure/core-lro.LroEngineOptions.resolveOnUnsuccessful'
+    package: '@azure/core-lro'
+    summary: >-
+      Control whether to throw an exception if the operation failed or was
+      canceled.
+    fullName: resolveOnUnsuccessful
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'resolveOnUnsuccessful?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: resumeFrom
     uid: '@azure/core-lro.LroEngineOptions.resumeFrom'
     package: '@azure/core-lro'

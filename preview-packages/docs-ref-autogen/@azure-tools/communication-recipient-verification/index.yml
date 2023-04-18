@@ -1,0 +1,34 @@
+### YamlMime:TSPackage
+uid: '@azure-tools/communication-recipient-verification'
+name: '@azure-tools/communication-recipient-verification'
+summary: ''
+type: package
+classes:
+  - >-
+    @azure-tools/communication-recipient-verification.RecipientVerificationClient
+interfaces:
+  - '@azure-tools/communication-recipient-verification.AcsVerification'
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationDeleteVerificationOptionalParams
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationGetVerificationConstantsOptionalParams
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationGetVerificationsOptionalParams
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationRequestVerificationOptionalParams
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationVerifyIdentityOptionalParams
+  - >-
+    @azure-tools/communication-recipient-verification.RecipientVerificationClientOptions
+  - >-
+    @azure-tools/communication-recipient-verification.VerificationConstantsResponse
+  - '@azure-tools/communication-recipient-verification.VerificationResponse'
+typeAliases:
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationGetVerificationConstantsResponse
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationGetVerificationsResponse
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationRequestVerificationResponse
+  - >-
+    @azure-tools/communication-recipient-verification.AcsVerificationVerifyIdentityResponse

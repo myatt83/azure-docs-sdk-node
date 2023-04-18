@@ -1,0 +1,228 @@
+### YamlMime:TSType
+name: CallRecording
+uid: '@azure/communication-call-automation.CallRecording'
+package: '@azure/communication-call-automation'
+summary: CallRecording class represents call recording related APIs.
+fullName: CallRecording
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: CallRecording(CallRecordingImpl, ContentDownloaderImpl)
+    uid: '@azure/communication-call-automation.CallRecording.constructor'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new CallRecording(callRecordingImpl: CallRecordingImpl,
+        contentDownloader: ContentDownloaderImpl)
+      parameters:
+        - id: callRecordingImpl
+          type: CallRecordingImpl
+          description: ''
+        - id: contentDownloader
+          type: ContentDownloaderImpl
+          description: ''
+methods:
+  - name: deleteRecording(string, OperationOptions)
+    uid: '@azure/communication-call-automation.CallRecording.deleteRecording'
+    package: '@azure/communication-call-automation'
+    summary: Deletes a recording.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteRecording(recordingLocation: string, options?:
+        OperationOptions): Promise<void>
+      parameters:
+        - id: recordingLocation
+          type: string
+          description: The recording location uri. Required.
+        - id: options
+          type: OperationOptions
+          description: Additional request options contains deleteRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: downloadStreaming(string, DownloadRecordingOptions)
+    uid: '@azure/communication-call-automation.CallRecording.downloadStreaming'
+    package: '@azure/communication-call-automation'
+    summary: Returns a stream with a call recording.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function downloadStreaming(sourceLocation: string, options?:
+        DownloadRecordingOptions): Promise<ReadableStream>
+      parameters:
+        - id: sourceLocation
+          type: string
+          description: The source location uri. Required.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.DownloadRecordingOptions"
+            />
+          description: Additional request options contains downloadRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;ReadableStream&gt;
+  - name: downloadToPath(string, string, DownloadRecordingOptions)
+    uid: '@azure/communication-call-automation.CallRecording.downloadToPath'
+    package: '@azure/communication-call-automation'
+    summary: Downloads a call recording file to the specified path.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function downloadToPath(sourceLocation: string, destinationPath: string,
+        options?: DownloadRecordingOptions): Promise<void>
+      parameters:
+        - id: sourceLocation
+          type: string
+          description: The source location uri. Required.
+        - id: destinationPath
+          type: string
+          description: The destination path. Required.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.DownloadRecordingOptions"
+            />
+          description: Additional request options contains downloadRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: downloadToStream(string, WritableStream, DownloadRecordingOptions)
+    uid: '@azure/communication-call-automation.CallRecording.downloadToStream'
+    package: '@azure/communication-call-automation'
+    summary: Downloads a call recording file to the specified stream.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function downloadToStream(sourceLocation: string, destinationStream:
+        WritableStream, options?: DownloadRecordingOptions): Promise<void>
+      parameters:
+        - id: sourceLocation
+          type: string
+          description: The source location uri. Required.
+        - id: destinationStream
+          type: WritableStream
+          description: The destination stream. Required.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.DownloadRecordingOptions"
+            />
+          description: Additional request options contains downloadRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: getRecordingState(string, OperationOptions)
+    uid: '@azure/communication-call-automation.CallRecording.getRecordingState'
+    package: '@azure/communication-call-automation'
+    summary: Returns call recording properties.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getRecordingState(recordingId: string, options?:
+        OperationOptions): Promise<RecordingStateResult>
+      parameters:
+        - id: recordingId
+          type: string
+          description: The recordingId associated with the recording.
+        - id: options
+          type: OperationOptions
+          description: >-
+            Additional request options contains getRecordingProperties api
+            options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.RecordingStateResult" />&gt;
+  - name: pauseRecording(string, OperationOptions)
+    uid: '@azure/communication-call-automation.CallRecording.pauseRecording'
+    package: '@azure/communication-call-automation'
+    summary: Pauses a call recording.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function pauseRecording(recordingId: string, options?:
+        OperationOptions): Promise<void>
+      parameters:
+        - id: recordingId
+          type: string
+          description: The recordingId associated with the recording.
+        - id: options
+          type: OperationOptions
+          description: Additional request options contains pauseRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: resumeRecording(string, OperationOptions)
+    uid: '@azure/communication-call-automation.CallRecording.resumeRecording'
+    package: '@azure/communication-call-automation'
+    summary: Resumes a call recording.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resumeRecording(recordingId: string, options?:
+        OperationOptions): Promise<void>
+      parameters:
+        - id: recordingId
+          type: string
+          description: The recordingId associated with the recording.
+        - id: options
+          type: OperationOptions
+          description: Additional request options contains resumeRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: startRecording(StartRecordingOptions)
+    uid: '@azure/communication-call-automation.CallRecording.startRecording'
+    package: '@azure/communication-call-automation'
+    summary: Starts a call recording with the specified options.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function startRecording(options: StartRecordingOptions):
+        Promise<RecordingStateResult>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.StartRecordingOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.RecordingStateResult" />&gt;
+  - name: stopRecording(string, OperationOptions)
+    uid: '@azure/communication-call-automation.CallRecording.stopRecording'
+    package: '@azure/communication-call-automation'
+    summary: Stops a call recording.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function stopRecording(recordingId: string, options?: OperationOptions):
+        Promise<void>
+      parameters:
+        - id: recordingId
+          type: string
+          description: The recordingId associated with the recording.
+        - id: options
+          type: OperationOptions
+          description: Additional request options contains stopRecording api options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

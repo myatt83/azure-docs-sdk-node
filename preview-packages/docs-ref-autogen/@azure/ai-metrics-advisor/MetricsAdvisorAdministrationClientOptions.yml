@@ -1,0 +1,137 @@
+### YamlMime:TSType
+name: MetricsAdvisorAdministrationClientOptions
+uid: '@azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions'
+package: '@azure/ai-metrics-advisor'
+summary: Client options used to configure API requests.
+fullName: MetricsAdvisorAdministrationClientOptions
+remarks: ''
+isDeprecated: false
+type: interface
+inheritedProperties:
+  - name: additionalPolicies
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.additionalPolicies
+    package: '@azure/ai-metrics-advisor'
+    summary: Additional policies to include in the HTTP pipeline.
+    fullName: additionalPolicies
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'additionalPolicies?: AdditionalPolicyConfig[]'
+      return:
+        description: ''
+        type: AdditionalPolicyConfig[]
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.additionalPolicies
+  - name: allowInsecureConnection
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.allowInsecureConnection
+    package: '@azure/ai-metrics-advisor'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.allowInsecureConnection
+  - name: httpClient
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.httpClient
+    package: '@azure/ai-metrics-advisor'
+    summary: The HttpClient that will be used to send HTTP requests.
+    fullName: httpClient
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'httpClient?: HttpClient'
+      return:
+        description: ''
+        type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.httpClient
+  - name: keepAliveOptions
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.keepAliveOptions
+    package: '@azure/ai-metrics-advisor'
+    summary: Options to disable keep alive.
+    fullName: keepAliveOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'keepAliveOptions?: KeepAliveOptions'
+      return:
+        description: ''
+        type: KeepAliveOptions
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.keepAliveOptions
+  - name: proxyOptions
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.proxyOptions
+    package: '@azure/ai-metrics-advisor'
+    summary: Options to configure a proxy for outgoing requests.
+    fullName: proxyOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'proxyOptions?: ProxySettings'
+      return:
+        description: ''
+        type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.proxyOptions
+  - name: redirectOptions
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.redirectOptions
+    package: '@azure/ai-metrics-advisor'
+    summary: Options for how redirect responses are handled.
+    fullName: redirectOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'redirectOptions?: RedirectPolicyOptions & RedirectOptions'
+      return:
+        description: ''
+        type: RedirectPolicyOptions & RedirectOptions
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.redirectOptions
+  - name: retryOptions
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.retryOptions
+    package: '@azure/ai-metrics-advisor'
+    summary: Options that control how to retry failed requests.
+    fullName: retryOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'retryOptions?: PipelineRetryOptions'
+      return:
+        description: ''
+        type: PipelineRetryOptions
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.retryOptions
+  - name: tlsOptions
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.tlsOptions
+    package: '@azure/ai-metrics-advisor'
+    summary: Options for configuring TLS authentication
+    fullName: tlsOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tlsOptions?: TlsSettings'
+      return:
+        description: ''
+        type: TlsSettings
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.tlsOptions
+  - name: userAgentOptions
+    uid: >-
+      @azure/ai-metrics-advisor.MetricsAdvisorAdministrationClientOptions.userAgentOptions
+    package: '@azure/ai-metrics-advisor'
+    summary: Options for adding user agent details to outgoing requests.
+    fullName: userAgentOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
+      return:
+        description: ''
+        type: UserAgentPolicyOptions
+    inheritanceDescription: <b>Inherited From</b> ExtendedCommonClientOptions.userAgentOptions
+extends: ExtendedCommonClientOptions

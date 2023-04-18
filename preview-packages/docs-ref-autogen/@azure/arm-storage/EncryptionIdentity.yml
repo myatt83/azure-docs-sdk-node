@@ -8,6 +8,21 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: encryptionFederatedIdentityClientId
+    uid: '@azure/arm-storage.EncryptionIdentity.encryptionFederatedIdentityClientId'
+    package: '@azure/arm-storage'
+    summary: >-
+      ClientId of the multi-tenant application to be used in conjunction with
+      the user-assigned identity for cross-tenant customer-managed-keys
+      server-side encryption on the storage account.
+    fullName: encryptionFederatedIdentityClientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'encryptionFederatedIdentityClientId?: string'
+      return:
+        description: ''
+        type: string
   - name: encryptionUserAssignedIdentity
     uid: '@azure/arm-storage.EncryptionIdentity.encryptionUserAssignedIdentity'
     package: '@azure/arm-storage'

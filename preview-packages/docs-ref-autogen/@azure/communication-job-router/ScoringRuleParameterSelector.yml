@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: ScoringRuleParameterSelector
+uid: '@azure/communication-job-router.ScoringRuleParameterSelector'
+package: '@azure/communication-job-router'
+summary: Defines values for ScoringRuleParameterSelector.
+fullName: ScoringRuleParameterSelector
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ScoringRuleParameterSelector = "jobLabels" | "workerSelectors"

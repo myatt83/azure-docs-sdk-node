@@ -1,0 +1,140 @@
+### YamlMime:TSType
+name: CallInvite
+uid: '@azure/communication-call-automation.CallInvite'
+package: '@azure/communication-call-automation'
+summary: Call invitee details.
+fullName: CallInvite
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: CallInvite(CommunicationUserIdentifier)
+    uid: '@azure/communication-call-automation.CallInvite.constructor_2'
+    package: '@azure/communication-call-automation'
+    summary: Create a CallInvite object with CommunicationUserIdentifier
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new CallInvite(targetIdentity: CommunicationUserIdentifier)'
+      parameters:
+        - id: targetIdentity
+          type: CommunicationUserIdentifier
+          description: Target's CommunicationUserIdentifier
+  - name: 'CallInvite(CommunicationUserIdentifier, {[propertyName: string]: string})'
+    uid: '@azure/communication-call-automation.CallInvite.constructor_3'
+    package: '@azure/communication-call-automation'
+    summary: Create a CallInvite object with CommunicationUserIdentifier
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new CallInvite(targetIdentity: CommunicationUserIdentifier, voipHeaders:
+        {[propertyName: string]: string})
+      parameters:
+        - id: targetIdentity
+          type: CommunicationUserIdentifier
+          description: Target's CommunicationUserIdentifier
+        - id: voipHeaders
+          type: '{[propertyName: string]: string}'
+          description: Custom context for voip
+  - name: CallInvite(PhoneNumberIdentifier, PhoneNumberIdentifier)
+    uid: '@azure/communication-call-automation.CallInvite.constructor'
+    package: '@azure/communication-call-automation'
+    summary: Create a CallInvite object with PhoneNumberIdentifierr
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new CallInvite(targetPhoneNumberIdentity: PhoneNumberIdentifier,
+        callerIdNumber: PhoneNumberIdentifier)
+      parameters:
+        - id: targetPhoneNumberIdentity
+          type: PhoneNumberIdentifier
+          description: Target's PhoneNumberIdentifier
+        - id: callerIdNumber
+          type: PhoneNumberIdentifier
+          description: Caller's phone number identifier
+  - name: >-
+      CallInvite(PhoneNumberIdentifier, PhoneNumberIdentifier, {[propertyName:
+      string]: string})
+    uid: '@azure/communication-call-automation.CallInvite.constructor_1'
+    package: '@azure/communication-call-automation'
+    summary: Create a CallInvite object with PhoneNumberIdentifier
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new CallInvite(targetPhoneNumberIdentity: PhoneNumberIdentifier,
+        callerIdNumber: PhoneNumberIdentifier, sipHeader: {[propertyName:
+        string]: string})
+      parameters:
+        - id: targetPhoneNumberIdentity
+          type: PhoneNumberIdentifier
+          description: Target's PhoneNumberIdentifier
+        - id: callerIdNumber
+          type: PhoneNumberIdentifier
+          description: Caller's phone number identifier
+        - id: sipHeader
+          type: '{[propertyName: string]: string}'
+          description: ''
+properties:
+  - name: sipHeaders
+    uid: '@azure/communication-call-automation.CallInvite.sipHeaders'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: sipHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sipHeaders?: {[propertyName: string]: string}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: string}'
+  - name: sourceCallIdNumber
+    uid: '@azure/communication-call-automation.CallInvite.sourceCallIdNumber'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: sourceCallIdNumber
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sourceCallIdNumber?: PhoneNumberIdentifier'
+      return:
+        description: ''
+        type: PhoneNumberIdentifier
+  - name: sourceDisplayName
+    uid: '@azure/communication-call-automation.CallInvite.sourceDisplayName'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: sourceDisplayName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sourceDisplayName?: string'
+      return:
+        description: ''
+        type: string
+  - name: target
+    uid: '@azure/communication-call-automation.CallInvite.target'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: target
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'target: CommunicationIdentifier'
+      return:
+        description: ''
+        type: CommunicationIdentifier
+  - name: voipHeaders
+    uid: '@azure/communication-call-automation.CallInvite.voipHeaders'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: voipHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'voipHeaders?: {[propertyName: string]: string}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: string}'

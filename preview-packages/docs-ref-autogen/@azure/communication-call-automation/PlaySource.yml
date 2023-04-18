@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: PlaySource
+uid: '@azure/communication-call-automation.PlaySource'
+package: '@azure/communication-call-automation'
+summary: The PlaySource model.
+fullName: PlaySource
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: playSourceId
+    uid: '@azure/communication-call-automation.PlaySource.playSourceId'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: playSourceId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'playSourceId?: string'
+      return:
+        description: ''
+        type: string

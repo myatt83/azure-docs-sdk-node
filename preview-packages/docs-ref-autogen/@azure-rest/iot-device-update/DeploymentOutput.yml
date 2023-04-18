@@ -11,7 +11,12 @@ properties:
   - name: deploymentId
     uid: '@azure-rest/iot-device-update.DeploymentOutput.deploymentId'
     package: '@azure-rest/iot-device-update'
-    summary: The caller-provided deployment identifier.
+    summary: >-
+      The caller-provided deployment identifier. This cannot be longer than 73
+      characters, must be all lower-case, and cannot contain '&', '^', '[', ']',
+      '{', '}', '|', '<', '>', forward slash, backslash, or double quote. The
+      Updates view in the Azure Portal IoT Hub resource generates a GUID for
+      deploymentId when you create a deployment.
     fullName: deploymentId
     remarks: ''
     isDeprecated: false

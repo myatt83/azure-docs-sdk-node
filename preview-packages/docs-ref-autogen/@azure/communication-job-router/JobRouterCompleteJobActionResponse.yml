@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: JobRouterCompleteJobActionResponse
+uid: '@azure/communication-job-router.JobRouterCompleteJobActionResponse'
+package: '@azure/communication-job-router'
+summary: Contains response data for the completeJobAction operation.
+fullName: JobRouterCompleteJobActionResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JobRouterCompleteJobActionResponse = Record<string, unknown>

@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: AcsVerification
+uid: '@azure-tools/communication-recipient-verification.AcsVerification'
+package: '@azure-tools/communication-recipient-verification'
+summary: Model response returned for users.
+fullName: AcsVerification
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: attempts
+    uid: '@azure-tools/communication-recipient-verification.AcsVerification.attempts'
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Number of times the user has tried to validate the code.
+    fullName: attempts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'attempts?: number'
+      return:
+        description: ''
+        type: number
+  - name: challengeId
+    uid: >-
+      @azure-tools/communication-recipient-verification.AcsVerification.challengeId
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Verification Id for the 3rd party verification service.
+    fullName: challengeId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'challengeId?: string'
+      return:
+        description: ''
+        type: string
+  - name: identity
+    uid: '@azure-tools/communication-recipient-verification.AcsVerification.identity'
+    package: '@azure-tools/communication-recipient-verification'
+    summary: The phone number that was used to verify.
+    fullName: identity
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identity?: string'
+      return:
+        description: ''
+        type: string
+  - name: immutableId
+    uid: >-
+      @azure-tools/communication-recipient-verification.AcsVerification.immutableId
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Immutable Id of the resource.
+    fullName: immutableId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'immutableId?: string'
+      return:
+        description: ''
+        type: string
+  - name: retries
+    uid: '@azure-tools/communication-recipient-verification.AcsVerification.retries'
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Number of times the verification code has been sent.
+    fullName: retries
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'retries?: number'
+      return:
+        description: ''
+        type: number
+  - name: status
+    uid: '@azure-tools/communication-recipient-verification.AcsVerification.status'
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Status of the Verification (Pending or Verified).
+    fullName: status
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'status?: string'
+      return:
+        description: ''
+        type: string
+  - name: subscriptionId
+    uid: >-
+      @azure-tools/communication-recipient-verification.AcsVerification.subscriptionId
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Subscription Id of the resource.
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId?: string'
+      return:
+        description: ''
+        type: string
+  - name: verificationId
+    uid: >-
+      @azure-tools/communication-recipient-verification.AcsVerification.verificationId
+    package: '@azure-tools/communication-recipient-verification'
+    summary: VerificationId of the number assigned to the verified recipient.
+    fullName: verificationId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'verificationId?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: JobRouterReclassifyJobActionResponse
+uid: '@azure/communication-job-router.JobRouterReclassifyJobActionResponse'
+package: '@azure/communication-job-router'
+summary: Contains response data for the reclassifyJobAction operation.
+fullName: JobRouterReclassifyJobActionResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JobRouterReclassifyJobActionResponse = Record<string, unknown>

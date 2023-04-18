@@ -120,8 +120,8 @@ properties:
     uid: '@azure-rest/iot-device-update.DeviceOutput.onLatestUpdate'
     package: '@azure-rest/iot-device-update'
     summary: >-
-      Boolean flag indicating whether the latest update is installed on the
-      device
+      Boolean flag indicating whether the latest update (the best compatible
+      update for the device's device class and group) is installed on the device
     fullName: onLatestUpdate
     remarks: ''
     isDeprecated: false

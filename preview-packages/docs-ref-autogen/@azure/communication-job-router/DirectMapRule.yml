@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: DirectMapRule
+uid: '@azure/communication-job-router.DirectMapRule'
+package: '@azure/communication-job-router'
+summary: A rule that return the same labels as the input labels.
+fullName: DirectMapRule
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-job-router.DirectMapRule.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "direct-map-rule"'
+      return:
+        description: ''
+        type: '"direct-map-rule"'
+extends: <xref uid="@azure/communication-job-router.RouterRule" />

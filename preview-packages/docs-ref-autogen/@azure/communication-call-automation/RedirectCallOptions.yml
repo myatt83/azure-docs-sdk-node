@@ -1,0 +1,104 @@
+### YamlMime:TSType
+name: RedirectCallOptions
+uid: '@azure/communication-call-automation.RedirectCallOptions'
+package: '@azure/communication-call-automation'
+summary: Options to redirect call.
+fullName: RedirectCallOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: sipHeaders
+    uid: '@azure/communication-call-automation.RedirectCallOptions.sipHeaders'
+    package: '@azure/communication-call-automation'
+    summary: Headers for SIP calls
+    fullName: sipHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sipHeaders?: {[propertyName: string]: string}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: string}'
+  - name: voipHeaders
+    uid: '@azure/communication-call-automation.RedirectCallOptions.voipHeaders'
+    package: '@azure/communication-call-automation'
+    summary: Headers for VOIP calls
+    fullName: voipHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'voipHeaders?: {[propertyName: string]: string}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: string}'
+inheritedProperties:
+  - name: abortSignal
+    uid: '@azure/communication-call-automation.RedirectCallOptions.abortSignal'
+    package: '@azure/communication-call-automation'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.abortSignal
+  - name: onResponse
+    uid: '@azure/communication-call-automation.RedirectCallOptions.onResponse'
+    package: '@azure/communication-call-automation'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.onResponse
+  - name: requestOptions
+    uid: '@azure/communication-call-automation.RedirectCallOptions.requestOptions'
+    package: '@azure/communication-call-automation'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: '@azure/communication-call-automation.RedirectCallOptions.serializerOptions'
+    package: '@azure/communication-call-automation'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.serializerOptions
+  - name: tracingOptions
+    uid: '@azure/communication-call-automation.RedirectCallOptions.tracingOptions'
+    package: '@azure/communication-call-automation'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.tracingOptions
+extends: OperationOptions

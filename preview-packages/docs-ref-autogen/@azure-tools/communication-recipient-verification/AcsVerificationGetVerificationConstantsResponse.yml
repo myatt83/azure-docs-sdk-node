@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AcsVerificationGetVerificationConstantsResponse
+uid: >-
+  @azure-tools/communication-recipient-verification.AcsVerificationGetVerificationConstantsResponse
+package: '@azure-tools/communication-recipient-verification'
+summary: Contains response data for the getVerificationConstants operation.
+fullName: AcsVerificationGetVerificationConstantsResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type AcsVerificationGetVerificationConstantsResponse =
+    VerificationConstantsResponse

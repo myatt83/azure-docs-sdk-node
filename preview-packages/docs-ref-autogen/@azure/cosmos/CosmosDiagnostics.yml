@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: CosmosDiagnostics
+uid: '@azure/cosmos.CosmosDiagnostics'
+package: '@azure/cosmos'
+summary: >-
+  This is a Cosmos Diagnostic type that holds diagnostic information during
+  client operations. ie. Item.read().
+
+  The `clientSideRequestStatistics` member contains diagnostic information on
+  operations happening in client process. ie.e
+
+  - metadata lookups.
+
+  - retries
+
+  - endpoints contacted.
+
+  - request, response payload stats.
+
+  Here all the server requests, apart from the final intended resource are
+  considered as metadata calls.
+
+  i.e. for item.read(id), if the client makes server call to discover endpoints
+  it would be considered
+
+  as metadata call.
+fullName: CosmosDiagnostics
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: clientSideRequestStatistics
+    uid: '@azure/cosmos.CosmosDiagnostics.clientSideRequestStatistics'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: clientSideRequestStatistics
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'clientSideRequestStatistics: ClientSideRequestStatistics'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.ClientSideRequestStatistics" />
+  - name: getContactedRegionNames
+    uid: '@azure/cosmos.CosmosDiagnostics.getContactedRegionNames'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: getContactedRegionNames
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Set<string> getContactedRegionNames
+      return:
+        description: ''
+        type: Set&lt;string&gt;
+  - name: id
+    uid: '@azure/cosmos.CosmosDiagnostics.id'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string

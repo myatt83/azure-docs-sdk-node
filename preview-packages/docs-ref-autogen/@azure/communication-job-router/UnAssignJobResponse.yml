@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: UnAssignJobResponse
+uid: '@azure/communication-job-router.UnAssignJobResponse'
+package: '@azure/communication-job-router'
+summary: ''
+fullName: UnAssignJobResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: jobId
+    uid: '@azure/communication-job-router.UnAssignJobResponse.jobId'
+    package: '@azure/communication-job-router'
+    summary: The Id of the job unassigned.
+    fullName: jobId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'jobId: string'
+      return:
+        description: ''
+        type: string
+  - name: unAssignmentCount
+    uid: '@azure/communication-job-router.UnAssignJobResponse.unAssignmentCount'
+    package: '@azure/communication-job-router'
+    summary: The number of times a job is unassigned. At a maximum 3.
+    fullName: unAssignmentCount
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'unAssignmentCount: number'
+      return:
+        description: ''
+        type: number

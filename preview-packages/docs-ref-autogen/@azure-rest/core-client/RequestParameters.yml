@@ -12,7 +12,6 @@ syntax: |
   type RequestParameters = {
     accept?: string,
     allowInsecureConnection?: boolean,
-    binaryResponse?: boolean,
     body?: unknown,
     contentType?: string,
     headers?: RawHttpHeadersInput,

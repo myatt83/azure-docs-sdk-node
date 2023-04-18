@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: FileSource
+uid: '@azure/communication-call-automation.FileSource'
+package: '@azure/communication-call-automation'
+summary: The FileSource model.
+fullName: FileSource
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-call-automation.FileSource.kind'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind?: "fileSource"'
+      return:
+        description: ''
+        type: '"fileSource"'
+  - name: uri
+    uid: '@azure/communication-call-automation.FileSource.uri'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: uri
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'uri: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
+  - name: playSourceId
+    uid: '@azure/communication-call-automation.FileSource.playSourceId'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    fullName: playSourceId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'playSourceId?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PlaySource.playSourceId](xref:@azure/communication-call-automation.PlaySource.playSourceId)
+extends: <xref uid="@azure/communication-call-automation.PlaySource" />

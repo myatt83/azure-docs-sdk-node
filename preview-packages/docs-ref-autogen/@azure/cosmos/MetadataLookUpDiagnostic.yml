@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: MetadataLookUpDiagnostic
+uid: '@azure/cosmos.MetadataLookUpDiagnostic'
+package: '@azure/cosmos'
+summary: >-
+  This type contains diagnostic information regarding a single metadata request
+  to server.
+fullName: MetadataLookUpDiagnostic
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: activityId
+    uid: '@azure/cosmos.MetadataLookUpDiagnostic.activityId'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: activityId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'activityId: string'
+      return:
+        description: ''
+        type: string
+  - name: endTimeUTCInMs
+    uid: '@azure/cosmos.MetadataLookUpDiagnostic.endTimeUTCInMs'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: endTimeUTCInMs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endTimeUTCInMs: number'
+      return:
+        description: ''
+        type: number
+  - name: id
+    uid: '@azure/cosmos.MetadataLookUpDiagnostic.id'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: metaDataType
+    uid: '@azure/cosmos.MetadataLookUpDiagnostic.metaDataType'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: metaDataType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'metaDataType: MetadataLookUpType'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.MetadataLookUpType" />
+  - name: startTimeUTCInMs
+    uid: '@azure/cosmos.MetadataLookUpDiagnostic.startTimeUTCInMs'
+    package: '@azure/cosmos'
+    summary: ''
+    fullName: startTimeUTCInMs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'startTimeUTCInMs: number'
+      return:
+        description: ''
+        type: number

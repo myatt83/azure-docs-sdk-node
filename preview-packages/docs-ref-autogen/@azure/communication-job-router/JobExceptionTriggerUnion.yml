@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: JobExceptionTriggerUnion
+uid: '@azure/communication-job-router.JobExceptionTriggerUnion'
+package: '@azure/communication-job-router'
+summary: ''
+fullName: JobExceptionTriggerUnion
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JobExceptionTriggerUnion =
+    | JobExceptionTrigger
+    | QueueLengthExceptionTrigger
+    | WaitTimeExceptionTrigger

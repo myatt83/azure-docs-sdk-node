@@ -93,38 +93,6 @@ methods:
         description: ''
         type: Promise&lt;<xref uid="@azure/arm-msi.Identity" />&gt;
   - name: >-
-      listAssociatedResources(string, string,
-      UserAssignedIdentitiesListAssociatedResourcesOptionalParams)
-    uid: '@azure/arm-msi.UserAssignedIdentities.listAssociatedResources'
-    package: '@azure/arm-msi'
-    summary: Lists the associated resources for this identity.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAssociatedResources(resourceGroupName: string,
-        resourceName: string, options?:
-        UserAssignedIdentitiesListAssociatedResourcesOptionalParams):
-        PagedAsyncIterableIterator<AzureResource, AzureResource[], PageSettings>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the Resource Group to which the identity belongs.
-        - id: resourceName
-          type: string
-          description: The name of the identity resource.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-msi.UserAssignedIdentitiesListAssociatedResourcesOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          PagedAsyncIterableIterator&lt;<xref uid="@azure/arm-msi.AzureResource"
-          />, <xref uid="@azure/arm-msi.AzureResource" />[], PageSettings&gt;
-  - name: >-
       listByResourceGroup(string,
       UserAssignedIdentitiesListByResourceGroupOptionalParams)
     uid: '@azure/arm-msi.UserAssignedIdentities.listByResourceGroup'

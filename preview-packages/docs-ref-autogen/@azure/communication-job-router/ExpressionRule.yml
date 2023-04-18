@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: ExpressionRule
+uid: '@azure/communication-job-router.ExpressionRule'
+package: '@azure/communication-job-router'
+summary: A rule providing inline expression rules.
+fullName: ExpressionRule
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: expression
+    uid: '@azure/communication-job-router.ExpressionRule.expression'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The string containing the expression to evaluate. Should contain return
+      statement with calculated values.
+    fullName: expression
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expression: string'
+      return:
+        description: ''
+        type: string
+  - name: kind
+    uid: '@azure/communication-job-router.ExpressionRule.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "expression-rule"'
+      return:
+        description: ''
+        type: '"expression-rule"'
+  - name: language
+    uid: '@azure/communication-job-router.ExpressionRule.language'
+    package: '@azure/communication-job-router'
+    summary: The expression language to compile to and execute
+    fullName: language
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'language: "powerFx"'
+      return:
+        description: ''
+        type: '"powerFx"'
+extends: <xref uid="@azure/communication-job-router.RouterRule" />

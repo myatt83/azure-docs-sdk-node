@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: ConditionalWorkerSelectorAttachment
+uid: '@azure/communication-job-router.ConditionalWorkerSelectorAttachment'
+package: '@azure/communication-job-router'
+summary: >-
+  Describes a set of label selectors that will be attached if the given
+  condition resolves to true
+fullName: ConditionalWorkerSelectorAttachment
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: condition
+    uid: >-
+      @azure/communication-job-router.ConditionalWorkerSelectorAttachment.condition
+    package: '@azure/communication-job-router'
+    summary: >-
+      A rule of one of the following types:
+
+
+      StaticRule:  A rule providing static rules that always return the same
+      result, regardless of input.
+
+      DirectMapRule:  A rule that return the same labels as the input labels.
+
+      ExpressionRule: A rule providing inline expression rules.
+
+      AzureFunctionRule: A rule providing a binding to an HTTP Triggered Azure
+      Function.
+    fullName: condition
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'condition: RouterRuleUnion'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.RouterRuleUnion" />
+  - name: kind
+    uid: '@azure/communication-job-router.ConditionalWorkerSelectorAttachment.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "conditional"'
+      return:
+        description: ''
+        type: '"conditional"'
+  - name: labelSelectors
+    uid: >-
+      @azure/communication-job-router.ConditionalWorkerSelectorAttachment.labelSelectors
+    package: '@azure/communication-job-router'
+    summary: The label selectors to attach
+    fullName: labelSelectors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'labelSelectors: WorkerSelector[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.WorkerSelector" />[]
+extends: <xref uid="@azure/communication-job-router.WorkerSelectorAttachment" />

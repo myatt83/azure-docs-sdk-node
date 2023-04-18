@@ -28,6 +28,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: protectedAppendWritesHistory
+    uid: '@azure/arm-storage.LegalHoldProperties.protectedAppendWritesHistory'
+    package: '@azure/arm-storage'
+    summary: Protected append blob writes history.
+    fullName: protectedAppendWritesHistory
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'protectedAppendWritesHistory?: ProtectedAppendWritesHistory'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.ProtectedAppendWritesHistory" />
   - name: tags
     uid: '@azure/arm-storage.LegalHoldProperties.tags'
     package: '@azure/arm-storage'

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: StaticRule
+uid: '@azure/communication-job-router.StaticRule'
+package: '@azure/communication-job-router'
+summary: >-
+  A rule providing static rules that always return the same result, regardless
+  of input.
+fullName: StaticRule
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-job-router.StaticRule.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "static-rule"'
+      return:
+        description: ''
+        type: '"static-rule"'
+  - name: value
+    uid: '@azure/communication-job-router.StaticRule.value'
+    package: '@azure/communication-job-router'
+    summary: The static value this rule always returns.
+    fullName: value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'value?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+extends: <xref uid="@azure/communication-job-router.RouterRule" />

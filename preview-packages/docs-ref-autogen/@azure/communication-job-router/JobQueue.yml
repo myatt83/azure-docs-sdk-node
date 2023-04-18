@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: JobQueue
+uid: '@azure/communication-job-router.JobQueue'
+package: '@azure/communication-job-router'
+summary: A queue that can contain jobs to be routed.
+fullName: JobQueue
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: distributionPolicyId
+    uid: '@azure/communication-job-router.JobQueue.distributionPolicyId'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The ID of the distribution policy that will determine how a job is
+      distributed to workers.
+    fullName: distributionPolicyId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'distributionPolicyId?: string'
+      return:
+        description: ''
+        type: string
+  - name: exceptionPolicyId
+    uid: '@azure/communication-job-router.JobQueue.exceptionPolicyId'
+    package: '@azure/communication-job-router'
+    summary: >-
+      (Optional) The ID of the exception policy that determines various job
+      escalation rules.
+    fullName: exceptionPolicyId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'exceptionPolicyId?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@azure/communication-job-router.JobQueue.id'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The Id of this queue
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: labels
+    uid: '@azure/communication-job-router.JobQueue.labels'
+    package: '@azure/communication-job-router'
+    summary: >-
+      A set of key/value pairs that are identifying attributes used by the rules
+      engines to make decisions.
+    fullName: labels
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'labels?: {[propertyName: string]: any}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: any}'
+  - name: name
+    uid: '@azure/communication-job-router.JobQueue.name'
+    package: '@azure/communication-job-router'
+    summary: The name of this queue.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string

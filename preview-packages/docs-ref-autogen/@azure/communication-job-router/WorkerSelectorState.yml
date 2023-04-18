@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: WorkerSelectorState
+uid: '@azure/communication-job-router.WorkerSelectorState'
+package: '@azure/communication-job-router'
+summary: Defines values for WorkerSelectorState.
+fullName: WorkerSelectorState
+remarks: ''
+isDeprecated: false
+syntax: |
+  type WorkerSelectorState = "active" | "expired"

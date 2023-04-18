@@ -18,12 +18,6 @@ fields:
       networking usage. Best for experimenting, learning, simple testing, or
       workloads with fewer than 10 nodes. Not recommended for production use
       cases.
-  - name: Paid
-    uid: '@azure/arm-containerservice.KnownManagedClusterSKUTier.Paid'
-    package: '@azure/arm-containerservice'
-    summary: >-
-      Paid tier will be removed in 07/01/2023 API version. Standard tier will
-      replace Paid tier, please switch to Standard tier.
   - name: Standard
     uid: '@azure/arm-containerservice.KnownManagedClusterSKUTier.Standard'
     package: '@azure/arm-containerservice'

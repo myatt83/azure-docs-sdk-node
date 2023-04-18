@@ -14,8 +14,8 @@ inheritedProperties:
     uid: '@azure/arm-msi.ProxyResource.id'
     package: '@azure/arm-msi'
     summary: >-
-      Fully qualified resource ID for the resource. Ex -
-      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+      Fully qualified resource ID for the resource. E.g.
+      "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -45,6 +45,26 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: <b>Inherited From</b> [Resource.name](xref:@azure/arm-msi.Resource.name)
+  - name: systemData
+    uid: '@azure/arm-msi.ProxyResource.systemData'
+    package: '@azure/arm-msi'
+    summary: >-
+      Azure Resource Manager metadata containing createdBy and modifiedBy
+      information.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: systemData
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-msi.SystemData" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [Resource.systemData](xref:@azure/arm-msi.Resource.systemData)
   - name: type
     uid: '@azure/arm-msi.ProxyResource.type'
     package: '@azure/arm-msi'

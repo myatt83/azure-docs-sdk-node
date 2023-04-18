@@ -1,0 +1,263 @@
+### YamlMime:TSType
+name: RouterJobResponse
+uid: '@azure/communication-job-router.RouterJobResponse'
+package: '@azure/communication-job-router'
+summary: A unit of work to be routed
+fullName: RouterJobResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/communication-job-router.RouterJobResponse.id'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The id of the job.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
+  - name: assignments
+    uid: '@azure/communication-job-router.RouterJobResponse.assignments'
+    package: '@azure/communication-job-router'
+    summary: >-
+      A collection of the assignments of the job.
+
+      Key is AssignmentId.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: assignments
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'assignments?: {[propertyName: string]: JobAssignment}'
+      return:
+        description: ''
+        type: >-
+          {[propertyName: string]: <xref
+          uid="@azure/communication-job-router.JobAssignment" />}
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.assignments](xref:@azure/communication-job-router.RouterJob.assignments)
+  - name: attachedWorkerSelectors
+    uid: '@azure/communication-job-router.RouterJobResponse.attachedWorkerSelectors'
+    package: '@azure/communication-job-router'
+    summary: >-
+      A collection of label selectors attached by a classification policy, which
+      a worker must satisfy in order to process this job.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: attachedWorkerSelectors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'attachedWorkerSelectors?: WorkerSelector[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.WorkerSelector" />[]
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.attachedWorkerSelectors](xref:@azure/communication-job-router.RouterJob.attachedWorkerSelectors)
+  - name: channelId
+    uid: '@azure/communication-job-router.RouterJobResponse.channelId'
+    package: '@azure/communication-job-router'
+    summary: The channel identifier. eg. voice, chat, etc.
+    fullName: channelId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'channelId?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.channelId](xref:@azure/communication-job-router.RouterJob.channelId)
+  - name: channelReference
+    uid: '@azure/communication-job-router.RouterJobResponse.channelReference'
+    package: '@azure/communication-job-router'
+    summary: Reference to an external parent context, eg. call ID.
+    fullName: channelReference
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'channelReference?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.channelReference](xref:@azure/communication-job-router.RouterJob.channelReference)
+  - name: classificationPolicyId
+    uid: '@azure/communication-job-router.RouterJobResponse.classificationPolicyId'
+    package: '@azure/communication-job-router'
+    summary: The Id of the Classification policy used for classifying a job.
+    fullName: classificationPolicyId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'classificationPolicyId?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.classificationPolicyId](xref:@azure/communication-job-router.RouterJob.classificationPolicyId)
+  - name: dispositionCode
+    uid: '@azure/communication-job-router.RouterJobResponse.dispositionCode'
+    package: '@azure/communication-job-router'
+    summary: Reason code for cancelled or closed jobs.
+    fullName: dispositionCode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dispositionCode?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.dispositionCode](xref:@azure/communication-job-router.RouterJob.dispositionCode)
+  - name: enqueuedOn
+    uid: '@azure/communication-job-router.RouterJobResponse.enqueuedOn'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The time a job was queued.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: enqueuedOn
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enqueuedOn?: Date'
+      return:
+        description: ''
+        type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.enqueuedOn](xref:@azure/communication-job-router.RouterJob.enqueuedOn)
+  - name: jobStatus
+    uid: '@azure/communication-job-router.RouterJobResponse.jobStatus'
+    package: '@azure/communication-job-router'
+    summary: >-
+      The state of the Job.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: jobStatus
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'jobStatus?: RouterJobStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.RouterJobStatus" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.jobStatus](xref:@azure/communication-job-router.RouterJob.jobStatus)
+  - name: labels
+    uid: '@azure/communication-job-router.RouterJobResponse.labels'
+    package: '@azure/communication-job-router'
+    summary: >-
+      A set of key/value pairs that are identifying attributes used by the rules
+      engines to make decisions.
+    fullName: labels
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'labels?: {[propertyName: string]: any}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: any}'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.labels](xref:@azure/communication-job-router.RouterJob.labels)
+  - name: notes
+    uid: '@azure/communication-job-router.RouterJobResponse.notes'
+    package: '@azure/communication-job-router'
+    summary: Notes attached to a job, sorted by timestamp
+    fullName: notes
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'notes?: {[propertyName: string]: string}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: string}'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.notes](xref:@azure/communication-job-router.RouterJob.notes)
+  - name: priority
+    uid: '@azure/communication-job-router.RouterJobResponse.priority'
+    package: '@azure/communication-job-router'
+    summary: The priority of this job.
+    fullName: priority
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'priority?: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.priority](xref:@azure/communication-job-router.RouterJob.priority)
+  - name: queueId
+    uid: '@azure/communication-job-router.RouterJobResponse.queueId'
+    package: '@azure/communication-job-router'
+    summary: The Id of the Queue that this job is queued to.
+    fullName: queueId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'queueId?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.queueId](xref:@azure/communication-job-router.RouterJob.queueId)
+  - name: requestedWorkerSelectors
+    uid: '@azure/communication-job-router.RouterJobResponse.requestedWorkerSelectors'
+    package: '@azure/communication-job-router'
+    summary: >-
+      A collection of manually specified label selectors, which a worker must
+      satisfy in order to process this job.
+    fullName: requestedWorkerSelectors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestedWorkerSelectors?: WorkerSelector[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.WorkerSelector" />[]
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.requestedWorkerSelectors](xref:@azure/communication-job-router.RouterJob.requestedWorkerSelectors)
+  - name: tags
+    uid: '@azure/communication-job-router.RouterJobResponse.tags'
+    package: '@azure/communication-job-router'
+    summary: A set of non-identifying attributes attached to this job
+    fullName: tags
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tags?: {[propertyName: string]: any}'
+      return:
+        description: ''
+        type: '{[propertyName: string]: any}'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RouterJob.tags](xref:@azure/communication-job-router.RouterJob.tags)
+extends: <xref uid="@azure/communication-job-router.RouterJob" />

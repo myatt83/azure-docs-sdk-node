@@ -39,6 +39,30 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.$host'
+    package: '@azure/arm-resourcehealth'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.apiVersion'
+    package: '@azure/arm-resourcehealth'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: availabilityStatuses
     uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.availabilityStatuses'
     package: '@azure/arm-resourcehealth'
@@ -100,52 +124,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-resourcehealth.Operations" />
-inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.$host'
-    package: '@azure/arm-resourcehealth'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MicrosoftResourceHealthContext.$host](xref:@azure/arm-resourcehealth.MicrosoftResourceHealthContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.apiVersion'
-    package: '@azure/arm-resourcehealth'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MicrosoftResourceHealthContext.apiVersion](xref:@azure/arm-resourcehealth.MicrosoftResourceHealthContext.apiVersion)
-  - name: pipeline
-    uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.pipeline'
-    package: '@azure/arm-resourcehealth'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MicrosoftResourceHealthContext.pipeline](xref:@azure/arm-resourcehealth.MicrosoftResourceHealthContext.pipeline)
   - name: subscriptionId
     uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.subscriptionId'
     package: '@azure/arm-resourcehealth'
@@ -158,9 +136,20 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MicrosoftResourceHealthContext.subscriptionId](xref:@azure/arm-resourcehealth.MicrosoftResourceHealthContext.subscriptionId)
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.pipeline'
+    package: '@azure/arm-resourcehealth'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.sendOperationRequest'
@@ -184,9 +173,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MicrosoftResourceHealthContext.sendOperationRequest](xref:@azure/arm-resourcehealth.MicrosoftResourceHealthContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-resourcehealth.MicrosoftResourceHealth.sendRequest'
     package: '@azure/arm-resourcehealth'
@@ -204,7 +191,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MicrosoftResourceHealthContext.sendRequest](xref:@azure/arm-resourcehealth.MicrosoftResourceHealthContext.sendRequest)
-extends: <xref uid="@azure/arm-resourcehealth.MicrosoftResourceHealthContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

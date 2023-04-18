@@ -2,7 +2,10 @@
 name: SingleServerConfiguration
 uid: '@azure/arm-workloads.SingleServerConfiguration'
 package: '@azure/arm-workloads'
-summary: Gets or sets the single server configuration.
+summary: >-
+  Gets or sets the single server configuration. For prerequisites for creating
+  the infrastructure, please see
+  [here](https://go.microsoft.com/fwlink/?linkid=2212611&clcid=0x409)
 fullName: SingleServerConfiguration
 remarks: ''
 isDeprecated: false

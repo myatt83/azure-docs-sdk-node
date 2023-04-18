@@ -13,8 +13,8 @@ fields:
   - name: Premium
     uid: '@azure/arm-labservices.KnownLabServicesSkuTier.Premium'
     package: '@azure/arm-labservices'
-    summary: ''
+    summary: Premium
   - name: Standard
     uid: '@azure/arm-labservices.KnownLabServicesSkuTier.Standard'
     package: '@azure/arm-labservices'
-    summary: ''
+    summary: Standard

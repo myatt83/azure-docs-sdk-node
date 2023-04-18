@@ -1,0 +1,617 @@
+### YamlMime:TSType
+name: RouterAdministrationClient
+uid: '@azure/communication-job-router.RouterAdministrationClient'
+package: '@azure/communication-job-router'
+summary: The client to do router operations
+fullName: RouterAdministrationClient
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      RouterAdministrationClient(string, CommunicationTokenCredential,
+      RouterAdministrationClientOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.constructor_2'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Initializes a new instance of the RouterClient class using a
+      TokenCredential.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RouterAdministrationClient(endpoint: string, credential:
+        CommunicationTokenCredential, routerAdministrationClientOptions?:
+        RouterAdministrationClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the service (ex:
+            https://contoso.eastus.communications.azure.net).
+        - id: credential
+          type: CommunicationTokenCredential
+          description: >-
+            CommunicationTokenCredential that is used to authenticate requests
+            to the service.
+        - id: routerAdministrationClientOptions
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.RouterAdministrationClientOptions"
+            />
+          description: Optional. Options to configure the HTTP pipeline.
+  - name: >-
+      RouterAdministrationClient(string, KeyCredential | TokenCredential,
+      RouterAdministrationClientOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.constructor_1'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Initializes a new instance of the RouterClient class using an Azure
+      KeyCredential.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RouterAdministrationClient(endpoint: string, credential:
+        KeyCredential | TokenCredential, routerAdministrationClientOptions?:
+        RouterAdministrationClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the service (ex:
+            https://contoso.eastus.communications.azure.net).
+        - id: credential
+          type: KeyCredential | TokenCredential
+          description: >-
+            An object that is used to authenticate requests to the service. Use
+            the Azure KeyCredential or
+
+            `@azure/identity` or TokenCredential to create a credential.
+        - id: routerAdministrationClientOptions
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.RouterAdministrationClientOptions"
+            />
+          description: Optional. Options to configure the HTTP pipeline.
+  - name: RouterAdministrationClient(string, RouterAdministrationClientOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.constructor'
+    package: '@azure/communication-job-router'
+    summary: Initializes a new instance of the RouterClient class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RouterAdministrationClient(connectionString: string,
+        routerAdministrationClientOptions?: RouterAdministrationClientOptions)
+      parameters:
+        - id: connectionString
+          type: string
+          description: >-
+            Connection string to connect to an Azure Communication Service
+            resource.
+                                    Example: "endpoint=https://contoso.eastus.communications.azure.net/;accesskey=secret";
+        - id: routerAdministrationClientOptions
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.RouterAdministrationClientOptions"
+            />
+          description: Optional. Options to configure the HTTP pipeline.
+methods:
+  - name: createClassificationPolicy(string, CreateClassificationPolicyOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.createClassificationPolicy
+    package: '@azure/communication-job-router'
+    summary: >-
+      Creates a classification policy.
+
+      Returns classification policy with the id of the created classification
+      policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createClassificationPolicy(classificationPolicyId: string,
+        options?: CreateClassificationPolicyOptions):
+        Promise<ClassificationPolicyResponse>
+      parameters:
+        - id: classificationPolicyId
+          type: string
+          description: Id of the classification policy.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.CreateClassificationPolicyOptions"
+            />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.ClassificationPolicyResponse"
+          />&gt;
+  - name: createDistributionPolicy(string, CreateDistributionPolicyOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.createDistributionPolicy
+    package: '@azure/communication-job-router'
+    summary: >-
+      Creates a distribution policy.
+
+      Returns distribution policy with the id of the created distribution
+      policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createDistributionPolicy(distributionPolicyId: string,
+        options?: CreateDistributionPolicyOptions):
+        Promise<DistributionPolicyResponse>
+      parameters:
+        - id: distributionPolicyId
+          type: string
+          description: The id of the distribution policy to create.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.CreateDistributionPolicyOptions"
+            />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.DistributionPolicyResponse"
+          />&gt;
+  - name: createExceptionPolicy(string, CreateExceptionPolicyOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.createExceptionPolicy
+    package: '@azure/communication-job-router'
+    summary: |-
+      Creates a exception policy.
+      Returns exception policy with the id of the created exception policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createExceptionPolicy(exceptionPolicyId: string, options?:
+        CreateExceptionPolicyOptions): Promise<ExceptionPolicyResponse>
+      parameters:
+        - id: exceptionPolicyId
+          type: string
+          description: The id of the exception policy to create.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.CreateExceptionPolicyOptions"
+            />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.ExceptionPolicyResponse" />&gt;
+  - name: createQueue(string, CreateQueueOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.createQueue'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Creates a queue.
+      Returns queue with the id of the created queue.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createQueue(queueId: string, options?: CreateQueueOptions):
+        Promise<JobQueueResponse>
+      parameters:
+        - id: queueId
+          type: string
+          description: The ID of the queue to create.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.CreateQueueOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobQueueResponse" />&gt;
+  - name: deleteClassificationPolicy(string, OperationOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.deleteClassificationPolicy
+    package: '@azure/communication-job-router'
+    summary: Deletes a classification policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteClassificationPolicy(classificationPolicyId: string,
+        options?: OperationOptions): Promise<void>
+      parameters:
+        - id: classificationPolicyId
+          type: string
+          description: The id of the classification policy to delete.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: deleteDistributionPolicy(string, OperationOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.deleteDistributionPolicy
+    package: '@azure/communication-job-router'
+    summary: Deletes a distribution policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteDistributionPolicy(distributionPolicyId: string,
+        options?: OperationOptions): Promise<void>
+      parameters:
+        - id: distributionPolicyId
+          type: string
+          description: The id of the distribution policy to delete.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: deleteExceptionPolicy(string, OperationOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.deleteExceptionPolicy
+    package: '@azure/communication-job-router'
+    summary: Deletes an exception policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteExceptionPolicy(exceptionPolicyId: string, options?:
+        OperationOptions): Promise<void>
+      parameters:
+        - id: exceptionPolicyId
+          type: string
+          description: The id of the exception policy to delete.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: deleteQueue(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.deleteQueue'
+    package: '@azure/communication-job-router'
+    summary: Deletes a queue.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteQueue(queueId: string, options?: OperationOptions):
+        Promise<void>
+      parameters:
+        - id: queueId
+          type: string
+          description: The ID of the queue to delete.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: getClassificationPolicy(string, OperationOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.getClassificationPolicy
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets a classification policy.
+      Returns classification policy with the id of the classification policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClassificationPolicy(classificationPolicyId: string,
+        options?: OperationOptions): Promise<ClassificationPolicyResponse>
+      parameters:
+        - id: classificationPolicyId
+          type: string
+          description: The id of the classification policy to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.ClassificationPolicyResponse"
+          />&gt;
+  - name: getDistributionPolicy(string, OperationOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.getDistributionPolicy
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets a distribution policy.
+      Returns distribution policy client with the id of the distribution policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDistributionPolicy(distributionPolicyId: string, options?:
+        OperationOptions): Promise<DistributionPolicyResponse>
+      parameters:
+        - id: distributionPolicyId
+          type: string
+          description: The id of the distribution policy to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.DistributionPolicyResponse"
+          />&gt;
+  - name: getExceptionPolicy(string, OperationOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.getExceptionPolicy
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets an exception policy.
+      Returns exception policy with the id of the exception policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getExceptionPolicy(exceptionPolicyId: string, options?:
+        OperationOptions): Promise<ExceptionPolicyResponse>
+      parameters:
+        - id: exceptionPolicyId
+          type: string
+          description: The id of the exception policy to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.ExceptionPolicyResponse" />&gt;
+  - name: getQueue(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.getQueue'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets a queue.
+      Returns queue with the id of the queue.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getQueue(queueId: string, options?: OperationOptions):
+        Promise<JobQueueResponse>
+      parameters:
+        - id: queueId
+          type: string
+          description: The ID of the queue to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobQueueResponse" />&gt;
+  - name: listClassificationPolicies(ListClassificationPoliciesOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.listClassificationPolicies
+    package: '@azure/communication-job-router'
+    summary: Gets the list of classification policies.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listClassificationPolicies(options?:
+        ListClassificationPoliciesOptions):
+        PagedAsyncIterableIterator<ClassificationPolicyItem,
+        ClassificationPolicyItem[], PageSettings>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.ListClassificationPoliciesOptions"
+            />
+          description: List classification policies options.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/communication-job-router.ClassificationPolicyItem" />,
+          <xref uid="@azure/communication-job-router.ClassificationPolicyItem"
+          />[], PageSettings&gt;
+  - name: listDistributionPolicies(ListDistributionPoliciesOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.listDistributionPolicies
+    package: '@azure/communication-job-router'
+    summary: Gets the list of distribution policies.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDistributionPolicies(options?:
+        ListDistributionPoliciesOptions):
+        PagedAsyncIterableIterator<DistributionPolicyItem,
+        DistributionPolicyItem[], PageSettings>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.ListDistributionPoliciesOptions"
+            />
+          description: List distribution policies options.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/communication-job-router.DistributionPolicyItem" />, <xref
+          uid="@azure/communication-job-router.DistributionPolicyItem" />[],
+          PageSettings&gt;
+  - name: listExceptionPolicies(ListExceptionPoliciesOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.listExceptionPolicies
+    package: '@azure/communication-job-router'
+    summary: Gets the list of exception policies.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listExceptionPolicies(options?: ListExceptionPoliciesOptions):
+        PagedAsyncIterableIterator<ExceptionPolicyItem, ExceptionPolicyItem[],
+        PageSettings>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.ListExceptionPoliciesOptions"
+            />
+          description: List exception policies options.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/communication-job-router.ExceptionPolicyItem" />, <xref
+          uid="@azure/communication-job-router.ExceptionPolicyItem" />[],
+          PageSettings&gt;
+  - name: listQueues(ListQueuesOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.listQueues'
+    package: '@azure/communication-job-router'
+    summary: Gets the list of queues.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listQueues(options?: ListQueuesOptions):
+        PagedAsyncIterableIterator<JobQueueItem, JobQueueItem[], PageSettings>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/communication-job-router.ListQueuesOptions" />
+          description: List queues options.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/communication-job-router.JobQueueItem" />, <xref
+          uid="@azure/communication-job-router.JobQueueItem" />[],
+          PageSettings&gt;
+  - name: updateClassificationPolicy(string, UpdateClassificationPolicyOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.updateClassificationPolicy
+    package: '@azure/communication-job-router'
+    summary: >-
+      Updates a classification policy.
+
+      Returns classification policy with the id of the updated classification
+      policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateClassificationPolicy(classificationPolicyId: string,
+        options?: UpdateClassificationPolicyOptions):
+        Promise<ClassificationPolicyResponse>
+      parameters:
+        - id: classificationPolicyId
+          type: string
+          description: Id of the classification policy.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.UpdateClassificationPolicyOptions"
+            />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.ClassificationPolicyResponse"
+          />&gt;
+  - name: updateDistributionPolicy(string, UpdateDistributionPolicyOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.updateDistributionPolicy
+    package: '@azure/communication-job-router'
+    summary: >-
+      Updates a distribution policy.
+
+      Returns distribution policy with the id of the updated distribution
+      policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateDistributionPolicy(distributionPolicyId: string,
+        options?: UpdateDistributionPolicyOptions):
+        Promise<DistributionPolicyResponse>
+      parameters:
+        - id: distributionPolicyId
+          type: string
+          description: The id of the distribution policy to update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.UpdateDistributionPolicyOptions"
+            />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.DistributionPolicyResponse"
+          />&gt;
+  - name: updateExceptionPolicy(string, UpdateExceptionPolicyOptions)
+    uid: >-
+      @azure/communication-job-router.RouterAdministrationClient.updateExceptionPolicy
+    package: '@azure/communication-job-router'
+    summary: |-
+      Updates a exception policy.
+      Returns exception policy with the id of the updated exception policy.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateExceptionPolicy(exceptionPolicyId: string, options?:
+        UpdateExceptionPolicyOptions): Promise<ExceptionPolicyResponse>
+      parameters:
+        - id: exceptionPolicyId
+          type: string
+          description: The id of the exception policy to update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-job-router.UpdateExceptionPolicyOptions"
+            />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.ExceptionPolicyResponse" />&gt;
+  - name: updateQueue(string, UpdateQueueOptions)
+    uid: '@azure/communication-job-router.RouterAdministrationClient.updateQueue'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Updates a queue.
+      Returns queue with the id of the created queue.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateQueue(queueId: string, options?: UpdateQueueOptions):
+        Promise<JobQueueResponse>
+      parameters:
+        - id: queueId
+          type: string
+          description: The ID of the queue to update.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.UpdateQueueOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobQueueResponse" />&gt;

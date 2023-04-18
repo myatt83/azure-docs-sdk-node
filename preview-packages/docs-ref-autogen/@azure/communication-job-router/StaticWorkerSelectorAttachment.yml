@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: StaticWorkerSelectorAttachment
+uid: '@azure/communication-job-router.StaticWorkerSelectorAttachment'
+package: '@azure/communication-job-router'
+summary: Describes a label selector that will always be attached
+fullName: StaticWorkerSelectorAttachment
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-job-router.StaticWorkerSelectorAttachment.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "static"'
+      return:
+        description: ''
+        type: '"static"'
+  - name: labelSelector
+    uid: >-
+      @azure/communication-job-router.StaticWorkerSelectorAttachment.labelSelector
+    package: '@azure/communication-job-router'
+    summary: >-
+      Describes a condition that must be met against a set of labels for worker
+      selection
+    fullName: labelSelector
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'labelSelector: WorkerSelector'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.WorkerSelector" />
+extends: <xref uid="@azure/communication-job-router.WorkerSelectorAttachment" />

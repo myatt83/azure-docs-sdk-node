@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: AcsVerificationRequestVerificationResponse
+uid: >-
+  @azure-tools/communication-recipient-verification.AcsVerificationRequestVerificationResponse
+package: '@azure-tools/communication-recipient-verification'
+summary: Contains response data for the requestVerification operation.
+fullName: AcsVerificationRequestVerificationResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type AcsVerificationRequestVerificationResponse = VerificationResponse

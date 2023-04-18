@@ -8,5 +8,4 @@ fullName: DeviceManagementListBestUpdatesForGroupParameters
 remarks: ''
 isDeprecated: false
 syntax: |
-  type DeviceManagementListBestUpdatesForGroupParameters =
-    DeviceManagementListBestUpdatesForGroupQueryParam & RequestParameters
+  type DeviceManagementListBestUpdatesForGroupParameters = RequestParameters

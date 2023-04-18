@@ -30,7 +30,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'keySource: string'
+      content: 'keySource?: string'
       return:
         description: ''
         type: string

@@ -13,7 +13,6 @@ enums:
   - '@azure/arm-policy.KnownPolicyType'
 classes:
   - '@azure/arm-policy.PolicyClient'
-  - '@azure/arm-policy.PolicyClientContext'
 interfaces:
   - '@azure/arm-policy.Alias'
   - '@azure/arm-policy.AliasPath'
@@ -173,3 +172,22 @@ typeAliases:
   - '@azure/arm-policy.PolicySetDefinitionsListResponse'
   - '@azure/arm-policy.PolicyType'
   - '@azure/arm-policy.ResourceIdentityType'
+functions:
+  - name: getContinuationToken(unknown)
+    uid: '@azure/arm-policy.getContinuationToken'
+    package: '@azure/arm-policy'
+    summary: |-
+      Given a result page from a pageable operation, returns a
+      continuation token that can be used to begin paging from
+      that point later.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getContinuationToken(page: unknown): string | undefined'
+      parameters:
+        - id: page
+          type: unknown
+          description: A result object from calling .byPage() on a paged operation.
+      return:
+        description: The continuation token that can be passed into byPage().
+        type: string | undefined

@@ -25,7 +25,7 @@ methods:
         function beginCreate(resourceGroupName: string, monitorName: string,
         providerInstanceName: string, providerInstanceParameter:
         ProviderInstance, options?: ProviderInstancesCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<ProviderInstance>,
+        Promise<SimplePollerLike<OperationState<ProviderInstance>,
         ProviderInstance>>
       parameters:
         - id: resourceGroupName
@@ -48,7 +48,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.ProviderInstance" />&gt;, <xref
           uid="@azure/arm-workloads.ProviderInstance" />&gt;&gt;
   - name: >-
@@ -105,7 +105,7 @@ methods:
         function beginDelete(resourceGroupName: string, monitorName: string,
         providerInstanceName: string, options?:
         ProviderInstancesDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -125,7 +125,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-

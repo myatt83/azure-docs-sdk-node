@@ -2,7 +2,9 @@
 name: UserAssignedServiceIdentity
 uid: '@azure/arm-workloads.UserAssignedServiceIdentity'
 package: '@azure/arm-workloads'
-summary: Managed service identity (user assigned identities)
+summary: >-
+  A pre-created user assigned identity with appropriate roles assigned. To learn
+  more on identity and roles required, visit the ACSS how-to-guide.
 fullName: UserAssignedServiceIdentity
 remarks: ''
 isDeprecated: false

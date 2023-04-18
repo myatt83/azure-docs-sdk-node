@@ -11,7 +11,7 @@ properties:
   - name: identity
     uid: '@azure/arm-workloads.UpdateMonitorRequest.identity'
     package: '@azure/arm-workloads'
-    summary: Managed service identity (user assigned identities)
+    summary: '[currently not in use] Managed service identity(user assigned identities)'
     fullName: identity
     remarks: ''
     isDeprecated: false

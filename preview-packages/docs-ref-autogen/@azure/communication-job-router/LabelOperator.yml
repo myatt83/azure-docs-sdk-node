@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: LabelOperator
+uid: '@azure/communication-job-router.LabelOperator'
+package: '@azure/communication-job-router'
+summary: Defines values for LabelOperator.
+fullName: LabelOperator
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LabelOperator =
+    | "equal"
+    | "notEqual"
+    | "lessThan"
+    | "lessThanEqual"
+    | "greaterThan"
+    | "greaterThanEqual"

@@ -28,7 +28,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'request?: Request'
+      content: 'request?: Request_2'
       return:
         description: ''
         type: <xref uid="@azure/arm-logic.Request" />
@@ -40,7 +40,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'response?: Response'
+      content: 'response?: Response_2'
       return:
         description: ''
         type: <xref uid="@azure/arm-logic.Response" />

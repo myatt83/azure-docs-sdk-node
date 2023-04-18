@@ -26,7 +26,7 @@ properties:
         description: ''
         type: <xref uid="@azure/cosmos.Container" />
 methods:
-  - name: batch(OperationInput[], PartitionKey, RequestOptions)
+  - name: batch(OperationInput[], string, RequestOptions)
     uid: '@azure/cosmos.Items.batch'
     package: '@azure/cosmos'
     summary: >-
@@ -67,15 +67,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function batch(operations: OperationInput[], partitionKey?:
-        PartitionKey, options?: RequestOptions):
-        Promise<Response_2<OperationResponse[]>>
+        function batch(operations: OperationInput[], partitionKey?: string,
+        options?: RequestOptions): Promise<Response_2<OperationResponse[]>>
       parameters:
         - id: operations
           type: <xref uid="@azure/cosmos.OperationInput" />[]
           description: List of operations. Limit 100
         - id: partitionKey
-          type: <xref uid="@azure/cosmos.PartitionKey" />
+          type: string
           description: ''
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions" />
@@ -161,7 +160,7 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/cosmos.ChangeFeedIterator" />&lt;any&gt;
-  - name: changeFeed(PartitionKey, ChangeFeedOptions)
+  - name: changeFeed(string | number | boolean, ChangeFeedOptions)
     uid: '@azure/cosmos.Items.changeFeed'
     package: '@azure/cosmos'
     summary: |+
@@ -181,11 +180,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function changeFeed(partitionKey: PartitionKey, changeFeedOptions?:
-        ChangeFeedOptions): ChangeFeedIterator<any>
+        function changeFeed(partitionKey: string | number | boolean,
+        changeFeedOptions?: ChangeFeedOptions): ChangeFeedIterator<any>
       parameters:
         - id: partitionKey
-          type: <xref uid="@azure/cosmos.PartitionKey" />
+          type: string | number | boolean
           description: ''
         - id: changeFeedOptions
           type: <xref uid="@azure/cosmos.ChangeFeedOptions" />
@@ -210,7 +209,7 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/cosmos.ChangeFeedIterator" />&lt;T&gt;
-  - name: changeFeed<T>(PartitionKey, ChangeFeedOptions)
+  - name: changeFeed<T>(string | number | boolean, ChangeFeedOptions)
     uid: '@azure/cosmos.Items.changeFeed_2'
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
@@ -218,11 +217,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function changeFeed<T>(partitionKey: PartitionKey, changeFeedOptions?:
-        ChangeFeedOptions): ChangeFeedIterator<T>
+        function changeFeed<T>(partitionKey: string | number | boolean,
+        changeFeedOptions?: ChangeFeedOptions): ChangeFeedIterator<T>
       parameters:
         - id: partitionKey
-          type: <xref uid="@azure/cosmos.PartitionKey" />
+          type: string | number | boolean
           description: ''
         - id: changeFeedOptions
           type: <xref uid="@azure/cosmos.ChangeFeedOptions" />
@@ -448,7 +447,7 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/cosmos.ChangeFeedIterator" />&lt;any&gt;
-  - name: readChangeFeed(PartitionKey, ChangeFeedOptions)
+  - name: readChangeFeed(string | number | boolean, ChangeFeedOptions)
     uid: '@azure/cosmos.Items.readChangeFeed'
     package: '@azure/cosmos'
     summary: |+
@@ -469,11 +468,11 @@ methods:
     customDeprecatedMessage: Use `changeFeed` instead.
     syntax:
       content: >-
-        function readChangeFeed(partitionKey: PartitionKey, changeFeedOptions?:
-        ChangeFeedOptions): ChangeFeedIterator<any>
+        function readChangeFeed(partitionKey: string | number | boolean,
+        changeFeedOptions?: ChangeFeedOptions): ChangeFeedIterator<any>
       parameters:
         - id: partitionKey
-          type: <xref uid="@azure/cosmos.PartitionKey" />
+          type: string | number | boolean
           description: ''
         - id: changeFeedOptions
           type: <xref uid="@azure/cosmos.ChangeFeedOptions" />
@@ -499,7 +498,7 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/cosmos.ChangeFeedIterator" />&lt;T&gt;
-  - name: readChangeFeed<T>(PartitionKey, ChangeFeedOptions)
+  - name: readChangeFeed<T>(string | number | boolean, ChangeFeedOptions)
     uid: '@azure/cosmos.Items.readChangeFeed_2'
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
@@ -508,11 +507,11 @@ methods:
     customDeprecatedMessage: Use `changeFeed` instead.
     syntax:
       content: >-
-        function readChangeFeed<T>(partitionKey: PartitionKey,
+        function readChangeFeed<T>(partitionKey: string | number | boolean,
         changeFeedOptions?: ChangeFeedOptions): ChangeFeedIterator<T>
       parameters:
         - id: partitionKey
-          type: <xref uid="@azure/cosmos.PartitionKey" />
+          type: string | number | boolean
           description: ''
         - id: changeFeedOptions
           type: <xref uid="@azure/cosmos.ChangeFeedOptions" />

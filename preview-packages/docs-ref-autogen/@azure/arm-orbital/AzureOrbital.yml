@@ -103,6 +103,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-orbital.Operations" />
+  - name: operationsResults
+    uid: '@azure/arm-orbital.AzureOrbital.operationsResults'
+    package: '@azure/arm-orbital'
+    summary: ''
+    fullName: operationsResults
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'operationsResults: OperationsResults'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-orbital.OperationsResults" />
   - name: spacecrafts
     uid: '@azure/arm-orbital.AzureOrbital.spacecrafts'
     package: '@azure/arm-orbital'

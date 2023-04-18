@@ -2,6 +2,26 @@
   landingPageType: Root
   expanded: false
   items:
+  - name: AD External Identities
+    href: ~/docs-ref-services/preview/ad-external-identities.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - AD External Identities
+        href: ~/docs-ref-services/preview/arm-azureadexternalidentities-readme.md
+        children:
+        - '@azure/arm-azureadexternalidentities'
+  - name: Advisor
+    href: ~/docs-ref-services/preview/advisor.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Advisor
+        href: ~/docs-ref-services/preview/arm-advisor-readme.md
+        children:
+        - '@azure/arm-advisor'
   - name: Agrifood
     href: ~/docs-ref-services/preview/agrifood.md
     landingPageType: Service
@@ -98,6 +118,20 @@
         href: ~/docs-ref-services/preview/arm-appinsights-readme.md
         children:
         - '@azure/arm-appinsights'
+  - name: Attestation
+    href: ~/docs-ref-services/preview/attestation.md
+    landingPageType: Service
+    items:
+    - name: Attestation
+      href: ~/docs-ref-services/preview/attestation-readme.md
+      children:
+      - '@azure/attestation'
+    - name: Management
+      items:
+      - name: Resource Management - Attestation
+        href: ~/docs-ref-services/preview/arm-attestation-readme.md
+        children:
+        - '@azure/arm-attestation'
   - name: Authorization
     href: ~/docs-ref-services/preview/authorization.md
     landingPageType: Service
@@ -108,6 +142,16 @@
         href: ~/docs-ref-services/preview/arm-authorization-readme.md
         children:
         - '@azure/arm-authorization'
+  - name: Automanage
+    href: ~/docs-ref-services/preview/automanage.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Automanage
+        href: ~/docs-ref-services/preview/arm-automanage-readme.md
+        children:
+        - '@azure/arm-automanage'
   - name: Automation
     href: ~/docs-ref-services/preview/automation.md
     landingPageType: Service
@@ -128,6 +172,16 @@
         href: ~/docs-ref-services/preview/arm-azurestack-readme.md
         children:
         - '@azure/arm-azurestack'
+  - name: Azure Stack HCI
+    href: ~/docs-ref-services/preview/azure-stack-hci.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Azure Stack HCI
+        href: ~/docs-ref-services/preview/arm-azurestackhci-readme.md
+        children:
+        - '@azure/arm-azurestackhci'
   - name: Batch
     href: ~/docs-ref-services/preview/batch.md
     landingPageType: Service
@@ -138,6 +192,16 @@
         href: ~/docs-ref-services/preview/arm-batch-readme.md
         children:
         - '@azure/arm-batch'
+  - name: Billing Benefits
+    href: ~/docs-ref-services/preview/billing-benefits.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Billing Benefits
+        href: ~/docs-ref-services/preview/arm-billingbenefits-readme.md
+        children:
+        - '@azure/arm-billingbenefits'
   - name: Bot Service
     href: ~/docs-ref-services/preview/bot-service.md
     landingPageType: Service
@@ -148,6 +212,26 @@
         href: ~/docs-ref-services/preview/arm-botservice-readme.md
         children:
         - '@azure/arm-botservice'
+  - name: Change Analysis
+    href: ~/docs-ref-services/preview/change-analysis.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Change Analysis
+        href: ~/docs-ref-services/preview/arm-changeanalysis-readme.md
+        children:
+        - '@azure/arm-changeanalysis'
+  - name: Changes
+    href: ~/docs-ref-services/preview/changes.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Changes
+        href: ~/docs-ref-services/preview/arm-changes-readme.md
+        children:
+        - '@azure/arm-changes'
   - name: Chaos
     href: ~/docs-ref-services/preview/chaos.md
     landingPageType: Service
@@ -252,6 +336,10 @@
       href: ~/docs-ref-services/preview/communication-rooms-readme.md
       children:
       - '@azure/communication-rooms'
+    - name: Communication Sms
+      href: ~/docs-ref-services/preview/communication-sms-readme.md
+      children:
+      - '@azure/communication-sms'
     - name: Management
       items:
       - name: Resource Management - Communication
@@ -272,6 +360,14 @@
         href: ~/docs-ref-services/preview/arm-compute-readme.md
         children:
         - '@azure/arm-compute'
+  - name: Confidential Ledger
+    href: ~/docs-ref-services/preview/confidential-ledger.md
+    landingPageType: Service
+    items:
+    - name: Confidential Ledger
+      href: ~/docs-ref-services/preview/confidential-ledger-rest-readme.md
+      children:
+      - '@azure-rest/confidential-ledger'
   - name: Confluent
     href: ~/docs-ref-services/preview/confluent.md
     landingPageType: Service
@@ -384,6 +480,16 @@
         href: ~/docs-ref-services/preview/arm-databox-readme.md
         children:
         - '@azure/arm-databox'
+  - name: Data Catalog
+    href: ~/docs-ref-services/preview/data-catalog.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Data Catalog
+        href: ~/docs-ref-services/preview/arm-datacatalog-readme.md
+        children:
+        - '@azure/arm-datacatalog'
   - name: Data Factory
     href: ~/docs-ref-services/preview/data-factory.md
     landingPageType: Service
@@ -488,6 +594,16 @@
         href: ~/docs-ref-services/preview/arm-dnsresolver-readme.md
         children:
         - '@azure/arm-dnsresolver'
+  - name: Domain Services
+    href: ~/docs-ref-services/preview/domain-services.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Domain Services
+        href: ~/docs-ref-services/preview/arm-domainservices-readme.md
+        children:
+        - '@azure/arm-domainservices'
   - name: Dynatrace
     href: ~/docs-ref-services/preview/dynatrace.md
     landingPageType: Service
@@ -614,6 +730,26 @@
         href: ~/docs-ref-services/preview/arm-hanaonazure-readme.md
         children:
         - '@azure/arm-hanaonazure'
+  - name: HDInsight
+    href: ~/docs-ref-services/preview/hdinsight.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - HDInsight
+        href: ~/docs-ref-services/preview/arm-hdinsight-readme.md
+        children:
+        - '@azure/arm-hdinsight'
+  - name: Health Bot
+    href: ~/docs-ref-services/preview/health-bot.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Health Bot
+        href: ~/docs-ref-services/preview/arm-healthbot-readme.md
+        children:
+        - '@azure/arm-healthbot'
   - name: Hybrid Compute
     href: ~/docs-ref-services/preview/hybrid-compute.md
     landingPageType: Service
@@ -650,6 +786,16 @@
       - name: VSCode Authentication
         href: ~/docs-ref-services/preview/identity-vscode-readme.md
         landingPageType: Service
+  - name: Image Builder
+    href: ~/docs-ref-services/preview/image-builder.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Image Builder
+        href: ~/docs-ref-services/preview/arm-imagebuilder-readme.md
+        children:
+        - '@azure/arm-imagebuilder'
   - name: IoT
     href: ~/docs-ref-services/preview/iot.md
     landingPageType: Service
@@ -676,6 +822,10 @@
       - '@azure/iot-device-update'
     - name: Management
       items:
+      - name: Resource Management - Device Provisioning Services
+        href: ~/docs-ref-services/preview/arm-deviceprovisioningservices-readme.md
+        children:
+        - '@azure/arm-deviceprovisioningservices'
       - name: Resource Management - Device Update
         href: ~/docs-ref-services/preview/arm-deviceupdate-readme.md
         children:
@@ -736,6 +886,16 @@
         href: ~/docs-ref-services/preview/arm-kubernetesconfiguration-readme.md
         children:
         - '@azure/arm-kubernetesconfiguration'
+  - name: Kusto
+    href: ~/docs-ref-services/preview/kusto.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Kusto
+        href: ~/docs-ref-services/preview/arm-kusto-readme.md
+        children:
+        - '@azure/arm-kusto'
   - name: Lab Services
     href: ~/docs-ref-services/preview/lab-services.md
     landingPageType: Service
@@ -790,6 +950,16 @@
         href: ~/docs-ref-services/preview/arm-locks-readme.md
         children:
         - '@azure/arm-locks'
+  - name: Locks-Profile-2020-09-01-Hybrid
+    href: ~/docs-ref-services/preview/locks-profile-2020-09-01-hybrid.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: '@azure/arm-locks-profile-2020-09-01-hybrid'
+        href: ~/docs-ref-services/preview/arm-locks-profile-2020-09-01-hybrid-readme.md
+        children:
+        - '@azure/arm-locks-profile-2020-09-01-hybrid'
   - name: Log Analytics
     href: ~/docs-ref-services/preview/log-analytics.md
     landingPageType: Service
@@ -862,6 +1032,16 @@
         href: ~/docs-ref-services/preview/arm-managementgroups-readme.md
         children:
         - '@azure/arm-managementgroups'
+  - name: Management Partner
+    href: ~/docs-ref-services/preview/management-partner.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Management Partner
+        href: ~/docs-ref-services/preview/arm-managementpartner-readme.md
+        children:
+        - '@azure/arm-managementpartner'
   - name: Maps
     href: ~/docs-ref-services/preview/maps.md
     landingPageType: Service
@@ -896,6 +1076,16 @@
         href: ~/docs-ref-services/preview/arm-maps-readme.md
         children:
         - '@azure/arm-maps'
+  - name: Marketplace Ordering
+    href: ~/docs-ref-services/preview/marketplace-ordering.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Marketplace Ordering
+        href: ~/docs-ref-services/preview/arm-marketplaceordering-readme.md
+        children:
+        - '@azure/arm-marketplaceordering'
   - name: Media Services
     href: ~/docs-ref-services/preview/media-services.md
     landingPageType: Service
@@ -906,6 +1096,24 @@
         href: ~/docs-ref-services/preview/arm-mediaservices-readme.md
         children:
         - '@azure/arm-mediaservices'
+  - name: Metrics Advisor
+    href: ~/docs-ref-services/preview/metrics-advisor.md
+    landingPageType: Service
+    items:
+    - name: Metrics Advisor
+      href: ~/docs-ref-services/preview/ai-metrics-advisor-readme.md
+      children:
+      - '@azure/ai-metrics-advisor'
+  - name: Migrate
+    href: ~/docs-ref-services/preview/migrate.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Migrate
+        href: ~/docs-ref-services/preview/arm-migrate-readme.md
+        children:
+        - '@azure/arm-migrate'
   - name: Mixed Reality
     href: ~/docs-ref-services/preview/mixed-reality.md
     landingPageType: Service
@@ -984,6 +1192,16 @@
         href: ~/docs-ref-services/preview/arm-network-readme.md
         children:
         - '@azure/arm-network'
+  - name: Network Function
+    href: ~/docs-ref-services/preview/network-function.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Network Function
+        href: ~/docs-ref-services/preview/arm-networkfunction-readme.md
+        children:
+        - '@azure/arm-networkfunction'
   - name: Newrelicobservability
     href: ~/docs-ref-services/preview/newrelicobservability.md
     landingPageType: Service
@@ -994,6 +1212,16 @@
         children:
         - '@azure/arm-newrelicobservability'
         landingPageType: Service
+  - name: Nginx
+    href: ~/docs-ref-services/preview/nginx.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Nginx
+        href: ~/docs-ref-services/preview/arm-nginx-readme.md
+        children:
+        - '@azure/arm-nginx'
   - name: Notification Hubs
     href: ~/docs-ref-services/preview/notification-hubs.md
     landingPageType: Service
@@ -1038,6 +1266,16 @@
         href: ~/docs-ref-services/preview/arm-orbital-readme.md
         children:
         - '@azure/arm-orbital'
+  - name: Peering
+    href: ~/docs-ref-services/preview/peering.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Peering
+        href: ~/docs-ref-services/preview/arm-peering-readme.md
+        children:
+        - '@azure/arm-peering'
   - name: Policy
     href: ~/docs-ref-services/preview/policy.md
     landingPageType: Service
@@ -1048,6 +1286,10 @@
         href: ~/docs-ref-services/preview/arm-policy-readme.md
         children:
         - '@azure/arm-policy'
+      - name: '@azure/arm-policy-profile-2020-09-01-hybrid'
+        href: ~/docs-ref-services/preview/arm-policy-profile-2020-09-01-hybrid-readme.md
+        children:
+        - '@azure/arm-policy-profile-2020-09-01-hybrid'
   - name: Policy Insights
     href: ~/docs-ref-services/preview/policy-insights.md
     landingPageType: Service
@@ -1068,7 +1310,7 @@
         href: ~/docs-ref-services/preview/arm-portal-readme.md
         children:
         - '@azure/arm-portal'
-  - name: Postgresql
+  - name: PostgreSQL
     href: ~/docs-ref-services/preview/postgresql.md
     landingPageType: Service
     items:
@@ -1078,6 +1320,20 @@
         href: ~/docs-ref-services/preview/arm-postgresql-readme.md
         children:
         - '@azure/arm-postgresql'
+      - name: Resource Management - Postgresql
+        href: ~/docs-ref-services/preview/arm-postgresql-flexible-readme.md
+        children:
+        - '@azure/arm-postgresql-flexible'
+  - name: Private DNS
+    href: ~/docs-ref-services/preview/private-dns.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Private DNS
+        href: ~/docs-ref-services/preview/arm-privatedns-readme.md
+        children:
+        - '@azure/arm-privatedns'
   - name: Purview
     href: ~/docs-ref-services/preview/purview.md
     landingPageType: Service
@@ -1172,6 +1428,16 @@
         href: ~/docs-ref-services/preview/arm-resourcehealth-readme.md
         children:
         - '@azure/arm-resourcehealth'
+  - name: Resource Mover
+    href: ~/docs-ref-services/preview/resource-mover.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Resource Mover
+        href: ~/docs-ref-services/preview/arm-resourcemover-readme.md
+        children:
+        - '@azure/arm-resourcemover'
   - name: Resources
     href: ~/docs-ref-services/preview/resources.md
     landingPageType: Service
@@ -1262,6 +1528,16 @@
         href: ~/docs-ref-services/preview/arm-securityinsight-readme.md
         children:
         - '@azure/arm-securityinsight'
+  - name: Serial Console
+    href: ~/docs-ref-services/preview/serial-console.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Serial Console
+        href: ~/docs-ref-services/preview/arm-serialconsole-readme.md
+        children:
+        - '@azure/arm-serialconsole'
   - name: Service Bus
     href: ~/docs-ref-services/preview/service-bus.md
     landingPageType: Service
@@ -1374,10 +1650,18 @@
         href: ~/docs-ref-services/preview/arm-storage-readme.md
         children:
         - '@azure/arm-storage'
+      - name: '@azure/arm-storage-profile-2020-09-01-hybrid'
+        href: ~/docs-ref-services/preview/arm-storage-profile-2020-09-01-hybrid-readme.md
+        children:
+        - '@azure/arm-storage-profile-2020-09-01-hybrid'
       - name: Resource Management - Storage Cache
         href: ~/docs-ref-services/preview/arm-storagecache-readme.md
         children:
         - '@azure/arm-storagecache'
+      - name: Resource Management - Storage Import/Export (deprecated)
+        href: ~/docs-ref-services/preview/arm-storageimportexport-readme.md
+        children:
+        - '@azure/arm-storageimportexport'
   - name: Storagemover
     href: ~/docs-ref-services/preview/storagemover.md
     landingPageType: Service
@@ -1398,6 +1682,20 @@
         href: ~/docs-ref-services/preview/arm-streamanalytics-readme.md
         children:
         - '@azure/arm-streamanalytics'
+  - name: Subscriptions
+    href: ~/docs-ref-services/preview/subscriptions.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Subscriptions
+        href: ~/docs-ref-services/preview/arm-subscriptions-readme.md
+        children:
+        - '@azure/arm-subscriptions'
+      - name: '@azure/arm-subscriptions-profile-2020-09-01-hybrid'
+        href: ~/docs-ref-services/preview/arm-subscriptions-profile-2020-09-01-hybrid-readme.md
+        children:
+        - '@azure/arm-subscriptions-profile-2020-09-01-hybrid'
   - name: Synapse
     href: ~/docs-ref-services/preview/synapse.md
     landingPageType: Service
@@ -1490,6 +1788,14 @@
         href: ~/docs-ref-services/preview/arm-webpubsub-readme.md
         children:
         - '@azure/arm-webpubsub'
+  - name: WebPubSub
+    href: ~/docs-ref-services/preview/webpubsub.md
+    landingPageType: Service
+    items:
+    - name: WebPubSub Client SDK Protobuf
+      href: ~/docs-ref-services/preview/web-pubsub-client-protobuf-readme.md
+      children:
+      - '@azure/web-pubsub-client-protobuf'
   - name: Workloads
     href: ~/docs-ref-services/preview/workloads.md
     landingPageType: Service
@@ -1509,18 +1815,54 @@
       - name: Client
         landingPageType: Service
         items:
+        - name: Abort Controller
+          href: ~/docs-ref-services/preview/abort-controller-readme.md
+          children:
+          - '@azure/abort-controller'
+        - name: AMQP
+          href: ~/docs-ref-services/preview/core-amqp-readme.md
+          children:
+          - '@azure/core-amqp'
         - name: AMQP Common
           children:
           - '@azure/amqp-common'
           landingPageType: Service
+        - name: Auth
+          href: ~/docs-ref-services/preview/core-auth-readme.md
+          children:
+          - '@azure/core-auth'
+        - name: Client
+          href: ~/docs-ref-services/preview/core-client-readme.md
+          children:
+          - '@azure/core-client'
         - name: Client Paging
           href: ~/docs-ref-services/preview/core-client-paging-rest-readme.md
           children:
           - '@azure-rest/core-client-paging'
+        - name: Core Rest Pipeline
+          href: ~/docs-ref-services/preview/core-rest-pipeline-readme.md
+          children:
+          - '@azure/core-rest-pipeline'
+        - name: Core Utils
+          href: ~/docs-ref-services/preview/core-util-readme.md
+          children:
+          - '@azure/core-util'
+        - name: HTTP
+          href: ~/docs-ref-services/preview/core-http-readme.md
+          children:
+          - '@azure/core-http'
+        - name: Http Compat
+          href: ~/docs-ref-services/preview/core-http-compat-readme.md
+          children:
+          - '@azure/core-http-compat'
         - name: Https
           href: ~/docs-ref-services/preview/core-https-readme.md
           children:
           - '@azure/core-https'
+        - name: Logger
+          href: ~/docs-ref-services/preview/logger-readme.md
+          children:
+          - '@azure/logger'
         - name: LRO
           href: ~/docs-ref-services/preview/core-lro-readme.md
           children:
@@ -1533,6 +1875,14 @@
           href: ~/docs-ref-services/preview/core-tracing-readme.md
           children:
           - '@azure/core-tracing'
+        - name: XML
+          href: ~/docs-ref-services/preview/core-xml-readme.md
+          children:
+          - '@azure/core-xml'
+      - name: Paging
+        href: ~/docs-ref-services/preview/core-paging-readme.md
+        children:
+        - '@azure/core-paging'
     - name: OpenTelemetry Instrumentation
       href: ~/docs-ref-services/preview/opentelemetry-instrumentation-azure-sdk-readme.md
       children:

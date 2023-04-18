@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: JobExceptionTrigger
+uid: '@azure/communication-job-router.JobExceptionTrigger'
+package: '@azure/communication-job-router'
+summary: The trigger for this exception rule
+fullName: JobExceptionTrigger
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-job-router.JobExceptionTrigger.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "queue-length" | "wait-time"'
+      return:
+        description: ''
+        type: '"queue-length" | "wait-time"'

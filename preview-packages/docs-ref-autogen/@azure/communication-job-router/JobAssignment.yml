@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: JobAssignment
+uid: '@azure/communication-job-router.JobAssignment'
+package: '@azure/communication-job-router'
+summary: Assignment details of a job to a worker
+fullName: JobAssignment
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: assignedOn
+    uid: '@azure/communication-job-router.JobAssignment.assignedOn'
+    package: '@azure/communication-job-router'
+    summary: The assignment time of the job.
+    fullName: assignedOn
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'assignedOn: Date'
+      return:
+        description: ''
+        type: Date
+  - name: closedOn
+    uid: '@azure/communication-job-router.JobAssignment.closedOn'
+    package: '@azure/communication-job-router'
+    summary: The time the job was marked as closed after being completed.
+    fullName: closedOn
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'closedOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: completedOn
+    uid: '@azure/communication-job-router.JobAssignment.completedOn'
+    package: '@azure/communication-job-router'
+    summary: The time the job was marked as completed after being assigned.
+    fullName: completedOn
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'completedOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: id
+    uid: '@azure/communication-job-router.JobAssignment.id'
+    package: '@azure/communication-job-router'
+    summary: The Id of the job assignment.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: workerId
+    uid: '@azure/communication-job-router.JobAssignment.workerId'
+    package: '@azure/communication-job-router'
+    summary: The Id of the Worker assigned to the job.
+    fullName: workerId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workerId?: string'
+      return:
+        description: ''
+        type: string

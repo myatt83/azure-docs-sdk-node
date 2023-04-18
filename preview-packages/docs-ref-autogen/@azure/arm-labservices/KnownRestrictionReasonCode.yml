@@ -14,8 +14,8 @@ fields:
     uid: >-
       @azure/arm-labservices.KnownRestrictionReasonCode.NotAvailableForSubscription
     package: '@azure/arm-labservices'
-    summary: ''
+    summary: NotAvailableForSubscription
   - name: QuotaId
     uid: '@azure/arm-labservices.KnownRestrictionReasonCode.QuotaId'
     package: '@azure/arm-labservices'
-    summary: ''
+    summary: QuotaId

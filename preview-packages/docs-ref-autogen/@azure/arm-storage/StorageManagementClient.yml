@@ -35,6 +35,30 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-storage.StorageManagementClient.$host'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-storage.StorageManagementClient.apiVersion'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: blobContainers
     uid: '@azure/arm-storage.StorageManagementClient.blobContainers'
     package: '@azure/arm-storage'
@@ -119,6 +143,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-storage.FileShares" />
+  - name: localUsersOperations
+    uid: '@azure/arm-storage.StorageManagementClient.localUsersOperations'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: localUsersOperations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'localUsersOperations: LocalUsersOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.LocalUsersOperations" />
   - name: managementPolicies
     uid: '@azure/arm-storage.StorageManagementClient.managementPolicies'
     package: '@azure/arm-storage'
@@ -228,6 +264,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-storage.StorageAccounts" />
+  - name: subscriptionId
+    uid: '@azure/arm-storage.StorageManagementClient.subscriptionId'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: tableOperations
     uid: '@azure/arm-storage.StorageManagementClient.tableOperations'
     package: '@azure/arm-storage'
@@ -265,36 +313,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-storage.Usages" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-storage.StorageManagementClient.$host'
-    package: '@azure/arm-storage'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageManagementClientContext.$host](xref:@azure/arm-storage.StorageManagementClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-storage.StorageManagementClient.apiVersion'
-    package: '@azure/arm-storage'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageManagementClientContext.apiVersion](xref:@azure/arm-storage.StorageManagementClientContext.apiVersion)
   - name: pipeline
     uid: '@azure/arm-storage.StorageManagementClient.pipeline'
     package: '@azure/arm-storage'
@@ -307,24 +325,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageManagementClientContext.pipeline](xref:@azure/arm-storage.StorageManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-storage.StorageManagementClient.subscriptionId'
-    package: '@azure/arm-storage'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageManagementClientContext.subscriptionId](xref:@azure/arm-storage.StorageManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-storage.StorageManagementClient.sendOperationRequest'
@@ -348,9 +349,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageManagementClientContext.sendOperationRequest](xref:@azure/arm-storage.StorageManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-storage.StorageManagementClient.sendRequest'
     package: '@azure/arm-storage'
@@ -368,7 +367,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageManagementClientContext.sendRequest](xref:@azure/arm-storage.StorageManagementClientContext.sendRequest)
-extends: <xref uid="@azure/arm-storage.StorageManagementClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

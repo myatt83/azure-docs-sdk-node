@@ -1,0 +1,128 @@
+### YamlMime:TSType
+name: CallConnectionProperties
+uid: '@azure/communication-call-automation.CallConnectionProperties'
+package: '@azure/communication-call-automation'
+summary: Properties of a call connection
+fullName: CallConnectionProperties
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: callbackUri
+    uid: '@azure/communication-call-automation.CallConnectionProperties.callbackUri'
+    package: '@azure/communication-call-automation'
+    summary: The callback URI.
+    fullName: callbackUri
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'callbackUri?: string'
+      return:
+        description: ''
+        type: string
+  - name: callConnectionId
+    uid: >-
+      @azure/communication-call-automation.CallConnectionProperties.callConnectionId
+    package: '@azure/communication-call-automation'
+    summary: The call connection id.
+    fullName: callConnectionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'callConnectionId?: string'
+      return:
+        description: ''
+        type: string
+  - name: callConnectionState
+    uid: >-
+      @azure/communication-call-automation.CallConnectionProperties.callConnectionState
+    package: '@azure/communication-call-automation'
+    summary: The state of the call connection.
+    fullName: callConnectionState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'callConnectionState?: string'
+      return:
+        description: ''
+        type: string
+  - name: mediaSubscriptionId
+    uid: >-
+      @azure/communication-call-automation.CallConnectionProperties.mediaSubscriptionId
+    package: '@azure/communication-call-automation'
+    summary: SubscriptionId for media streaming
+    fullName: mediaSubscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaSubscriptionId?: string'
+      return:
+        description: ''
+        type: string
+  - name: serverCallId
+    uid: '@azure/communication-call-automation.CallConnectionProperties.serverCallId'
+    package: '@azure/communication-call-automation'
+    summary: The server call id.
+    fullName: serverCallId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serverCallId?: string'
+      return:
+        description: ''
+        type: string
+  - name: sourceCallerIdNumber
+    uid: >-
+      @azure/communication-call-automation.CallConnectionProperties.sourceCallerIdNumber
+    package: '@azure/communication-call-automation'
+    summary: >-
+      The source caller Id, a phone number, that's shown to the PSTN participant
+      being invited.
+
+      Required only when calling a PSTN callee.
+    fullName: sourceCallerIdNumber
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sourceCallerIdNumber?: PhoneNumberIdentifier'
+      return:
+        description: ''
+        type: PhoneNumberIdentifier
+  - name: sourceDisplayName
+    uid: >-
+      @azure/communication-call-automation.CallConnectionProperties.sourceDisplayName
+    package: '@azure/communication-call-automation'
+    summary: Display name of the call if dialing out to a pstn number.
+    fullName: sourceDisplayName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sourceDisplayName?: string'
+      return:
+        description: ''
+        type: string
+  - name: sourceIdentity
+    uid: >-
+      @azure/communication-call-automation.CallConnectionProperties.sourceIdentity
+    package: '@azure/communication-call-automation'
+    summary: Source identity.
+    fullName: sourceIdentity
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sourceIdentity?: CommunicationIdentifier'
+      return:
+        description: ''
+        type: CommunicationIdentifier
+  - name: targets
+    uid: '@azure/communication-call-automation.CallConnectionProperties.targets'
+    package: '@azure/communication-call-automation'
+    summary: The targets of the call.
+    fullName: targets
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'targets?: CommunicationIdentifier[]'
+      return:
+        description: ''
+        type: CommunicationIdentifier[]

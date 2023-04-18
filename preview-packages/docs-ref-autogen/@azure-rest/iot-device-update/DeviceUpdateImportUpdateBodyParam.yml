@@ -11,7 +11,10 @@ properties:
   - name: body
     uid: '@azure-rest/iot-device-update.DeviceUpdateImportUpdateBodyParam.body'
     package: '@azure-rest/iot-device-update'
-    summary: The update to be imported.
+    summary: >-
+      The update to be imported (see schema
+      https://json.schemastore.org/azure-deviceupdate-import-manifest-5.0.json
+      for details).
     fullName: body
     remarks: ''
     isDeprecated: false

@@ -21,7 +21,7 @@ methods:
         function beginCreateOrUpdate(resourceGroupName: string, vaultName:
         string, parameters: BackupVaultResource, options?:
         BackupVaultsCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BackupVaultResource>,
+        Promise<SimplePollerLike<OperationState<BackupVaultResource>,
         BackupVaultResource>>
       parameters:
         - id: resourceGroupName
@@ -42,7 +42,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.BackupVaultResource" />&gt;, <xref
           uid="@azure/arm-dataprotection.BackupVaultResource" />&gt;&gt;
   - name: >-
@@ -89,7 +89,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, vaultName: string,
         options?: BackupVaultsDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -104,7 +104,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginDeleteAndWait(string, string, BackupVaultsDeleteOptionalParams)
     uid: '@azure/arm-dataprotection.BackupVaults.beginDeleteAndWait'
     package: '@azure/arm-dataprotection'
@@ -147,7 +149,7 @@ methods:
         function beginUpdate(resourceGroupName: string, vaultName: string,
         parameters: PatchResourceRequestInput, options?:
         BackupVaultsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BackupVaultResource>,
+        Promise<SimplePollerLike<OperationState<BackupVaultResource>,
         BackupVaultResource>>
       parameters:
         - id: resourceGroupName
@@ -167,7 +169,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.BackupVaultResource" />&gt;, <xref
           uid="@azure/arm-dataprotection.BackupVaultResource" />&gt;&gt;
   - name: >-

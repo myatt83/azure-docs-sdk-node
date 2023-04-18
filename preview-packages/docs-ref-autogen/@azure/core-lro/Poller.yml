@@ -402,7 +402,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: pollUntilDone()
+  - name: 'pollUntilDone({ abortSignal?: AbortSignalLike })'
     uid: '@azure/core-lro.Poller.pollUntilDone'
     package: '@azure/core-lro'
     summary: >-
@@ -411,7 +411,13 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function pollUntilDone(): Promise<TResult>'
+      content: >-
+        function pollUntilDone(pollOptions?: { abortSignal?: AbortSignalLike }):
+        Promise<TResult>
+      parameters:
+        - id: pollOptions
+          type: '{ abortSignal?: AbortSignalLike }'
+          description: ''
       return:
         description: ''
         type: Promise&lt;TResult&gt;

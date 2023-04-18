@@ -1,0 +1,578 @@
+### YamlMime:TSType
+name: RouterClient
+uid: '@azure/communication-job-router.RouterClient'
+package: '@azure/communication-job-router'
+summary: The client to do router operations
+fullName: RouterClient
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: RouterClient(string, CommunicationTokenCredential, RouterClientOptions)
+    uid: '@azure/communication-job-router.RouterClient.constructor_2'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Initializes a new instance of the RouterClient class using a
+      TokenCredential.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RouterClient(endpoint: string, credential:
+        CommunicationTokenCredential, routerClientOptions?: RouterClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the service (ex:
+            https://contoso.eastus.communications.azure.net).
+        - id: credential
+          type: CommunicationTokenCredential
+          description: >-
+            CommunicationTokenCredential that is used to authenticate requests
+            to the service.
+        - id: routerClientOptions
+          type: <xref uid="@azure/communication-job-router.RouterClientOptions" />
+          description: Optional. Options to configure the HTTP pipeline.
+  - name: RouterClient(string, KeyCredential | TokenCredential, RouterClientOptions)
+    uid: '@azure/communication-job-router.RouterClient.constructor_1'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Initializes a new instance of the RouterClient class using an Azure
+      KeyCredential.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RouterClient(endpoint: string, credential: KeyCredential |
+        TokenCredential, routerClientOptions?: RouterClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the service (ex:
+            https://contoso.eastus.communications.azure.net).
+        - id: credential
+          type: KeyCredential | TokenCredential
+          description: >-
+            An object that is used to authenticate requests to the service. Use
+            the Azure KeyCredential or
+
+            `@azure/identity` or TokenCredential to create a credential.
+        - id: routerClientOptions
+          type: <xref uid="@azure/communication-job-router.RouterClientOptions" />
+          description: Optional. Options to configure the HTTP pipeline.
+  - name: RouterClient(string, RouterClientOptions)
+    uid: '@azure/communication-job-router.RouterClient.constructor'
+    package: '@azure/communication-job-router'
+    summary: Initializes a new instance of the RouterClient class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new RouterClient(connectionString: string, routerClientOptions?:
+        RouterClientOptions)
+      parameters:
+        - id: connectionString
+          type: string
+          description: >-
+            Connection string to connect to an Azure Communication Service
+            resource.
+                                    Example: "endpoint=https://contoso.eastus.communications.azure.net/;accesskey=secret";
+        - id: routerClientOptions
+          type: <xref uid="@azure/communication-job-router.RouterClientOptions" />
+          description: Optional. Options to configure the HTTP pipeline.
+methods:
+  - name: acceptJobOffer(string, string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.acceptJobOffer'
+    package: '@azure/communication-job-router'
+    summary: Accept a job offer.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function acceptJobOffer(workerId: string, offerId: string, options?:
+        OperationOptions): Promise<AcceptJobOfferResult>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker that accepts the job.
+        - id: offerId
+          type: string
+          description: The ID of the offer to accept.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.AcceptJobOfferResult" />&gt;
+  - name: cancelJob(string, CancelJobOptions)
+    uid: '@azure/communication-job-router.RouterClient.cancelJob'
+    package: '@azure/communication-job-router'
+    summary: Cancel a job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function cancelJob(jobId: string, options?: CancelJobOptions):
+        Promise<JobRouterCancelJobActionResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The ID of the job to cancel.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.CancelJobOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobRouterCancelJobActionResponse"
+          />&gt;
+  - name: closeJob(string, string, CloseJobOptions)
+    uid: '@azure/communication-job-router.RouterClient.closeJob'
+    package: '@azure/communication-job-router'
+    summary: Close a job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function closeJob(jobId: string, assignmentId: string, options?:
+        CloseJobOptions): Promise<JobRouterCloseJobActionResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The ID of the job to close.
+        - id: assignmentId
+          type: string
+          description: The assignment within which the job is to be closed.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.CloseJobOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobRouterCloseJobActionResponse"
+          />&gt;
+  - name: completeJob(string, string, CompleteJobOptions)
+    uid: '@azure/communication-job-router.RouterClient.completeJob'
+    package: '@azure/communication-job-router'
+    summary: Complete a job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completeJob(jobId: string, assignmentId: string, options?:
+        CompleteJobOptions): Promise<JobRouterCompleteJobActionResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The ID of the job to complete.
+        - id: assignmentId
+          type: string
+          description: The assignment Id to complete.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.CompleteJobOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobRouterCompleteJobActionResponse"
+          />&gt;
+  - name: createJob(string, CreateJobOptions)
+    uid: '@azure/communication-job-router.RouterClient.createJob'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Creates a job.
+      Returns job with the id of the created job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createJob(jobId: string, options?: CreateJobOptions):
+        Promise<RouterJobResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The job to be create
+        - id: options
+          type: <xref uid="@azure/communication-job-router.CreateJobOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterJobResponse" />&gt;
+  - name: createWorker(string, CreateWorkerOptions)
+    uid: '@azure/communication-job-router.RouterClient.createWorker'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Creates a worker.
+      Returns worker with the id of the registered worker.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createWorker(workerId: string, options?: CreateWorkerOptions):
+        Promise<RouterWorkerResponse>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker to create.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.CreateWorkerOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterWorkerResponse" />&gt;
+  - name: declineJobOffer(string, string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.declineJobOffer'
+    package: '@azure/communication-job-router'
+    summary: Decline a job offer.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function declineJobOffer(workerId: string, offerId: string, options?:
+        OperationOptions): Promise<JobRouterDeclineJobActionResponse>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker holding the offer.
+        - id: offerId
+          type: string
+          description: The ID of the offer to decline.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobRouterDeclineJobActionResponse"
+          />&gt;
+  - name: deleteJob(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.deleteJob'
+    package: '@azure/communication-job-router'
+    summary: Deletes a job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteJob(jobId: string, options?: OperationOptions):
+        Promise<void>
+      parameters:
+        - id: jobId
+          type: string
+          description: The id of the job to delete.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: deleteWorker(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.deleteWorker'
+    package: '@azure/communication-job-router'
+    summary: Deletes a worker.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteWorker(workerId: string, options?: OperationOptions):
+        Promise<void>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker to delete.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: deregisterWorker(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.deregisterWorker'
+    package: '@azure/communication-job-router'
+    summary: |-
+      De-registers a worker.
+      Returns worker with the id of the de-registered worker.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deregisterWorker(workerId: string, options?: OperationOptions):
+        Promise<RouterWorkerResponse>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker to deregister.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterWorkerResponse" />&gt;
+  - name: getJob(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.getJob'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets an job.
+      Returns job with the id of the job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getJob(jobId: string, options?: OperationOptions):
+        Promise<RouterJobResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The id of the job to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterJobResponse" />&gt;
+  - name: getQueuePosition(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.getQueuePosition'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets a job's position details.
+      Returns job position details.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getQueuePosition(jobId: string, options?: OperationOptions):
+        Promise<JobPositionDetails>
+      parameters:
+        - id: jobId
+          type: string
+          description: The ID of the job to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobPositionDetails" />&gt;
+  - name: getQueueStatistics(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.getQueueStatistics'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets a queue's statistics.
+      Returns queue's statistics.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getQueueStatistics(queueId: string, options?:
+        OperationOptions): Promise<QueueStatistics>
+      parameters:
+        - id: queueId
+          type: string
+          description: The ID of the queue to get statistics.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/communication-job-router.QueueStatistics"
+          />&gt;
+  - name: getWorker(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.getWorker'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Gets a worker.
+      Returns worker with the id of the worker.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getWorker(workerId: string, options?: OperationOptions):
+        Promise<RouterWorkerResponse>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker to get.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterWorkerResponse" />&gt;
+  - name: listJobs(ListJobsOptions)
+    uid: '@azure/communication-job-router.RouterClient.listJobs'
+    package: '@azure/communication-job-router'
+    summary: Gets the list of jobs.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listJobs(options?: ListJobsOptions):
+        PagedAsyncIterableIterator<RouterJobItem, RouterJobItem[], PageSettings>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/communication-job-router.ListJobsOptions" />
+          description: List jobs options.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/communication-job-router.RouterJobItem" />, <xref
+          uid="@azure/communication-job-router.RouterJobItem" />[],
+          PageSettings&gt;
+  - name: listWorkers(ListWorkersOptions)
+    uid: '@azure/communication-job-router.RouterClient.listWorkers'
+    package: '@azure/communication-job-router'
+    summary: Gets the list of workers.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWorkers(options?: ListWorkersOptions):
+        PagedAsyncIterableIterator<RouterWorkerItem, RouterWorkerItem[],
+        PageSettings>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/communication-job-router.ListWorkersOptions" />
+          description: List workers options.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/communication-job-router.RouterWorkerItem" />, <xref
+          uid="@azure/communication-job-router.RouterWorkerItem" />[],
+          PageSettings&gt;
+  - name: reclassifyJob(string, ReclassifyJobOptions)
+    uid: '@azure/communication-job-router.RouterClient.reclassifyJob'
+    package: '@azure/communication-job-router'
+    summary: Updates an existing job by Id and forcing it to be reclassified.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function reclassifyJob(jobId: string, options?: ReclassifyJobOptions):
+        Promise<JobRouterReclassifyJobActionResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The ID of the job to reclassify.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.ReclassifyJobOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.JobRouterReclassifyJobActionResponse"
+          />&gt;
+  - name: registerWorker(string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.registerWorker'
+    package: '@azure/communication-job-router'
+    summary: |-
+      Registers a worker.
+      Returns worker with the id of the registered worker.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerWorker(workerId: string, options?: OperationOptions):
+        Promise<RouterWorkerResponse>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker to register.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterWorkerResponse" />&gt;
+  - name: unassignJob(string, string, OperationOptions)
+    uid: '@azure/communication-job-router.RouterClient.unassignJob'
+    package: '@azure/communication-job-router'
+    summary: Unassign a job.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function unassignJob(jobId: string, assignmentId: string, options?:
+        OperationOptions): Promise<UnAssignJobResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The ID of the job to close.
+        - id: assignmentId
+          type: string
+          description: The assignment within which the job is to be unassigned.
+        - id: options
+          type: OperationOptions
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.UnAssignJobResponse" />&gt;
+  - name: updateJob(string, UpdateJobOptions)
+    uid: '@azure/communication-job-router.RouterClient.updateJob'
+    package: '@azure/communication-job-router'
+    summary: Update a job by Id.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateJob(jobId: string, options?: UpdateJobOptions):
+        Promise<RouterJobResponse>
+      parameters:
+        - id: jobId
+          type: string
+          description: The job to be updated
+        - id: options
+          type: <xref uid="@azure/communication-job-router.UpdateJobOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterJobResponse" />&gt;
+  - name: updateWorker(string, UpdateWorkerOptions)
+    uid: '@azure/communication-job-router.RouterClient.updateWorker'
+    package: '@azure/communication-job-router'
+    summary: Updates a worker.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateWorker(workerId: string, options?: UpdateWorkerOptions):
+        Promise<RouterWorkerResponse>
+      parameters:
+        - id: workerId
+          type: string
+          description: The ID of the worker to update.
+        - id: options
+          type: <xref uid="@azure/communication-job-router.UpdateWorkerOptions" />
+          description: Operation options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-job-router.RouterWorkerResponse" />&gt;

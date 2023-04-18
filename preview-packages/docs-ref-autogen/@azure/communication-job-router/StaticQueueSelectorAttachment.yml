@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: StaticQueueSelectorAttachment
+uid: '@azure/communication-job-router.StaticQueueSelectorAttachment'
+package: '@azure/communication-job-router'
+summary: Describes a label selector that will always be attached
+fullName: StaticQueueSelectorAttachment
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: kind
+    uid: '@azure/communication-job-router.StaticQueueSelectorAttachment.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "static"'
+      return:
+        description: ''
+        type: '"static"'
+  - name: labelSelector
+    uid: >-
+      @azure/communication-job-router.StaticQueueSelectorAttachment.labelSelector
+    package: '@azure/communication-job-router'
+    summary: >-
+      Describes a condition that must be met against a set of labels for queue
+      selection
+    fullName: labelSelector
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'labelSelector: QueueSelector'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.QueueSelector" />
+extends: <xref uid="@azure/communication-job-router.QueueSelectorAttachment" />

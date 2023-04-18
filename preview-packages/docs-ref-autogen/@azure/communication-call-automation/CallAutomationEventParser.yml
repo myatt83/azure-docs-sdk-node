@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: CallAutomationEventParser
+uid: '@azure/communication-call-automation.CallAutomationEventParser'
+package: '@azure/communication-call-automation'
+summary: Helper class for parsing Acs callback events.
+fullName: CallAutomationEventParser
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: parse(Record<string, unknown>)
+    uid: '@azure/communication-call-automation.CallAutomationEventParser.parse_1'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function parse(encodedEvents: Record<string, unknown>):
+        Promise<CallAutomationEvent>
+      parameters:
+        - id: encodedEvents
+          type: Record&lt;string, unknown&gt;
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.CallAutomationEvent" />&gt;
+  - name: parse(string)
+    uid: '@azure/communication-call-automation.CallAutomationEventParser.parse'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function parse(encodedEvent: string): Promise<CallAutomationEvent>'
+      parameters:
+        - id: encodedEvent
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-call-automation.CallAutomationEvent" />&gt;

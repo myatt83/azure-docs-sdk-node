@@ -25,7 +25,7 @@ methods:
         function beginCreate(resourceGroupName: string, sapVirtualInstanceName:
         string, applicationInstanceName: string, options?:
         SAPApplicationServerInstancesCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<SAPApplicationServerInstance>,
+        Promise<SimplePollerLike<OperationState<SAPApplicationServerInstance>,
         SAPApplicationServerInstance>>
       parameters:
         - id: resourceGroupName
@@ -46,7 +46,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.SAPApplicationServerInstance" />&gt;, <xref
           uid="@azure/arm-workloads.SAPApplicationServerInstance" />&gt;&gt;
   - name: >-
@@ -105,7 +105,7 @@ methods:
         function beginDelete(resourceGroupName: string, sapVirtualInstanceName:
         string, applicationInstanceName: string, options?:
         SAPApplicationServerInstancesDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -126,7 +126,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -181,7 +181,7 @@ methods:
         function beginStartInstance(resourceGroupName: string,
         sapVirtualInstanceName: string, applicationInstanceName: string,
         options?: SAPApplicationServerInstancesStartInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -202,7 +202,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -254,7 +254,7 @@ methods:
         function beginStopInstance(resourceGroupName: string,
         sapVirtualInstanceName: string, applicationInstanceName: string,
         options?: SAPApplicationServerInstancesStopInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -275,7 +275,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -327,7 +327,7 @@ methods:
         function beginUpdate(resourceGroupName: string, sapVirtualInstanceName:
         string, applicationInstanceName: string, options?:
         SAPApplicationServerInstancesUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<SAPApplicationServerInstance>,
+        Promise<SimplePollerLike<OperationState<SAPApplicationServerInstance>,
         SAPApplicationServerInstance>>
       parameters:
         - id: resourceGroupName
@@ -348,7 +348,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.SAPApplicationServerInstance" />&gt;, <xref
           uid="@azure/arm-workloads.SAPApplicationServerInstance" />&gt;&gt;
   - name: >-

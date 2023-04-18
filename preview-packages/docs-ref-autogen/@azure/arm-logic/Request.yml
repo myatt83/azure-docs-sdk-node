@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'headers?: Record<string, unknown>'
+      content: 'headers?: any'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: any
   - name: method
     uid: '@azure/arm-logic.Request.method'
     package: '@azure/arm-logic'

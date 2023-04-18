@@ -113,7 +113,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;CommunicationUserIdentifier&gt;
-  - name: createUserAndToken(TokenScope[], OperationOptions)
+  - name: createUserAndToken(TokenScope[], CreateUserAndTokenOptions)
     uid: >-
       @azure/communication-identity.CommunicationIdentityClient.createUserAndToken
     package: '@azure/communication-identity'
@@ -123,13 +123,15 @@ methods:
     syntax:
       content: >-
         function createUserAndToken(scopes: TokenScope[], options?:
-        OperationOptions): Promise<CommunicationUserToken>
+        CreateUserAndTokenOptions): Promise<CommunicationUserToken>
       parameters:
         - id: scopes
           type: <xref uid="@azure/communication-identity.TokenScope" />[]
           description: Scopes to include in the token.
         - id: options
-          type: OperationOptions
+          type: >-
+            <xref uid="@azure/communication-identity.CreateUserAndTokenOptions"
+            />
           description: Additional options for the request.
       return:
         description: ''
@@ -156,7 +158,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: getToken(CommunicationUserIdentifier, TokenScope[], OperationOptions)
+  - name: getToken(CommunicationUserIdentifier, TokenScope[], GetTokenOptions)
     uid: '@azure/communication-identity.CommunicationIdentityClient.getToken'
     package: '@azure/communication-identity'
     summary: Creates a scoped user token.
@@ -165,7 +167,7 @@ methods:
     syntax:
       content: >-
         function getToken(user: CommunicationUserIdentifier, scopes:
-        TokenScope[], options?: OperationOptions):
+        TokenScope[], options?: GetTokenOptions):
         Promise<CommunicationAccessToken>
       parameters:
         - id: user
@@ -175,33 +177,34 @@ methods:
           type: <xref uid="@azure/communication-identity.TokenScope" />[]
           description: Scopes to include in the token.
         - id: options
-          type: OperationOptions
+          type: <xref uid="@azure/communication-identity.GetTokenOptions" />
           description: Additional options for the request.
       return:
         description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/communication-identity.CommunicationAccessToken" />&gt;
-  - name: getTokenForTeamsUser(string, OperationOptions)
+  - name: getTokenForTeamsUser(GetTokenForTeamsUserOptions)
     uid: >-
       @azure/communication-identity.CommunicationIdentityClient.getTokenForTeamsUser
     package: '@azure/communication-identity'
     summary: >-
-      Exchanges an AAD access token of a Teams user for a new Communication
+      Exchanges an Azure AD access token of a Teams user for a new Communication
       Identity access token with a matching expiration time.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function getTokenForTeamsUser(teamsUserAadToken: string, options?:
-        OperationOptions): Promise<CommunicationAccessToken>
+        function getTokenForTeamsUser(options: GetTokenForTeamsUserOptions):
+        Promise<CommunicationAccessToken>
       parameters:
-        - id: teamsUserAadToken
-          type: string
-          description: ''
         - id: options
-          type: OperationOptions
-          description: Additional options for the request.
+          type: >-
+            <xref
+            uid="@azure/communication-identity.GetTokenForTeamsUserOptions" />
+          description: >-
+            Options used to exchange an Azure AD access token of a Teams user
+            for a new Communication Identity access token.
       return:
         description: ''
         type: >-

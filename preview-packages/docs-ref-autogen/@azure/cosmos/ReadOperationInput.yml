@@ -40,7 +40,9 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'partitionKey?: PartitionKey'
+      content: >-
+        partitionKey?: null | string | number | boolean | Record<string,
+        unknown>
       return:
         description: ''
-        type: <xref uid="@azure/cosmos.PartitionKey" />
+        type: null | string | number | boolean | Record&lt;string, unknown&gt;

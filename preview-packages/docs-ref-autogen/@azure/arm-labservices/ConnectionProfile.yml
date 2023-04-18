@@ -16,7 +16,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientRdpAccess?: ConnectionType_2'
+      content: 'clientRdpAccess?: ConnectionType'
       return:
         description: ''
         type: <xref uid="@azure/arm-labservices.ConnectionType" />
@@ -28,7 +28,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientSshAccess?: ConnectionType_2'
+      content: 'clientSshAccess?: ConnectionType'
       return:
         description: ''
         type: <xref uid="@azure/arm-labservices.ConnectionType" />
@@ -40,7 +40,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'webRdpAccess?: ConnectionType_2'
+      content: 'webRdpAccess?: ConnectionType'
       return:
         description: ''
         type: <xref uid="@azure/arm-labservices.ConnectionType" />
@@ -52,7 +52,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'webSshAccess?: ConnectionType_2'
+      content: 'webSshAccess?: ConnectionType'
       return:
         description: ''
         type: <xref uid="@azure/arm-labservices.ConnectionType" />

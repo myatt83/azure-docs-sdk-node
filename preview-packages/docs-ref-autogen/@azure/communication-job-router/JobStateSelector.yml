@@ -1,0 +1,19 @@
+### YamlMime:TSTypeAlias
+name: JobStateSelector
+uid: '@azure/communication-job-router.JobStateSelector'
+package: '@azure/communication-job-router'
+summary: Defines values for JobStateSelector.
+fullName: JobStateSelector
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JobStateSelector =
+    | "all"
+    | "pendingClassification"
+    | "queued"
+    | "assigned"
+    | "completed"
+    | "closed"
+    | "cancelled"
+    | "classificationFailed"
+    | "active"

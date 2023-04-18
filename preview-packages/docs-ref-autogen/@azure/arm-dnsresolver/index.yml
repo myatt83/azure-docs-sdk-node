@@ -14,6 +14,7 @@ classes:
 interfaces:
   - '@azure/arm-dnsresolver.CloudError'
   - '@azure/arm-dnsresolver.CloudErrorBody'
+  - '@azure/arm-dnsresolver.DnsForwardingRuleset'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetListResult'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetPatch'
   - '@azure/arm-dnsresolver.DnsForwardingRulesets'
@@ -31,6 +32,7 @@ interfaces:
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsListNextOptionalParams'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsListOptionalParams'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsUpdateOptionalParams'
+  - '@azure/arm-dnsresolver.DnsResolver'
   - '@azure/arm-dnsresolver.DnsResolverListResult'
   - '@azure/arm-dnsresolver.DnsResolverManagementClientOptionalParams'
   - '@azure/arm-dnsresolver.DnsResolverPatch'
@@ -45,6 +47,7 @@ interfaces:
   - '@azure/arm-dnsresolver.DnsResolversListNextOptionalParams'
   - '@azure/arm-dnsresolver.DnsResolversListOptionalParams'
   - '@azure/arm-dnsresolver.DnsResolversUpdateOptionalParams'
+  - '@azure/arm-dnsresolver.ForwardingRule'
   - '@azure/arm-dnsresolver.ForwardingRuleListResult'
   - '@azure/arm-dnsresolver.ForwardingRulePatch'
   - '@azure/arm-dnsresolver.ForwardingRules'
@@ -54,6 +57,7 @@ interfaces:
   - '@azure/arm-dnsresolver.ForwardingRulesListNextOptionalParams'
   - '@azure/arm-dnsresolver.ForwardingRulesListOptionalParams'
   - '@azure/arm-dnsresolver.ForwardingRulesUpdateOptionalParams'
+  - '@azure/arm-dnsresolver.InboundEndpoint'
   - '@azure/arm-dnsresolver.InboundEndpointListResult'
   - '@azure/arm-dnsresolver.InboundEndpointPatch'
   - '@azure/arm-dnsresolver.InboundEndpoints'
@@ -64,6 +68,7 @@ interfaces:
   - '@azure/arm-dnsresolver.InboundEndpointsListOptionalParams'
   - '@azure/arm-dnsresolver.InboundEndpointsUpdateOptionalParams'
   - '@azure/arm-dnsresolver.IpConfiguration'
+  - '@azure/arm-dnsresolver.OutboundEndpoint'
   - '@azure/arm-dnsresolver.OutboundEndpointListResult'
   - '@azure/arm-dnsresolver.OutboundEndpointPatch'
   - '@azure/arm-dnsresolver.OutboundEndpoints'
@@ -73,13 +78,16 @@ interfaces:
   - '@azure/arm-dnsresolver.OutboundEndpointsListNextOptionalParams'
   - '@azure/arm-dnsresolver.OutboundEndpointsListOptionalParams'
   - '@azure/arm-dnsresolver.OutboundEndpointsUpdateOptionalParams'
+  - '@azure/arm-dnsresolver.ProxyResource'
   - '@azure/arm-dnsresolver.Resource'
   - '@azure/arm-dnsresolver.SubResource'
   - '@azure/arm-dnsresolver.SubResourceListResult'
   - '@azure/arm-dnsresolver.SystemData'
   - '@azure/arm-dnsresolver.TargetDnsServer'
+  - '@azure/arm-dnsresolver.TrackedResource'
   - '@azure/arm-dnsresolver.VirtualNetworkDnsForwardingRuleset'
   - '@azure/arm-dnsresolver.VirtualNetworkDnsForwardingRulesetListResult'
+  - '@azure/arm-dnsresolver.VirtualNetworkLink'
   - '@azure/arm-dnsresolver.VirtualNetworkLinkListResult'
   - '@azure/arm-dnsresolver.VirtualNetworkLinkPatch'
   - '@azure/arm-dnsresolver.VirtualNetworkLinks'
@@ -91,7 +99,6 @@ interfaces:
   - '@azure/arm-dnsresolver.VirtualNetworkLinksUpdateOptionalParams'
 typeAliases:
   - '@azure/arm-dnsresolver.CreatedByType'
-  - '@azure/arm-dnsresolver.DnsForwardingRuleset'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsCreateOrUpdateResponse'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsGetResponse'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsListByResourceGroupNextResponse'
@@ -101,7 +108,6 @@ typeAliases:
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsListNextResponse'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsListResponse'
   - '@azure/arm-dnsresolver.DnsForwardingRulesetsUpdateResponse'
-  - '@azure/arm-dnsresolver.DnsResolver'
   - '@azure/arm-dnsresolver.DnsResolverState'
   - '@azure/arm-dnsresolver.DnsResolversCreateOrUpdateResponse'
   - '@azure/arm-dnsresolver.DnsResolversGetResponse'
@@ -112,32 +118,49 @@ typeAliases:
   - '@azure/arm-dnsresolver.DnsResolversListNextResponse'
   - '@azure/arm-dnsresolver.DnsResolversListResponse'
   - '@azure/arm-dnsresolver.DnsResolversUpdateResponse'
-  - '@azure/arm-dnsresolver.ForwardingRule'
   - '@azure/arm-dnsresolver.ForwardingRuleState'
   - '@azure/arm-dnsresolver.ForwardingRulesCreateOrUpdateResponse'
   - '@azure/arm-dnsresolver.ForwardingRulesGetResponse'
   - '@azure/arm-dnsresolver.ForwardingRulesListNextResponse'
   - '@azure/arm-dnsresolver.ForwardingRulesListResponse'
   - '@azure/arm-dnsresolver.ForwardingRulesUpdateResponse'
-  - '@azure/arm-dnsresolver.InboundEndpoint'
   - '@azure/arm-dnsresolver.InboundEndpointsCreateOrUpdateResponse'
   - '@azure/arm-dnsresolver.InboundEndpointsGetResponse'
   - '@azure/arm-dnsresolver.InboundEndpointsListNextResponse'
   - '@azure/arm-dnsresolver.InboundEndpointsListResponse'
   - '@azure/arm-dnsresolver.InboundEndpointsUpdateResponse'
   - '@azure/arm-dnsresolver.IpAllocationMethod'
-  - '@azure/arm-dnsresolver.OutboundEndpoint'
   - '@azure/arm-dnsresolver.OutboundEndpointsCreateOrUpdateResponse'
   - '@azure/arm-dnsresolver.OutboundEndpointsGetResponse'
   - '@azure/arm-dnsresolver.OutboundEndpointsListNextResponse'
   - '@azure/arm-dnsresolver.OutboundEndpointsListResponse'
   - '@azure/arm-dnsresolver.OutboundEndpointsUpdateResponse'
   - '@azure/arm-dnsresolver.ProvisioningState'
-  - '@azure/arm-dnsresolver.ProxyResource'
-  - '@azure/arm-dnsresolver.TrackedResource'
-  - '@azure/arm-dnsresolver.VirtualNetworkLink'
   - '@azure/arm-dnsresolver.VirtualNetworkLinksCreateOrUpdateResponse'
   - '@azure/arm-dnsresolver.VirtualNetworkLinksGetResponse'
   - '@azure/arm-dnsresolver.VirtualNetworkLinksListNextResponse'
   - '@azure/arm-dnsresolver.VirtualNetworkLinksListResponse'
   - '@azure/arm-dnsresolver.VirtualNetworkLinksUpdateResponse'
+functions:
+  - name: getContinuationToken(unknown)
+    uid: '@azure/arm-dnsresolver.getContinuationToken'
+    package: '@azure/arm-dnsresolver'
+    summary: |-
+      Given the last `.value` produced by the `byPage` iterator,
+      returns a continuation token that can be used to begin paging from
+      that point later.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getContinuationToken(page: unknown): string | undefined'
+      parameters:
+        - id: page
+          type: unknown
+          description: >-
+            An object from accessing `value` on the IteratorResult from a
+            `byPage` iterator.
+      return:
+        description: >-
+          The continuation token that can be passed into byPage() during future
+          calls.
+        type: string | undefined

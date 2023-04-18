@@ -25,7 +25,7 @@ methods:
         function beginCreate(resourceGroupName: string, sapVirtualInstanceName:
         string, centralInstanceName: string, options?:
         SAPCentralInstancesCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<SAPCentralServerInstance>,
+        Promise<SimplePollerLike<OperationState<SAPCentralServerInstance>,
         SAPCentralServerInstance>>
       parameters:
         - id: resourceGroupName
@@ -49,7 +49,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.SAPCentralServerInstance" />&gt;, <xref
           uid="@azure/arm-workloads.SAPCentralServerInstance" />&gt;&gt;
   - name: >-
@@ -117,7 +117,7 @@ methods:
         function beginDelete(resourceGroupName: string, sapVirtualInstanceName:
         string, centralInstanceName: string, options?:
         SAPCentralInstancesDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -141,7 +141,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -204,7 +204,7 @@ methods:
         function beginStartInstance(resourceGroupName: string,
         sapVirtualInstanceName: string, centralInstanceName: string, options?:
         SAPCentralInstancesStartInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -228,7 +228,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -282,7 +282,7 @@ methods:
         function beginStopInstance(resourceGroupName: string,
         sapVirtualInstanceName: string, centralInstanceName: string, options?:
         SAPCentralInstancesStopInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -306,7 +306,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -364,7 +364,7 @@ methods:
         function beginUpdate(resourceGroupName: string, sapVirtualInstanceName:
         string, centralInstanceName: string, options?:
         SAPCentralInstancesUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<SAPCentralServerInstance>,
+        Promise<SimplePollerLike<OperationState<SAPCentralServerInstance>,
         SAPCentralServerInstance>>
       parameters:
         - id: resourceGroupName
@@ -388,7 +388,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.SAPCentralServerInstance" />&gt;, <xref
           uid="@azure/arm-workloads.SAPCentralServerInstance" />&gt;&gt;
   - name: >-

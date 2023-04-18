@@ -69,7 +69,7 @@ methods:
       content: >-
         function startSpan<Options>(name: string, operationOptions?: Options,
         spanOptions?: TracingSpanOptions): { span: TracingSpan, updatedOptions:
-        Options }
+        OptionsWithTracingContext<Options> }
       parameters:
         - id: name
           type: string
@@ -86,7 +86,9 @@ methods:
         description: >-
           A [TracingSpan](xref:@azure/core-tracing.TracingSpan) and the updated
           operation options.
-        type: '{ span: TracingSpan, updatedOptions: Options }'
+        type: >-
+          { span: TracingSpan, updatedOptions:
+          OptionsWithTracingContext&lt;Options&gt; }
   - name: >-
       withContext<CallbackArgs, Callback>(TracingContext, Callback,
       CallbackArgs)

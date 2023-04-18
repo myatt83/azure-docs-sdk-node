@@ -20,7 +20,7 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, monitorName: string,
         monitorParameter: Monitor, options?: MonitorsCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<Monitor>, Monitor>>
+        Promise<SimplePollerLike<OperationState<Monitor>, Monitor>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -37,7 +37,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.Monitor" />&gt;, <xref
           uid="@azure/arm-workloads.Monitor" />&gt;&gt;
   - name: beginCreateAndWait(string, string, Monitor, MonitorsCreateOptionalParams)
@@ -81,7 +81,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, monitorName: string,
         options?: MonitorsDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -96,7 +96,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: beginDeleteAndWait(string, string, MonitorsDeleteOptionalParams)

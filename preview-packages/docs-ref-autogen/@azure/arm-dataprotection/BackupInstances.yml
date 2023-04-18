@@ -21,7 +21,7 @@ methods:
         function beginAdhocBackup(resourceGroupName: string, vaultName: string,
         backupInstanceName: string, parameters: TriggerBackupRequest, options?:
         BackupInstancesAdhocBackupOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationJobExtendedInfo>,
+        Promise<SimplePollerLike<OperationState<OperationJobExtendedInfo>,
         OperationJobExtendedInfo>>
       parameters:
         - id: resourceGroupName
@@ -45,7 +45,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;, <xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;&gt;
   - name: >-
@@ -99,7 +99,7 @@ methods:
         function beginCreateOrUpdate(resourceGroupName: string, vaultName:
         string, backupInstanceName: string, parameters: BackupInstanceResource,
         options?: BackupInstancesCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BackupInstanceResource>,
+        Promise<SimplePollerLike<OperationState<BackupInstanceResource>,
         BackupInstanceResource>>
       parameters:
         - id: resourceGroupName
@@ -123,7 +123,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.BackupInstanceResource" />&gt;, <xref
           uid="@azure/arm-dataprotection.BackupInstanceResource" />&gt;&gt;
   - name: >-
@@ -176,7 +176,7 @@ methods:
         function beginDelete(resourceGroupName: string, vaultName: string,
         backupInstanceName: string, options?:
         BackupInstancesDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -195,7 +195,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginDeleteAndWait(string, string, string,
       BackupInstancesDeleteOptionalParams)
@@ -241,7 +243,7 @@ methods:
         function beginResumeBackups(resourceGroupName: string, vaultName:
         string, backupInstanceName: string, options?:
         BackupInstancesResumeBackupsOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -260,7 +262,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginResumeBackupsAndWait(string, string, string,
       BackupInstancesResumeBackupsOptionalParams)
@@ -306,7 +310,7 @@ methods:
         function beginResumeProtection(resourceGroupName: string, vaultName:
         string, backupInstanceName: string, options?:
         BackupInstancesResumeProtectionOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -325,7 +329,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginResumeProtectionAndWait(string, string, string,
       BackupInstancesResumeProtectionOptionalParams)
@@ -373,7 +379,7 @@ methods:
         function beginStopProtection(resourceGroupName: string, vaultName:
         string, backupInstanceName: string, options?:
         BackupInstancesStopProtectionOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -392,7 +398,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginStopProtectionAndWait(string, string, string,
       BackupInstancesStopProtectionOptionalParams)
@@ -444,7 +452,7 @@ methods:
         function beginSuspendBackups(resourceGroupName: string, vaultName:
         string, backupInstanceName: string, options?:
         BackupInstancesSuspendBackupsOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -463,7 +471,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginSuspendBackupsAndWait(string, string, string,
       BackupInstancesSuspendBackupsOptionalParams)
@@ -518,7 +528,7 @@ methods:
         string, backupInstanceName: string, parameters:
         SyncBackupInstanceRequest, options?:
         BackupInstancesSyncBackupInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -540,7 +550,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginSyncBackupInstanceAndWait(string, string, string,
       SyncBackupInstanceRequest,
@@ -597,7 +609,7 @@ methods:
         string, backupInstanceName: string, parameters:
         AzureBackupRehydrationRequest, options?:
         BackupInstancesTriggerRehydrateOptionalParams):
-        Promise<PollerLike<PollOperationState<BackupInstancesTriggerRehydrateHeaders>,
+        Promise<SimplePollerLike<OperationState<BackupInstancesTriggerRehydrateHeaders>,
         BackupInstancesTriggerRehydrateHeaders>>
       parameters:
         - id: resourceGroupName
@@ -623,7 +635,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.BackupInstancesTriggerRehydrateHeaders"
           />&gt;, <xref
           uid="@azure/arm-dataprotection.BackupInstancesTriggerRehydrateHeaders"
@@ -686,7 +698,7 @@ methods:
         string, backupInstanceName: string, parameters:
         AzureBackupRestoreRequestUnion, options?:
         BackupInstancesTriggerRestoreOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationJobExtendedInfo>,
+        Promise<SimplePollerLike<OperationState<OperationJobExtendedInfo>,
         OperationJobExtendedInfo>>
       parameters:
         - id: resourceGroupName
@@ -712,7 +724,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;, <xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;&gt;
   - name: >-
@@ -770,7 +782,7 @@ methods:
         function beginValidateForBackup(resourceGroupName: string, vaultName:
         string, parameters: ValidateForBackupRequest, options?:
         BackupInstancesValidateForBackupOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationJobExtendedInfo>,
+        Promise<SimplePollerLike<OperationState<OperationJobExtendedInfo>,
         OperationJobExtendedInfo>>
       parameters:
         - id: resourceGroupName
@@ -791,7 +803,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;, <xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;&gt;
   - name: >-
@@ -844,7 +856,7 @@ methods:
         string, backupInstanceName: string, parameters:
         ValidateRestoreRequestObject, options?:
         BackupInstancesValidateForRestoreOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationJobExtendedInfo>,
+        Promise<SimplePollerLike<OperationState<OperationJobExtendedInfo>,
         OperationJobExtendedInfo>>
       parameters:
         - id: resourceGroupName
@@ -870,7 +882,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;, <xref
           uid="@azure/arm-dataprotection.OperationJobExtendedInfo" />&gt;&gt;
   - name: >-

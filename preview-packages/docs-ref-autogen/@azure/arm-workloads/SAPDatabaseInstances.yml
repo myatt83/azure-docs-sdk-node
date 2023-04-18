@@ -26,7 +26,7 @@ methods:
         function beginCreate(resourceGroupName: string, sapVirtualInstanceName:
         string, databaseInstanceName: string, options?:
         SAPDatabaseInstancesCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<SAPDatabaseInstance>,
+        Promise<SimplePollerLike<OperationState<SAPDatabaseInstance>,
         SAPDatabaseInstance>>
       parameters:
         - id: resourceGroupName
@@ -50,7 +50,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.SAPDatabaseInstance" />&gt;, <xref
           uid="@azure/arm-workloads.SAPDatabaseInstance" />&gt;&gt;
   - name: >-
@@ -111,7 +111,7 @@ methods:
         function beginDelete(resourceGroupName: string, sapVirtualInstanceName:
         string, databaseInstanceName: string, options?:
         SAPDatabaseInstancesDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -135,7 +135,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -194,7 +194,7 @@ methods:
         function beginStartInstance(resourceGroupName: string,
         sapVirtualInstanceName: string, databaseInstanceName: string, options?:
         SAPDatabaseInstancesStartInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -218,7 +218,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -272,7 +272,7 @@ methods:
         function beginStopInstance(resourceGroupName: string,
         sapVirtualInstanceName: string, databaseInstanceName: string, options?:
         SAPDatabaseInstancesStopInstanceOptionalParams):
-        Promise<PollerLike<PollOperationState<OperationStatusResult>,
+        Promise<SimplePollerLike<OperationState<OperationStatusResult>,
         OperationStatusResult>>
       parameters:
         - id: resourceGroupName
@@ -296,7 +296,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;, <xref
           uid="@azure/arm-workloads.OperationStatusResult" />&gt;&gt;
   - name: >-
@@ -350,7 +350,7 @@ methods:
         function beginUpdate(resourceGroupName: string, sapVirtualInstanceName:
         string, databaseInstanceName: string, options?:
         SAPDatabaseInstancesUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<SAPDatabaseInstance>,
+        Promise<SimplePollerLike<OperationState<SAPDatabaseInstance>,
         SAPDatabaseInstance>>
       parameters:
         - id: resourceGroupName
@@ -374,7 +374,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-workloads.SAPDatabaseInstance" />&gt;, <xref
           uid="@azure/arm-workloads.SAPDatabaseInstance" />&gt;&gt;
   - name: >-

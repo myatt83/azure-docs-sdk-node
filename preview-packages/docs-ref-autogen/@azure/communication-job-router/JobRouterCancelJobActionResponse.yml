@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: JobRouterCancelJobActionResponse
+uid: '@azure/communication-job-router.JobRouterCancelJobActionResponse'
+package: '@azure/communication-job-router'
+summary: Contains response data for the cancelJobAction operation.
+fullName: JobRouterCancelJobActionResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JobRouterCancelJobActionResponse = Record<string, unknown>

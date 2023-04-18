@@ -11,7 +11,7 @@ methods:
   - name: list(SkusListOptionalParams)
     uid: '@azure/arm-labservices.Skus.list'
     package: '@azure/arm-labservices'
-    summary: Returns a list of all the Azure Lab Services resource SKUs.
+    summary: Returns a list of Azure Lab Services resource SKUs.
     remarks: ''
     isDeprecated: false
     syntax:

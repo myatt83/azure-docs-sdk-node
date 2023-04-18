@@ -8,23 +8,27 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: get(RequestParameters)
+  - name: get(DeviceManagementListDeviceClassesParameters)
     uid: '@azure-rest/iot-device-update.DeviceManagementListDeviceClasses.get'
     package: '@azure-rest/iot-device-update'
     summary: >-
-      Gets a list of all device classes (unique combinations of device
-      manufacturer and model) for all devices connected to Device Update for IoT
-      Hub.
+      Gets a list of all device classes (sets of devices compatible with the
+      same updates based on the model Id and compat properties reported in the
+      Device Update PnP interface in IoT Hub) for all devices connected to
+      Device Update for IoT Hub.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function get(options?: RequestParameters):
+        function get(options?: DeviceManagementListDeviceClassesParameters):
         StreamableMethod<DeviceManagementListDeviceClasses200Response |
         DeviceManagementListDeviceClassesdefaultResponse>
       parameters:
         - id: options
-          type: RequestParameters
+          type: >-
+            <xref
+            uid="@azure-rest/iot-device-update.DeviceManagementListDeviceClassesParameters"
+            />
           description: ''
       return:
         description: ''

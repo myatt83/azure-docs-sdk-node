@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: FunctionRule
+uid: '@azure/communication-job-router.FunctionRule'
+package: '@azure/communication-job-router'
+summary: A rule providing a binding to an HTTP Triggered Azure Function.
+fullName: FunctionRule
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: credential
+    uid: '@azure/communication-job-router.FunctionRule.credential'
+    package: '@azure/communication-job-router'
+    summary: Credentials used to access Azure function rule
+    fullName: credential
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credential?: FunctionRuleCredential'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-job-router.FunctionRuleCredential" />
+  - name: functionUri
+    uid: '@azure/communication-job-router.FunctionRule.functionUri'
+    package: '@azure/communication-job-router'
+    summary: URL for Azure Function
+    fullName: functionUri
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'functionUri: string'
+      return:
+        description: ''
+        type: string
+  - name: kind
+    uid: '@azure/communication-job-router.FunctionRule.kind'
+    package: '@azure/communication-job-router'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: kind
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kind: "azure-function-rule"'
+      return:
+        description: ''
+        type: '"azure-function-rule"'
+extends: <xref uid="@azure/communication-job-router.RouterRule" />

@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: VerificationConstantsResponse
+uid: >-
+  @azure-tools/communication-recipient-verification.VerificationConstantsResponse
+package: '@azure-tools/communication-recipient-verification'
+summary: Model verified recipients.
+fullName: VerificationConstantsResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: currentNumberOfVerifications
+    uid: >-
+      @azure-tools/communication-recipient-verification.VerificationConstantsResponse.currentNumberOfVerifications
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Current number of verified numbers for the resource.
+    fullName: currentNumberOfVerifications
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'currentNumberOfVerifications?: number'
+      return:
+        description: ''
+        type: number
+  - name: maxRetriesAllowed
+    uid: >-
+      @azure-tools/communication-recipient-verification.VerificationConstantsResponse.maxRetriesAllowed
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Max retries allowed for resource.
+    fullName: maxRetriesAllowed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxRetriesAllowed?: number'
+      return:
+        description: ''
+        type: number
+  - name: maxVerificationsAllowed
+    uid: >-
+      @azure-tools/communication-recipient-verification.VerificationConstantsResponse.maxVerificationsAllowed
+    package: '@azure-tools/communication-recipient-verification'
+    summary: Max verified numbers allowed for resource.
+    fullName: maxVerificationsAllowed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxVerificationsAllowed?: number'
+      return:
+        description: ''
+        type: number

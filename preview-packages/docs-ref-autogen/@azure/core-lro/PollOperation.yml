@@ -50,7 +50,8 @@ methods:
       It returns a promise that should be resolved with an updated version of
       the poller's operation.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: '`cancel` has been deprecated because it was not implemented.'
     syntax:
       content: >-
         function cancel(options?: { abortSignal?: AbortSignalLike }):

@@ -27,7 +27,7 @@ properties:
   - name: identity
     uid: '@azure/arm-workloads.ProviderInstance.identity'
     package: '@azure/arm-workloads'
-    summary: Managed service identity (user assigned identities)
+    summary: '[currently not in use] Managed service identity(user assigned identities)'
     fullName: identity
     remarks: ''
     isDeprecated: false
@@ -39,7 +39,7 @@ properties:
   - name: providerSettings
     uid: '@azure/arm-workloads.ProviderInstance.providerSettings'
     package: '@azure/arm-workloads'
-    summary: Defines the provider instance errors.
+    summary: Defines the provider specific properties.
     fullName: providerSettings
     remarks: ''
     isDeprecated: false

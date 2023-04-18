@@ -22,9 +22,7 @@ summary: >-
 
   **ServiceBusTopic** \
 
-  **AzureFunction** \
-
-  **PartnerDestination**
+  **AzureFunction**
 fullName: EndpointType
 remarks: ''
 isDeprecated: false

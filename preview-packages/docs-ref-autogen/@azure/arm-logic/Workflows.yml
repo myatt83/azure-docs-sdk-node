@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: beginMove(string, string, ResourceReference, WorkflowsMoveOptionalParams)
+  - name: beginMove(string, string, WorkflowReference, WorkflowsMoveOptionalParams)
     uid: '@azure/arm-logic.Workflows.beginMove'
     package: '@azure/arm-logic'
     summary: Moves an existing workflow.
@@ -17,7 +17,7 @@ methods:
     syntax:
       content: >-
         function beginMove(resourceGroupName: string, workflowName: string,
-        move: ResourceReference, options?: WorkflowsMoveOptionalParams):
+        move: WorkflowReference, options?: WorkflowsMoveOptionalParams):
         Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
@@ -27,7 +27,7 @@ methods:
           type: string
           description: The workflow name.
         - id: move
-          type: <xref uid="@azure/arm-logic.ResourceReference" />
+          type: <xref uid="@azure/arm-logic.WorkflowReference" />
           description: The workflow to move.
         - id: options
           type: <xref uid="@azure/arm-logic.WorkflowsMoveOptionalParams" />
@@ -36,7 +36,7 @@ methods:
         description: ''
         type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
-      beginMoveAndWait(string, string, ResourceReference,
+      beginMoveAndWait(string, string, WorkflowReference,
       WorkflowsMoveOptionalParams)
     uid: '@azure/arm-logic.Workflows.beginMoveAndWait'
     package: '@azure/arm-logic'
@@ -46,7 +46,7 @@ methods:
     syntax:
       content: >-
         function beginMoveAndWait(resourceGroupName: string, workflowName:
-        string, move: ResourceReference, options?: WorkflowsMoveOptionalParams):
+        string, move: WorkflowReference, options?: WorkflowsMoveOptionalParams):
         Promise<void>
       parameters:
         - id: resourceGroupName
@@ -56,7 +56,7 @@ methods:
           type: string
           description: The workflow name.
         - id: move
-          type: <xref uid="@azure/arm-logic.ResourceReference" />
+          type: <xref uid="@azure/arm-logic.WorkflowReference" />
           description: The workflow to move.
         - id: options
           type: <xref uid="@azure/arm-logic.WorkflowsMoveOptionalParams" />

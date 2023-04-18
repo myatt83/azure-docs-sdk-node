@@ -1,0 +1,100 @@
+### YamlMime:TSType
+name: CallMedia
+uid: '@azure/communication-call-automation.CallMedia'
+package: '@azure/communication-call-automation'
+summary: CallMedia class represents call media related APIs.
+fullName: CallMedia
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: CallMedia(string, CallMediaImpl)
+    uid: '@azure/communication-call-automation.CallMedia.constructor'
+    package: '@azure/communication-call-automation'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new CallMedia(callConnectionId: string, callMediaImpl: CallMediaImpl)'
+      parameters:
+        - id: callConnectionId
+          type: string
+          description: ''
+        - id: callMediaImpl
+          type: CallMediaImpl
+          description: ''
+methods:
+  - name: cancelAllMediaOperations()
+    uid: '@azure/communication-call-automation.CallMedia.cancelAllMediaOperations'
+    package: '@azure/communication-call-automation'
+    summary: Cancels all the queued media operations.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function cancelAllMediaOperations(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: play(FileSource, CommunicationIdentifier[], PlayOptions)
+    uid: '@azure/communication-call-automation.CallMedia.play'
+    package: '@azure/communication-call-automation'
+    summary: Play audio to a specific participant.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function play(playSource: FileSource, playTo: CommunicationIdentifier[],
+        playOptions?: PlayOptions): Promise<void>
+      parameters:
+        - id: playSource
+          type: <xref uid="@azure/communication-call-automation.FileSource" />
+          description: A PlaySource representing the source to play.
+        - id: playTo
+          type: CommunicationIdentifier[]
+          description: The targets to play to.
+        - id: playOptions
+          type: <xref uid="@azure/communication-call-automation.PlayOptions" />
+          description: Additional attributes for play.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: playToAll(FileSource, PlayOptions)
+    uid: '@azure/communication-call-automation.CallMedia.playToAll'
+    package: '@azure/communication-call-automation'
+    summary: Play to all participants.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function playToAll(playSource: FileSource, playOptions?: PlayOptions):
+        Promise<void>
+      parameters:
+        - id: playSource
+          type: <xref uid="@azure/communication-call-automation.FileSource" />
+          description: A PlaySource representing the source to play.
+        - id: playOptions
+          type: <xref uid="@azure/communication-call-automation.PlayOptions" />
+          description: Additional attributes for play.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: startRecognizing(CallMediaRecognizeDtmfOptions)
+    uid: '@azure/communication-call-automation.CallMedia.startRecognizing'
+    package: '@azure/communication-call-automation'
+    summary: Recognize participant input.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function startRecognizing(recognizeOptions:
+        CallMediaRecognizeDtmfOptions): Promise<void>
+      parameters:
+        - id: recognizeOptions
+          type: >-
+            <xref
+            uid="@azure/communication-call-automation.CallMediaRecognizeDtmfOptions"
+            />
+          description: Different attributes for recognize.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

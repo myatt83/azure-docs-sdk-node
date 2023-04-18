@@ -219,10 +219,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'partitionKey?: PartitionKey'
+      content: 'partitionKey?: any'
       return:
         description: ''
-        type: <xref uid="@azure/cosmos.PartitionKey" />
+        type: any
   - name: populateIndexMetrics
     uid: '@azure/cosmos.FeedOptions.populateIndexMetrics'
     package: '@azure/cosmos'
