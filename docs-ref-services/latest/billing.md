@@ -7,8 +7,8 @@ ms.data: 04/19/2023
 ms.topic: reference
 ms.devlang: javascript
 ms.service: billing
-ms.technology: 
 manager: timlt
+ms.technology: 
 ms.date: 07/18/2017
 ms.product: 
 ---
